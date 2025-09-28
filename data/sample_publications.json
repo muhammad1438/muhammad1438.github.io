@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Thermodynamic properties calculations of Cu-based species",
+    "year": 2024,
+    "venue": "International Journal of Chemical Kinetics",
+    "doi": "10.1002/kin.21708",
+    "url": "https://onlinelibrary.wiley.com/doi/10.1002/kin.21708",
+    "openalex_id": null,
+    "cited_by_openalex": 3,
+    "cited_by_crossref": null,
+    "authors": ["Yousuf M", "Muhammad Fahad Arshad", "Tian Z-Y"],
+    "updated": "2024-01-15T12:00:00Z"
+  },
+  {
+    "title": "Insights into catalytic oxidation mechanism of CO over Cu catalyst: Experimental and modeling study",
+    "year": 2023,
+    "venue": "Materials Research Bulletin",
+    "doi": "10.1016/J.MATERRESBULL.2023.112343",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0025540823003793",
+    "openalex_id": null,
+    "cited_by_openalex": 5,
+    "cited_by_crossref": null,
+    "authors": ["El Kasmi A", "Muhammad Fahad Arshad", "Waqas M", "Monguen C K F", "Azar F-Z", "Wu L-N", "Tian Z-Y"],
+    "updated": "2023-08-20T12:00:00Z"
+  },
+  {
+    "title": "Insight into one-step synthesis of active amorphous La-Co thin films for catalytic oxidation of CO",
+    "year": 2021,
+    "venue": "Applications in Energy and Combustion Science",
+    "doi": "10.1016/j.jaecs.2020.100021",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2666352X20300217",
+    "openalex_id": null,
+    "cited_by_openalex": 12,
+    "cited_by_crossref": null,
+    "authors": ["Muhammad Fahad Arshad", "El Kasmi A", "Waqas M", "Tian Z-Y"],
+    "updated": "2021-03-10T12:00:00Z"
+  },
+  {
+    "title": "Ab Initio Calculation of Surface Thermochemistry for Popular Solid Transition Metal-Based Species",
+    "year": 2021,
+    "venue": "ACS Omega",
+    "doi": "10.1021/acsomega.1c02178",
+    "url": "https://pubs.acs.org/doi/10.1021/acsomega.1c02178",
+    "openalex_id": null,
+    "cited_by_openalex": 8,
+    "cited_by_crossref": null,
+    "authors": ["Muhammad Fahad Arshad", "Wu L N", "El Kasmi A", "Qin W", "Tian Z Y"],
+    "updated": "2021-09-02T12:00:00Z"
+  }
+]

@@ -1,0 +1,180 @@
+[
+  {
+    "title": "Thermodynamic properties calculations of Cu-based species",
+    "year": 2024,
+    "venue": "International Journal of Chemical Kinetics",
+    "doi": "10.1002/kin.21708",
+    "url": "https://onlinelibrary.wiley.com/doi/10.1002/kin.21708",
+    "authors": [
+      "Yousuf M",
+      "Muhammad Fahad Arshad",
+      "Tian Z-Y"
+    ],
+    "cited_by_openalex": 3,
+    "updated": "2024-01-15T12:00:00Z"
+  },
+  {
+    "title": "Insights into catalytic oxidation mechanism of CO over Cu catalyst: Experimental and modeling study",
+    "year": 2023,
+    "venue": "Materials Research Bulletin",
+    "doi": "10.1016/J.MATERRESBULL.2023.112343",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0025540823003793",
+    "authors": [
+      "El Kasmi A",
+      "Muhammad Fahad Arshad",
+      "Waqas M",
+      "Monguen C K F",
+      "Azar F-Z",
+      "Wu L-N",
+      "Tian Z-Y"
+    ],
+    "cited_by_openalex": 5,
+    "updated": "2023-08-20T12:00:00Z"
+  },
+  {
+    "title": "Insights into the Role of Carbonates and Hydroxides in La-Co Oxides for CO Catalytic Conversion",
+    "year": 2023,
+    "venue": "ES Energy & Environment",
+    "doi": "10.30919/esee908",
+    "url": "https://doi.org/10.30919/esee908",
+    "authors": [
+      "Muhammad Fahad Arshad",
+      "El Kasmi A",
+      "Fonzeu Monguen C K",
+      "Daniel S",
+      "Waqas M",
+      "Tian Z-Y"
+    ],
+    "cited_by_openalex": 2,
+    "updated": "2023-06-15T12:00:00Z"
+  },
+  {
+    "title": "Structure sensitivity of propane partial oxidation over chromium-manganese binary oxides",
+    "year": 2022,
+    "venue": "Proceedings of the Combustion Institute",
+    "doi": "10.1016/J.PROCI.2022.09.043",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1540748922004466",
+    "authors": [
+      "Fonzeu Monguen C K",
+      "El Kasmi A",
+      "Daniel S",
+      "Muhammad Fahad Arshad",
+      "Tian Z Y"
+    ],
+    "cited_by_openalex": 4,
+    "updated": "2022-11-10T12:00:00Z"
+  },
+  {
+    "title": "Oxidative Dehydrogenation of Propane into Propene over Chromium Oxides",
+    "year": 2022,
+    "venue": "Industrial & Engineering Chemistry Research",
+    "doi": "10.1021/acs.iecr.2c00813",
+    "url": "https://pubs.acs.org/doi/10.1021/acs.iecr.2c00813",
+    "authors": [
+      "Fonzeu Monguen C K",
+      "el Kasmi A",
+      "Muhammad Fahad Arshad",
+      "Kouotou P M",
+      "Daniel S",
+      "Tian Z Y"
+    ],
+    "cited_by_openalex": 7,
+    "updated": "2022-04-12T12:00:00Z"
+  },
+  {
+    "title": "Oxidative Dehydrogenation of Propane to Olefins Promoted by Zr Modified ZSM-5",
+    "year": 2022,
+    "venue": "Catalysis Letters",
+    "doi": "10.1007/S10562-022-03977-6",
+    "url": "https://link.springer.com/article/10.1007/s10562-022-03977-6",
+    "authors": [
+      "Daniel S",
+      "Monguen C K F",
+      "El Kasmi A",
+      "Muhammad Fahad Arshad",
+      "Tian Z Y"
+    ],
+    "cited_by_openalex": 6,
+    "updated": "2022-03-20T12:00:00Z"
+  },
+  {
+    "title": "Insight into one-step synthesis of active amorphous La-Co thin films for catalytic oxidation of CO",
+    "year": 2021,
+    "venue": "Applications in Energy and Combustion Science",
+    "doi": "10.1016/j.jaecs.2020.100021",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2666352X20300217",
+    "authors": [
+      "Muhammad Fahad Arshad",
+      "El Kasmi A",
+      "Waqas M",
+      "Tian Z-Y"
+    ],
+    "cited_by_openalex": 15,
+    "updated": "2021-03-10T12:00:00Z"
+  },
+  {
+    "title": "Ab Initio Calculation of Surface Thermochemistry for Popular Solid Transition Metal-Based Species",
+    "year": 2021,
+    "venue": "ACS Omega",
+    "doi": "10.1021/acsomega.1c02178",
+    "url": "https://pubs.acs.org/doi/10.1021/acsomega.1c02178",
+    "authors": [
+      "Muhammad Fahad Arshad",
+      "Wu L N",
+      "El Kasmi A",
+      "Qin W",
+      "Tian Z Y"
+    ],
+    "cited_by_openalex": 12,
+    "updated": "2021-09-02T12:00:00Z"
+  },
+  {
+    "title": "CO2 effect on catalytic abatement of VOC emissions over Cu-Co binary oxide films",
+    "year": 2021,
+    "venue": "Materials Research Bulletin",
+    "doi": "10.1016/j.materresbull.2021.111456",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0025540821003924",
+    "authors": [
+      "el Kasmi A",
+      "Waqas M",
+      "Wu L N",
+      "Muhammad Fahad Arshad",
+      "Tian Z Y"
+    ],
+    "cited_by_openalex": 8,
+    "updated": "2021-05-15T12:00:00Z"
+  },
+  {
+    "title": "Mechanistic study of the CO oxidation reaction on the CuO (111) surface during chemical looping combustion",
+    "year": 2021,
+    "venue": "Proceedings of the Combustion Institute",
+    "doi": "10.1016/j.proci.2020.06.376",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1540748920304345",
+    "authors": [
+      "Wu L N",
+      "Tian Z Y",
+      "Kasmi A el",
+      "Muhammad Fahad Arshad",
+      "Qin W"
+    ],
+    "cited_by_openalex": 11,
+    "updated": "2021-01-20T12:00:00Z"
+  },
+  {
+    "title": "Catalytic combustion of CO over Cu-doped iron oxides: CO2 effects on activity",
+    "year": 2021,
+    "venue": "Fuel",
+    "doi": "10.1016/j.fuel.2020.119760",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0016236120333330",
+    "authors": [
+      "Waqas M",
+      "El Kasmi A",
+      "Wu L N",
+      "Muhammad Fahad Arshad",
+      "Qin W",
+      "Tian Z Y"
+    ],
+    "cited_by_openalex": 9,
+    "updated": "2021-02-01T12:00:00Z"
+  }
+]
