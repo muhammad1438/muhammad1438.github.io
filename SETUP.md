@@ -2,15 +2,15 @@
 
 ## Step 1: Repository Setup
 ```bash
-git clone https://github.com/muhammad1438/muhammad1438.git
-cd muhammad1438
+git clone https://github.com/muhammad1438/muhammad1438.github.io.git
+cd muhammad1438.github.io
 ```
 
 ## Step 2: Enable GitHub Pages
 1. Go to your repository **Settings**
 2. Navigate to **Pages** section
 3. Under **Source**, select **"GitHub Actions"**
-4. Your site will be live at: `https://muhammad1438.github.io/muhammad1438`
+4. Your site will be live at: `https://muhammad1438.github.io`
 
 ## Step 3: Customize Your Profile
 Edit `index.html` to update:

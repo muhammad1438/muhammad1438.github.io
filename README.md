@@ -18,7 +18,7 @@ A modern, responsive CV website with automated publication tracking from OpenAle
 1. Go to your repository Settings
 2. Navigate to Pages section
 3. Under "Source", select "GitHub Actions"
-4. The site will be available at `https://muhammad1438.github.io/muhammad1438`
+4. The site will be available at `https://muhammad1438.github.io`
 
 ### 2. Automatic Updates
 
