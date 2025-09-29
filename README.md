@@ -4,7 +4,7 @@
 
 <h1 align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com/?lines=Hello,+There!+👋;This+is+Dr.+Muhammad+Fahad+Arshad....;Post-Doctoral+Researcher;Catalysis+%26+Hydrogen+Expert;Nice+to+meet+you!&center=true&size=30">
+    <img src="https://readme-typing-svg.herokuapp.com/?lines=Hello,+There!+👋;Dr.+Muhammad+Fahad+Arshad;Post-Doctoral+Researcher;Catalysis+Expert;Hydrogen+Production;Nice+to+meet+you!&center=true&size=50&height=100">
   </a>
 </h1>
 
@@ -21,42 +21,46 @@
   <a href="https://www.researchgate.net/profile/Muhammad-Fahad-Arshad" title="ResearchGate">
     <img src="https://img.shields.io/badge/ResearchGate-00CCBB?style=for-the-badge&logo=researchgate&logoColor=white" alt="ResearchGate" />
   </a>
-  <a href="https://muhammad1438.github.io/" title="Professional Website">
+  <a href="https://muhammad1438.github.io/" title="Website">
     <img src="https://img.shields.io/badge/Website-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Website" />
   </a>
 </p>
 <br>
 
-<p align="center">
-  Hi, I'm <b>Dr. Muhammad Fahad Arshad</b> — Post-Doctorate Researcher (Chemical & Biochemical Sciences) at <b>UM6P</b>, Morocco 🇲🇦 · Computational & Experimental Catalysis · Kinetics & Thermochemistry
-  <br><br>
-  🔬 Currently: Post-Doctorate Researcher at <b>University Mohammed VI Polytechnic (UM6P)</b>, Ben Guerir — Hydrogen production, CO<sub>2</sub> valorization, molecular dynamics, DFT, LLM/ML  <i>(2025–present)</i>
+<div align="center">
+  <h3>Hi, I'm <b>Dr. Muhammad Fahad Arshad</b> — Post-Doctorate Researcher (Chemical & Biochemical Sciences) at <b>UM6P</b>, Morocco 🇲🇦</h3>
+  <h4>Computational & Experimental Catalysis · Kinetics & Thermochemistry</h4>
   <br>
-  🧪 Previously: Post-Doctorate Researcher at <b>Institute of Engineering Thermophysics, Chinese Academy of Sciences</b>, Beijing 🇨🇳 — led & mentored international researchers  <i>(2023–2024)</i>
-  <br>
-  🎓 PhD in Engineering Thermophysics, <b>University of Chinese Academy of Sciences</b> — heterogeneous catalysis, photocatalysis, hydrogen production, DFT (2017–2023)
-  <br>
-  🎓 BSc Mechanical Engineering (Fluid Dynamics), <b>University of Engineering & Technology, Lahore</b> 🇵🇰 (2012–2016)
-  <br>
-  📍 Based in Morocco · 🌐 <a href="https://muhammad1438.github.io/">Professional Website</a>
-  <br>
-  💻 I love building reliable modeling & data pipelines for catalysis and energy systems
-  <br>
-  🧠 Interests: DFT, MD, reaction kinetics (Cantera/CHEMKIN), ML for materials & mechanisms
-  <br>
-  💬 Ask me anything via <a href="https://github.com/muhammad1438/muhammad1438/issues" title="Issues">Issues</a>
-  <br>
-  📫 Reach me: <a href="mailto:m.fahad1448@gmail.com">m.fahad1448@gmail.com</a>
-</p>
 
-## 🎯 Research Focus
+  <h4>🔬 Currently: Post-Doctorate Researcher at <b>University Mohammed VI Polytechnic (UM6P)</b>, Ben Guerir — Hydrogen production, CO<sub>2</sub> valorization, molecular dynamics, DFT, LLM/ML  <i>(2025–present)</i></h4>
 
-- **Heterogeneous Catalysis**: Design and optimization of catalytic materials for energy conversion
-- **Hydrogen Production**: Photocatalytic and thermocatalytic hydrogen generation systems
-- **CO₂ Valorization**: Converting carbon dioxide into valuable chemicals and fuels
-- **Computational Chemistry**: DFT calculations, molecular dynamics, and chemical kinetics modeling
-- **Reactor Engineering**: Novel photocatalytic and photolysis reactor design and implementation
-- **Machine Learning**: Application of LLM and ML techniques to catalysis research
+  <h4>🧪 Previously: Post-Doctorate Researcher at <b>Institute of Engineering Thermophysics, Chinese Academy of Sciences</b>, Beijing 🇨🇳 — led & mentored international researchers  <i>(2023–2024)</i></h4>
+
+  <h4>🎓 PhD in Engineering Thermophysics, <b>University of Chinese Academy of Sciences</b> — heterogeneous catalysis, photocatalysis, hydrogen production, DFT (2017–2023)</h4>
+
+  <h4>🎓 BSc Mechanical Engineering (Fluid Dynamics), <b>University of Engineering & Technology, Lahore</b> 🇵🇰 (2012–2016)</h4>
+
+  <h4>📍 Based in Morocco · 🌐 <a href="https://muhammad1438.github.io/">Professional Website</a></h4>
+
+  <h4>💻 I love building reliable modeling & data pipelines for catalysis and energy systems</h4>
+
+  <h4>🧠 Interests: DFT, MD, reaction kinetics (Cantera/CHEMKIN), ML for materials & mechanisms</h4>
+
+  <h4>💬 Ask me anything via <a href="https://github.com/muhammad1438/muhammad1438/issues" title="Issues">Issues</a></h4>
+
+  <h4>📫 Reach me: <a href="mailto:m.fahad1448@gmail.com">m.fahad1448@gmail.com</a></h4>
+</div>
+
+<h2 align="center">🎯 Research Focus</h2>
+
+<div align="center">
+  <h4>🔬 <strong>Heterogeneous Catalysis</strong>: Design and optimization of catalytic materials for energy conversion</h4>
+  <h4>⚡ <strong>Hydrogen Production</strong>: Photocatalytic and thermocatalytic hydrogen generation systems</h4>
+  <h4>🌱 <strong>CO₂ Valorization</strong>: Converting carbon dioxide into valuable chemicals and fuels</h4>
+  <h4>💻 <strong>Computational Chemistry</strong>: DFT calculations, molecular dynamics, and chemical kinetics modeling</h4>
+  <h4>⚗️ <strong>Reactor Engineering</strong>: Novel photocatalytic and photolysis reactor design and implementation</h4>
+  <h4>🤖 <strong>Machine Learning</strong>: Application of LLM and ML techniques to catalysis research</h4>
+</div>
 
 <hr>
 <h2 align="center">🔥 Languages & Frameworks & Tools & Abilities 🔥</h2>
