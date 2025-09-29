@@ -8,13 +8,23 @@
   </a>
 </h1>
 
-<h5 align="center">
-  <code><a href="https://www.linkedin.com/in/mfahadarshad/" title="LinkedIn Profile"><img width="22" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg"> LinkedIn</a></code>
-  <code><a href="https://scholar.google.com/citations?user=fwiNZasAAAAJ" title="Google Scholar"><img width="22" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/googlescholar.svg"> Scholar</a></code>
-  <code><a href="https://orcid.org/0000-0003-1828-9458" title="ORCID"><img width="22" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/orcid.svg"> ORCID</a></code>
-  <code><a href="https://www.researchgate.net/profile/Muhammad-Fahad-Arshad" title="ResearchGate"><img width="22" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/researchgate.svg"> ResearchGate</a></code>
-  <code><a href="https://muhammad1438.github.io/" title="Professional Website"><img width="22" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/internet-explorer.svg"> Website</a></code>
-</h5>
+<p align="center">
+  <a href="https://www.linkedin.com/in/mfahadarshad/" title="LinkedIn Profile">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="https://scholar.google.com/citations?user=fwiNZasAAAAJ" title="Google Scholar">
+    <img src="https://img.shields.io/badge/Google_Scholar-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white" alt="Google Scholar" />
+  </a>
+  <a href="https://orcid.org/0000-0003-1828-9458" title="ORCID">
+    <img src="https://img.shields.io/badge/ORCID-A6CE39?style=for-the-badge&logo=orcid&logoColor=white" alt="ORCID" />
+  </a>
+  <a href="https://www.researchgate.net/profile/Muhammad-Fahad-Arshad" title="ResearchGate">
+    <img src="https://img.shields.io/badge/ResearchGate-00CCBB?style=for-the-badge&logo=researchgate&logoColor=white" alt="ResearchGate" />
+  </a>
+  <a href="https://muhammad1438.github.io/" title="Professional Website">
+    <img src="https://img.shields.io/badge/Website-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Website" />
+  </a>
+</p>
 <br>
 
 <p align="center">
@@ -51,28 +61,32 @@
 <hr>
 <h2 align="center">🔥 Languages & Frameworks & Tools & Abilities 🔥</h2>
 <br>
+
+### 💻 Programming & Development
 <p align="center">
-  <!-- Core programming / tooling -->
-  <code><img title="Python" height="25" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/python.svg"></code>
-  <code><img title="C++" height="25" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/cplusplus.svg"></code>
-  <code><img title="LaTeX" height="25" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/latex.svg"></code>
-  <code><img title="Git" height="25" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/git.svg"></code>
-  <code><img title="Linux" height="25" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linux.svg"></code>
-  <code><img title="Bash" height="25" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/gnubash.svg"></code>
-  <code><img title="Jupyter" height="25" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/jupyter.svg"></code>
-  <code><img title="VS Code" height="25" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/visualstudiocode.svg"></code>
+  <img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" alt="Python" />
+  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++" />
+  <img src="https://img.shields.io/badge/LaTeX-47A141?style=for-the-badge&logo=latex&logoColor=white" alt="LaTeX" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
+  <img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="Bash" />
+</p>
 
-  <!-- Scientific computing -->
-  <code><img title="NumPy" height="25" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/numpy.svg"></code>
-  <code><img title="Pandas" height="25" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/pandas.svg"></code>
-  <code><img title="Matplotlib" height="25" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/plotly.svg"></code>
-  <code><img title="TensorFlow" height="25" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/tensorflow.svg"></code>
-  <code><img title="PyTorch" height="25" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/pytorch.svg"></code>
+### 🔬 Scientific Computing & ML
+<p align="center">
+  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
+  <img src="https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge&logo=python&logoColor=white" alt="Matplotlib" />
+  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow" />
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch" />
+  <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter" />
+</p>
 
-  <!-- Design & CAD -->
-  <code><img title="Adobe Illustrator" height="25" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/adobeillustrator.svg"></code>
-  <code><img title="AutoCAD" height="25" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/autodesk.svg"></code>
-  <code><img title="SolidWorks" height="25" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/dassaultsystemes.svg"></code>
+### 🎨 Design & Engineering Tools
+<p align="center">
+  <img src="https://img.shields.io/badge/Adobe%20Illustrator-FF9A00?style=for-the-badge&logo=adobe-illustrator&logoColor=white" alt="Adobe Illustrator" />
+  <img src="https://img.shields.io/badge/AutoCAD-0078d4?style=for-the-badge&logo=autodesk&logoColor=white" alt="AutoCAD" />
+  <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code" />
 </p>
 
 ### 🧪 Scientific Software Expertise
@@ -143,11 +157,18 @@
 
 ## 🤝 Let's Connect!
 
-- 🌐 **Professional Website**: [muhammad1438.github.io](https://muhammad1438.github.io/)
-- 💼 **LinkedIn**: [mfahadarshad](https://www.linkedin.com/in/mfahadarshad/)
-- 🎓 **Google Scholar**: [Profile](https://scholar.google.com/citations?user=fwiNZasAAAAJ)
-- 🔬 **ORCID**: [0000-0003-1828-9458](https://orcid.org/0000-0003-1828-9458)
-- 📧 **Email**: [m.fahad1448@gmail.com](mailto:m.fahad1448@gmail.com)
+<p align="center">
+  <a href="https://muhammad1438.github.io/">
+    <img src="https://img.shields.io/badge/🌐_Professional_Website-Visit-FF5722?style=for-the-badge" alt="Website" />
+  </a>
+  <a href="mailto:m.fahad1448@gmail.com">
+    <img src="https://img.shields.io/badge/📧_Email-Contact-red?style=for-the-badge" alt="Email" />
+  </a>
+</p>
+
+<p align="center">
+  📍 <strong>Based in Morocco</strong> | 🌍 <strong>Open to Collaborations</strong> | 💬 <strong>Ask me about Catalysis & Hydrogen Research</strong>
+</p>
 
 ---
 
