@@ -1,6 +1,6 @@
 # Dr. Muhammad Fahad Arshad - Professional CV Website
 
-<img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=muhammad1438.muhammad1438">
+<img align="right" src="https://komarev.com/ghpvc/?username=muhammad1438&label=Profile%20views&color=0e75b6&style=flat" alt="muhammad1438" />
 
 <h1 align="center">
   <a href="https://git.io/typing-svg">
@@ -111,41 +111,47 @@
 
 <hr>
 
-<h2 align="center">⚡ Stats ⚡</h2>
+<h2 align="center">⚡ GitHub Stats ⚡</h2>
 <br>
-<p align=center>
-  <div align=center>
-    <a href="https://github.com/denvercoder1/github-readme-streak-stats" title="Go to Source">
-      <img align="left" width=390 src="https://streak-stats.demolab.com/?user=muhammad1438&theme=react&border=61dafb&hide_border=true" alt="muhammad1438" />
-    </a>
-    <a href="https://github.com/anuraghazra/github-readme-stats" title="Go to Source">
-      <img align="right" width=390 src="https://github-readme-stats.vercel.app/api?username=muhammad1438&show_icons=true&theme=react&border_color=61dafb&hide_border=true" />
-    </a>
-  </div>
-  <br><br><br><br><br><br><br><br><br>
-  <div align=center>
-    <a href="https://github.com/anuraghazra/github-readme-stats">
-      <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=muhammad1438&hide=c%23,powershell,Mathematica,Ruby,Objective-C,Objective-C%2b%2b,Cuda&title_color=61dafb&text_color=ffffff&icon_color=61dafb&bg_color=20232a&langs_count=8&layout=compact&border_color=61dafb&hide_border=true&size_weight=0.5&count_weight=0.5" />
-    </a>
-  </div>
-  <br>
 
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=muhammad1438&theme=react-dark&bg_color=20232a&hide_border=true" width="100%"/>
-</p>
+<div align="center">
+  <img width="390" src="https://github-readme-streak-stats.demolab.com/?user=muhammad1438&theme=react&border=61dafb&hide_border=true" alt="GitHub Streak" />
+  <img width="390" src="https://github-readme-stats.vercel.app/api?username=muhammad1438&show_icons=true&theme=react&border_color=61dafb&hide_border=true" alt="GitHub Stats" />
+</div>
+
+<br>
+
+<div align="center">
+  <img height="200" src="https://github-readme-stats.vercel.app/api/top-langs/?username=muhammad1438&hide=c%23,powershell,Mathematica,Ruby,Objective-C,Objective-C%2b%2b,Cuda&title_color=61dafb&text_color=ffffff&icon_color=61dafb&bg_color=20232a&langs_count=8&layout=compact&border_color=61dafb&hide_border=true&size_weight=0.5&count_weight=0.5" alt="Top Languages" />
+</div>
+
+<br>
+
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=muhammad1438&theme=react-dark&bg_color=20232a&hide_border=true" width="100%" alt="GitHub Activity Graph"/>
+</div>
 
 <hr>
 
 <h2 align="center">👨‍💻 Featured Research & Repositories 👨‍💻</h2>
 <br>
-<div width="100%" align="center">
-  <a align="left" href="https://github.com/muhammad1438/muhammad1438.github.io" title="Professional CV Website"><img align="left" height="115" src="https://github-readme-stats.vercel.app/api/pin/?username=muhammad1438&repo=muhammad1438.github.io&theme=react&border_color=61dafb&border_radius=10"></a>
-  <a align="right" href="https://github.com/muhammad1438" title="Research Portfolio"><img align="right" height="115" src="https://github-readme-stats.vercel.app/api/pin/?username=muhammad1438&repo=muhammad1438&theme=react&border_color=61dafb&border_radius=10"></a>
-</div>
-<br/><br/><br/><br/><br/><br/>
 
-<h4 align="center">
-  <a href="https://github.com/muhammad1438?tab=repositories" title="Show Repositories">🔎 Show More 🔍</a>
-</h4>
+<div align="center">
+  <a href="https://github.com/muhammad1438/muhammad1438.github.io" title="Professional CV Website">
+    <img height="115" src="https://github-readme-stats.vercel.app/api/pin/?username=muhammad1438&repo=muhammad1438.github.io&theme=react&border_color=61dafb&border_radius=10" alt="CV Website Repository" />
+  </a>
+  <a href="https://github.com/muhammad1438/muhammad1438" title="GitHub Profile Repository">
+    <img height="115" src="https://github-readme-stats.vercel.app/api/pin/?username=muhammad1438&repo=muhammad1438&theme=react&border_color=61dafb&border_radius=10" alt="Profile Repository" />
+  </a>
+</div>
+
+<br>
+
+<div align="center">
+  <a href="https://github.com/muhammad1438?tab=repositories" title="View All Repositories">
+    <img src="https://img.shields.io/badge/🔎_View_All_Repositories-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="View All Repositories" />
+  </a>
+</div>
 
 ## 📚 Recent Publications
 
