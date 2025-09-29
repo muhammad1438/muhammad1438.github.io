@@ -4,7 +4,7 @@
 
 <h1 align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com/?lines=Hello,+There!+👋;Dr.+Muhammad+Fahad+Arshad;Post-Doctoral+Researcher;Catalysis+Expert;Hydrogen+Production;Nice+to+meet+you!&center=true&size=50&height=100">
+    <img src="https://readme-typing-svg.herokuapp.com/?lines=Hi,+There!+👋;Welcome!;Research📚+and+Science🔬;Nice+to+meet+you!&center=true&size=30&height=50">
   </a>
 </h1>
 
@@ -29,7 +29,7 @@
 
 <div align="center">
   <h3>Hi, I'm <b>Dr. Muhammad Fahad Arshad</b> — Post-Doctorate Researcher (Chemical & Biochemical Sciences) at <b>UM6P</b>, Morocco 🇲🇦</h3>
-  <h4>Computational & Experimental Catalysis · Kinetics & Thermochemistry</h4>
+  <h4>Computational & Experimental Catalysis · Kinetics & Thermochemistry</h3>
   <br>
 
   <h4>🔬 Currently: Post-Doctorate Researcher at <b>University Mohammed VI Polytechnic (UM6P)</b>, Ben Guerir — Hydrogen production, CO<sub>2</sub> valorization, molecular dynamics, DFT, LLM/ML  <i>(2025–present)</i></h4>
@@ -70,27 +70,41 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" alt="Python" />
   <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++" />
+  <img src="https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white" alt="Rust" />
+  <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+  <img src="https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white" alt="PowerShell" />
+  <img src="https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="Shell Script" />
   <img src="https://img.shields.io/badge/LaTeX-47A141?style=for-the-badge&logo=latex&logoColor=white" alt="LaTeX" />
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
   <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
-  <img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="Bash" />
+  <img src="https://img.shields.io/badge/Conda-44A833?style=for-the-badge&logo=anaconda&logoColor=white" alt="Conda" />
 </p>
 
 ### 🔬 Scientific Computing & ML
 <p align="center">
   <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
   <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
+  <img src="https://img.shields.io/badge/SciPy-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white" alt="SciPy" />
   <img src="https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge&logo=python&logoColor=white" alt="Matplotlib" />
+  <img src="https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white" alt="Plotly" />
+  <img src="https://img.shields.io/badge/Polars-CD792C?style=for-the-badge&logo=polars&logoColor=white" alt="Polars" />
   <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow" />
   <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch" />
   <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter" />
+  <img src="https://img.shields.io/badge/Cantera-FF6B35?style=for-the-badge&logo=python&logoColor=white" alt="Cantera" />
+  <img src="https://img.shields.io/badge/CHEMKIN-0078D4?style=for-the-badge&logo=python&logoColor=white" alt="CHEMKIN" />
+  <img src="https://img.shields.io/badge/Quantum_ESPRESSO-2E8B57?style=for-the-badge&logo=python&logoColor=white" alt="Quantum ESPRESSO" />
+  <img src="https://img.shields.io/badge/ANSYS-FFB71B?style=for-the-badge&logo=ansys&logoColor=black" alt="ANSYS" />
 </p>
 
 ### 🎨 Design & Engineering Tools
 <p align="center">
-  <img src="https://img.shields.io/badge/Adobe%20Illustrator-FF9A00?style=for-the-badge&logo=adobe-illustrator&logoColor=white" alt="Adobe Illustrator" />
-  <img src="https://img.shields.io/badge/AutoCAD-0078d4?style=for-the-badge&logo=autodesk&logoColor=white" alt="AutoCAD" />
-  <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code" />
+  <img src="https://img.shields.io/badge/Adobe_Illustrator-FF9A00?style=for-the-badge&logo=adobe-illustrator&logoColor=white" alt="Adobe Illustrator" />
+  <img src="https://img.shields.io/badge/GIMP-5C5543?style=for-the-badge&logo=gimp&logoColor=white" alt="GIMP" />
+  <img src="https://img.shields.io/badge/AutoCAD-0078D4?style=for-the-badge&logo=autodesk&logoColor=white" alt="AutoCAD" />
+  <img src="https://img.shields.io/badge/Microsoft_Office-D83B01?style=for-the-badge&logo=microsoft-office&logoColor=white" alt="Microsoft Office" />
+  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code" />
 </p>
 
 ### 🧪 Scientific Software Expertise
