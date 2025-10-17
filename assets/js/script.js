@@ -7,6 +7,26 @@ const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
 
 
+// Theme toggle functionality
+const themeToggleBtn = document.getElementById('theme-toggle');
+const html = document.documentElement;
+
+// Check for saved theme preference or default to 'light'
+const currentTheme = localStorage.getItem('theme') || 'light';
+html.setAttribute('data-theme', currentTheme);
+
+if (themeToggleBtn) {
+  themeToggleBtn.addEventListener('click', function () {
+    const currentTheme = html.getAttribute('data-theme');
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+
+    html.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+  });
+}
+
+
+
 // sidebar variables
 const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");

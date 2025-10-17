@@ -16,41 +16,99 @@
 \*-----------------------------------*/
 
 :root {
+  /* Theme toggle transition */
+  --transition-theme: all 0.3s ease;
+}
 
-  /**
-   * colors
-   */
+/* Light Mode (Default) */
+:root,
+:root[data-theme="light"] {
+  /* Base surfaces */
+  --bg: #ffffff;
+  --surface: #f9fafb;
+  --elevated: #ffffff;
+  --border: #e5e7eb;
+  --muted: #6b7280;
+  --text: #0f172a;
 
-  /* gradient */
+  /* Accent colors */
+  --accent: #2563eb;
+  --accent-ink: #0b2a6b;
+  --accent-weak: #dbeafe;
 
+  /* Legacy color mappings for light mode */
+  --bg-gradient-onyx: linear-gradient(to bottom right, #f9fafb 3%, #ffffff 97%);
+  --bg-gradient-jet: linear-gradient(to bottom right, rgba(249, 250, 251, 0.5) 0%, rgba(255, 255, 255, 0) 100%), #ffffff;
+  --bg-gradient-yellow-1: linear-gradient(to bottom right, #dbeafe 0%, rgba(219, 234, 254, 0) 50%);
+  --bg-gradient-yellow-2: linear-gradient(135deg, rgba(219, 234, 254, 0.5) 0%, rgba(219, 234, 254, 0) 59.86%), #ffffff;
+  --border-gradient-onyx: linear-gradient(to bottom right, #e5e7eb 0%, rgba(229, 231, 235, 0) 50%);
+  --text-gradient-yellow: linear-gradient(to right, #2563eb, #1d4ed8);
+
+  --jet: #e5e7eb;
+  --onyx: #f3f4f6;
+  --eerie-black-1: #ffffff;
+  --eerie-black-2: #f9fafb;
+  --smoky-black: #ffffff;
+  --white-1: #0f172a;
+  --white-2: #1e293b;
+  --orange-yellow-crayola: #2563eb;
+  --vegas-gold: #1d4ed8;
+  --light-gray: #475569;
+  --light-gray-70: rgba(71, 85, 105, 0.7);
+  --bittersweet-shimmer: #dc2626;
+
+  /* Shadows */
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 6px 20px rgba(0, 0, 0, 0.08);
+  --shadow-3: 0 6px 20px rgba(0, 0, 0, 0.1);
+  --shadow-4: 0 10px 30px rgba(0, 0, 0, 0.1);
+  --shadow-5: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Dark Mode */
+:root[data-theme="dark"] {
+  /* Base surfaces */
+  --bg: #0b1220;
+  --surface: #0e1626;
+  --elevated: #121a2b;
+  --border: #1e2a44;
+  --muted: #a5adc1;
+  --text: #e6eaf2;
+
+  /* Accent colors */
+  --accent: #60a5fa;
+  --accent-ink: #bdd7ff;
+  --accent-weak: #12254b;
+
+  /* Legacy color mappings for dark mode */
   --bg-gradient-onyx: linear-gradient(
-    to bottom right, 
-    hsl(240, 1%, 25%) 3%, 
+    to bottom right,
+    hsl(240, 1%, 25%) 3%,
     hsl(0, 0%, 19%) 97%
   );
   --bg-gradient-jet: linear-gradient(
-    to bottom right, 
-    hsla(240, 1%, 18%, 0.251) 0%, 
+    to bottom right,
+    hsla(240, 1%, 18%, 0.251) 0%,
     hsla(240, 2%, 11%, 0) 100%
   ), hsl(240, 2%, 13%);
   --bg-gradient-yellow-1: linear-gradient(
-    to bottom right, 
-    hsl(45, 100%, 71%) 0%, 
+    to bottom right,
+    hsl(45, 100%, 71%) 0%,
     hsla(36, 100%, 69%, 0) 50%
   );
   --bg-gradient-yellow-2: linear-gradient(
-    135deg, 
-    hsla(45, 100%, 71%, 0.251) 0%, 
+    135deg,
+    hsla(45, 100%, 71%, 0.251) 0%,
     hsla(35, 100%, 68%, 0) 59.86%
   ), hsl(240, 2%, 13%);
   --border-gradient-onyx: linear-gradient(
-    to bottom right, 
-    hsl(0, 0%, 25%) 0%, 
+    to bottom right,
+    hsl(0, 0%, 25%) 0%,
     hsla(0, 0%, 25%, 0) 50%
   );
   --text-gradient-yellow: linear-gradient(
-    to right, 
-    hsl(45, 100%, 72%), 
+    to right,
+    hsl(45, 100%, 72%),
     hsl(35, 100%, 68%)
   );
 
@@ -68,6 +126,17 @@
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
+
+  /* Shadows (reduced for dark mode) */
+  --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
+  --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
+  --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
+  --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
+  --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
+}
+
+/* Common variables */
+:root {
 
   /**
    * typography
@@ -153,9 +222,16 @@ input, textarea {
 
 :focus { outline-color: var(--orange-yellow-crayola); }
 
-html { font-family: var(--ff-poppins); }
+html {
+  font-family: var(--ff-poppins);
+  transition: var(--transition-theme);
+}
 
-body { background: var(--smoky-black); }
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: var(--transition-theme);
+}
 
 
 
@@ -486,6 +562,44 @@ main {
 .navbar-link:focus { color: var(--light-gray-70); }
 
 .navbar-link.active { color: var(--orange-yellow-crayola); }
+
+/* Theme toggle button */
+.theme-toggle-btn {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle-btn ion-icon {
+  font-size: 20px;
+  position: absolute;
+  transition: var(--transition-1);
+}
+
+.theme-icon-light {
+  opacity: 0;
+  transform: rotate(180deg) scale(0);
+}
+
+.theme-icon-dark {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+
+/* When in dark mode */
+:root[data-theme="dark"] .theme-icon-light {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+
+:root[data-theme="dark"] .theme-icon-dark {
+  opacity: 0;
+  transform: rotate(-180deg) scale(0);
+}
 
 
 
@@ -1838,8 +1952,9 @@ textarea.form-input::-webkit-resizer { display: none; }
   .avatar-box img { width: 150px; }
 
   .info-content .name {
-    white-space: nowrap;
     text-align: center;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
   }
 
   .info-content .title { margin: auto; }
