@@ -550,13 +550,15 @@ main {
 .contact-item {
   min-width: 100%;
   display: flex;
-  align-items: center;
-  gap: 16px;
+  align-items: flex-start;
+  gap: 12px;
 }
 
 .contact-info {
-  max-width: calc(100% - 46px);
-  width: calc(100% - 46px);
+  max-width: 100%;
+  width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .contact-title {
@@ -569,6 +571,8 @@ main {
 .contact-info :is(.contact-link, time, address) {
   color: var(--white-2);
   font-size: var(--fs-7);
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .contact-info address { font-style: normal; }
@@ -1484,7 +1488,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .sidebar, article {
-    width: 520px;
+    width: 540px;
     margin-inline: auto;
     padding: 30px;
   }
@@ -1558,8 +1562,8 @@ textarea.form-input::-webkit-resizer { display: none; }
   .contacts-list { gap: 20px; }
 
   .contact-info {
-    max-width: calc(100% - 64px);
-    width: calc(100% - 64px);
+    max-width: 100%;
+    width: 100%;
   }
 
 
@@ -1750,7 +1754,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    * REUSED STYLE
    */
 
-  .sidebar, article { width: 700px; }
+  .sidebar, article { width: 720px; }
 
   .has-scrollbar::-webkit-scrollbar-button { width: 100px; }
 
