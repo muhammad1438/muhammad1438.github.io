@@ -10,13 +10,27 @@
   <!-- Favicon -->
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Custom CSS - Modular Architecture -->
+  <link rel="stylesheet" href="./assets/css/modules/variables.css">
+  <link rel="stylesheet" href="./assets/css/modules/reset.css">
+  <link rel="stylesheet" href="./assets/css/modules/animations.css">
+  <link rel="stylesheet" href="./assets/css/modules/components.css">
+  <link rel="stylesheet" href="./assets/css/modules/layout.css">
+  <link rel="stylesheet" href="./assets/css/modules/sections/sidebar.css">
+  <link rel="stylesheet" href="./assets/css/modules/sections/navbar.css">
+  <link rel="stylesheet" href="./assets/css/modules/sections/about.css">
+  <link rel="stylesheet" href="./assets/css/modules/sections/resume.css">
+  <link rel="stylesheet" href="./assets/css/modules/sections/publications.css">
+  <link rel="stylesheet" href="./assets/css/modules/sections/contact.css">
+  <link rel="stylesheet" href="./assets/css/modules/sections/hero.css">
+  <link rel="stylesheet" href="./assets/css/modules/responsive.css">
+  <link rel="stylesheet" href="./assets/css/modules/accessibility.css">
+  <link rel="stylesheet" href="./assets/css/modules/print.css">
 
-  <!-- Google Fonts -->
+  <!-- Google Fonts - Enhanced Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Syne:wght@400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Syne:wght@400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,500;1,400&family=Cormorant+Garamond:ital,wght@1,400;1,500;1,600&display=swap" rel="stylesheet">
 
   <!-- SEO Meta Tags -->
   <meta name="description" content="Dr. Muhammad Fahad Arshad - Postdoctoral Researcher specializing in computational catalysis, hydrogen production, and sustainable energy solutions.">
@@ -108,8 +122,11 @@
 
 <body>
 
+  <!-- Skip Link for Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <!-- MAIN -->
-  <main>
+  <main id="main-content">
 
     <!-- SIDEBAR -->
     <aside class="sidebar" data-sidebar>
@@ -122,7 +139,7 @@
 
         <div class="info-content">
           <h1 class="name" title="Dr. Muhammad Fahad Arshad">Dr. Muhammad Fahad Arshad</h1>
-          <p class="title">Postdoctoral Researcher</p>
+          <p class="title">Postdoctoral Researcher · UM6P</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -254,6 +271,31 @@
 
       <!-- ABOUT -->
       <article class="about active" data-page="about">
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+          <div class="hero-bg"></div>
+          <div class="hero-particles">
+            <div class="hero-particle"></div>
+            <div class="hero-particle"></div>
+            <div class="hero-particle"></div>
+            <div class="hero-particle"></div>
+            <div class="hero-particle"></div>
+          </div>
+          <div class="hero-content">
+            <h2 class="hero-title">Dr. Muhammad Fahad Arshad</h2>
+            <p class="hero-subtitle">Advancing sustainable energy solutions through computational catalysis and hydrogen production research</p>
+            <div class="hero-cta">
+              <button class="hero-btn primary" onclick="navigateTo('contact')">Contact for Collaboration</button>
+              <button class="hero-btn secondary" onclick="navigateTo('publications')">View Publications</button>
+            </div>
+          </div>
+          <div class="hero-scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow"></div>
+          </div>
+          <div class="hero-formula" aria-hidden="true">DFT · MD · ML · H₂ ⟶ CO₂</div>
+        </section>
 
         <header>
           <h2 class="h2 article-title">About me</h2>
@@ -442,6 +484,35 @@
           </ul>
         </section>
 
+        <!-- Funding & Affiliations -->
+        <section class="affiliations-section">
+          <h3 class="h3 affiliations-title">Affiliations</h3>
+          <ul class="affiliations-list">
+            <li class="affiliation-item">
+              <span>University Mohammed VI Polytechnic (UM6P)</span>
+            </li>
+            <li class="affiliation-item">
+              <span>Chinese Academy of Sciences (CAS)</span>
+            </li>
+            <li class="affiliation-item">
+              <span>CAS–TWAS Fellowship</span>
+            </li>
+            <li class="affiliation-item">
+              <span>University of Chinese Academy of Sciences (UCAS)</span>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Land Acknowledgment -->
+        <section class="land-acknowledgment">
+          <h4 class="land-acknowledgment-title">Land & Context Acknowledgment</h4>
+          <p class="land-acknowledgment-text">
+            This research is conducted at University Mohammed VI Polytechnic, located in Ben Guerir, Morocco.
+            We acknowledge the rich scientific heritage of this region and commit to advancing knowledge
+            that benefits both local communities and the global pursuit of sustainable energy solutions.
+          </p>
+        </section>
+
       </article>
 
       <!-- RESUME -->
@@ -502,7 +573,7 @@
           <ol class="timeline-list">
 
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Postdoctoral Researcher</h4>
+              <h4 class="h4 timeline-item-title">Postdoctoral Researcher, Chemical and Biochemical Sciences</h4>
               <span>2025 — Present</span>
               <p class="timeline-text">
                 <strong>University Mohammed VI Polytechnic (UM6P), Morocco 🇲🇦</strong><br>
@@ -641,6 +712,61 @@
             </li>
           </ul>
 
+        </section>
+
+        <!-- Teaching Experience -->
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="school-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Teaching Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Graduate Teaching Assistant</h4>
+              <span>2020 — 2021</span>
+              <p class="timeline-text">
+                <strong>University of Chinese Academy of Sciences, Beijing 🇨🇳</strong><br>
+                Taught postgraduate students and assisted faculty with course delivery and curriculum development.
+                Provided one-on-one mentoring on research methodologies; facilitated laboratory sessions in
+                thermophysics and catalysis.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <!-- Leadership & Service -->
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="people-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Leadership & Service</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Leader of International Staff and Students</h4>
+              <span>2021 — 2024</span>
+              <p class="timeline-text">
+                <strong>Institute of Engineering Thermophysics, CAS, Beijing 🇨🇳</strong><br>
+                Organized weekly meetings to coordinate research activities and foster collaboration among international
+                researchers. Served as liaison between international researchers and laboratory management.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Student Guide and Translator</h4>
+              <span>2017 — 2023</span>
+              <p class="timeline-text">
+                <strong>UCAS International Student Office, Beijing 🇨🇳</strong><br>
+                Guided international students through orientation programmes. Provided Mandarin–English translation
+                for academic and administrative purposes. Contributed to cross-cultural communication and integration.
+              </p>
+            </li>
+          </ol>
         </section>
 
       </article>
@@ -820,6 +946,12 @@
                 <a href="https://www.researchgate.net/profile/Muhammad-Fahad-Arshad" target="_blank">
                   <ion-icon name="flask-outline"></ion-icon>
                   ResearchGate
+                </a>
+              </li>
+              <li>
+                <a href="https://www.webofscience.com/wos/author/record/rid102402" target="_blank">
+                  <ion-icon name="globe-outline"></ion-icon>
+                  Web of Science
                 </a>
               </li>
             </ul>

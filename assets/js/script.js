@@ -11,8 +11,8 @@ const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 const themeToggleBtn = document.getElementById('theme-toggle');
 const html = document.documentElement;
 
-// Check for saved theme preference or default to 'light'
-const currentTheme = localStorage.getItem('theme') || 'light';
+// Check for saved theme preference or default to 'dark'
+const currentTheme = localStorage.getItem('theme') || 'dark';
 html.setAttribute('data-theme', currentTheme);
 
 if (themeToggleBtn) {
@@ -164,6 +164,17 @@ if (form) {
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
+// Helper function for hero CTA buttons
+window.navigateTo = function (pageName) {
+  for (const link of navigationLinks) {
+    if (link.textContent.trim().toLowerCase() === pageName.toLowerCase()) {
+      link.click();
+      window.scrollTo(0, 0);
+      break;
+    }
+  }
+};
+
 // add event to all nav link
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
@@ -181,3 +192,127 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+
+//===================================*\
+// SCROLL-TRIGGERED ANIMATIONS
+// Molecular reveal on scroll
+//===================================*/
+
+// Intersection Observer for scroll animations
+const observeElements = function () {
+  // Elements to animate
+  const animatedElements = document.querySelectorAll(
+    '.timeline-item, .skills-item, .highlight-item, .service-item, ' +
+    '.gallery-item, .impact-item, .affiliation-item, .publication-item'
+  );
+
+  // Animation config
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px 0px -50px 0px',
+    threshold: 0.1
+  };
+
+  // Observer callback
+  const observerCallback = (entries, observer) => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        // Add staggered delay based on sibling index
+        const delay = entry.target.style.animationDelay || `${index * 0.1}s`;
+        entry.target.style.animationDelay = delay;
+        entry.target.classList.add('animate-reveal');
+        observer.unobserve(entry.target);
+      }
+    });
+  };
+
+  // Create observer
+  const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+  // Observe all elements
+  animatedElements.forEach(el => {
+    el.classList.add('reveal-init');
+    observer.observe(el);
+  });
+
+  // Animate skill bars when visible
+  const skillBars = document.querySelectorAll('.skill-progress-fill');
+  const skillObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const width = entry.target.style.width || '80%';
+        entry.target.style.width = '0';
+        setTimeout(() => {
+          entry.target.style.width = width;
+        }, 100);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  skillBars.forEach(bar => skillObserver.observe(bar));
+};
+
+// Initialize on DOM ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', observeElements);
+} else {
+  observeElements();
+}
+
+// Counter animation for research highlight numbers
+const animateCounter = function (el, target, suffix, duration) {
+  const isDecimal = target % 1 !== 0;
+  const step = duration / 60;
+  let current = 0;
+  const increment = target / (duration / step);
+  const timer = setInterval(() => {
+    current += increment;
+    if (current >= target) {
+      current = target;
+      clearInterval(timer);
+    }
+    el.textContent = (isDecimal ? current.toFixed(0) : Math.floor(current)) + suffix;
+  }, step);
+};
+
+const initCounters = function () {
+  const highlights = document.querySelectorAll('.highlight-item');
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const valueEl = entry.target.querySelector('.value');
+        if (valueEl && !valueEl.dataset.animated) {
+          valueEl.dataset.animated = 'true';
+          const raw = valueEl.textContent.trim();
+          const num = parseFloat(raw.replace(/[^0-9.]/g, ''));
+          const suffix = raw.replace(/[0-9.]/g, '');
+          if (!isNaN(num)) animateCounter(valueEl, num, suffix, 1200);
+        }
+        counterObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+  highlights.forEach(el => counterObserver.observe(el));
+};
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initCounters);
+} else {
+  initCounters();
+}
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    const href = this.getAttribute('href');
+    if (href !== '#' && href.length > 1) {
+      const target = document.querySelector(href);
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  });
+});

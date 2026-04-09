@@ -1,0 +1,139 @@
+/*-----------------------------------*\
+  #NAVBAR
+  Bottom navigation bar
+\*-----------------------------------*/
+
+.navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid var(--border);
+  border-top: 2px solid var(--accent);
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+  box-shadow:
+    0 -4px 24px rgba(0, 0, 0, 0.12),
+    0 -1px 0 rgba(255, 255, 255, 0.5) inset;
+  z-index: 5;
+  transition: var(--transition-theme);
+}
+
+:root[data-theme="dark"] .navbar {
+  background: rgba(15, 20, 40, 0.95);
+  border-top: 2px solid var(--accent);
+  box-shadow:
+    0 -4px 30px rgba(0, 0, 0, 0.8),
+    0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+}
+
+.navbar-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
+}
+
+.navbar-link {
+  color: var(--muted);
+  font-family: var(--ff-body);
+  font-size: var(--fs-8);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-1);
+  position: relative;
+}
+
+.navbar-link::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--accent-weak);
+  border-radius: inherit;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: var(--transition-1);
+}
+
+.navbar-link:hover::before {
+  opacity: 0.5;
+  transform: scale(1);
+}
+
+.navbar-link:hover,
+.navbar-link:focus {
+  color: var(--accent);
+}
+
+.navbar-link.active {
+  color: var(--accent);
+  background: var(--accent-weak);
+  font-weight: var(--fw-600);
+  box-shadow:
+    0 0 0 1px var(--accent),
+    0 2px 8px var(--accent-glow);
+}
+
+.navbar-link.active::before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Theme toggle button */
+.theme-toggle-btn {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  transition: all var(--transition-1);
+}
+
+.theme-toggle-btn:hover {
+  background: var(--accent-weak);
+  border-color: var(--accent);
+  transform: scale(1.1) rotate(15deg);
+}
+
+.theme-toggle-btn:active {
+  transform: scale(0.95);
+}
+
+.theme-toggle-btn ion-icon {
+  font-size: 20px;
+  position: absolute;
+  transition: all var(--transition-1);
+  color: var(--accent);
+}
+
+.theme-icon-light {
+  opacity: 0;
+  transform: rotate(180deg) scale(0);
+}
+
+.theme-icon-dark {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+
+/* When in dark mode */
+:root[data-theme="dark"] .theme-icon-light {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+
+:root[data-theme="dark"] .theme-icon-dark {
+  opacity: 0;
+  transform: rotate(-180deg) scale(0);
+}

@@ -1,0 +1,14 @@
+/*-----------------------------------*\
+  #LAYOUT
+  Main layout structures
+\*-----------------------------------*/
+
+/*-----------------------------------*\
+  #MAIN CONTENT
+\*-----------------------------------*/
+
+.main-content {
+  position: relative;
+  width: max-content;
+  margin: auto;
+}

@@ -1,0 +1,158 @@
+{
+  "$schema": "https://raw.githubusercontent.com/muhammad1438/OpenContextFramework/main/.agents/schemas/manifest.schema.json",
+  "version": "1.0.0",
+  "id": "portfolio-website",
+  "name": "Dr. Muhammad Fahad Arshad - Portfolio Website",
+  "domain": "academic-portfolio",
+  "description": "A modern, aesthetically beautiful academic portfolio website for a postdoctoral researcher specializing in computational catalysis, hydrogen production, and sustainable energy solutions.",
+  "capabilities": [
+    "context-loading",
+    "memory",
+    "constraints",
+    "skills",
+    "workflows",
+    "hooks"
+  ],
+  "active_modules": ["core-module"],
+  "active_workflows": ["implement-feature", "update-content", "optimize-performance"],
+  "features": {
+    "skills": {
+      "enabled": true,
+      "description": "Self-contained web development skills for frontend design, CSS patterns, and accessibility",
+      "categories": ["frontend-design", "css-patterns", "accessibility", "performance"]
+    },
+    "instructions": {
+      "enabled": true,
+      "description": "Auto-applying coding standards for HTML/CSS/JS with focus on accessibility and performance",
+      "languages": ["html", "css", "javascript"]
+    },
+    "guardrails": {
+      "enabled": true,
+      "description": "Security-first approach: no hardcoded secrets, validated external links, accessibility compliance"
+    },
+    "memory": {
+      "enabled": true,
+      "description": "Session memory for design decisions and content updates"
+    },
+    "hooks": {
+      "enabled": true,
+      "description": "Pre/post edit hooks for format validation and linting"
+    }
+  },
+  "project_context": {
+    "researcher": {
+      "name": "Dr. Muhammad Fahad Arshad",
+      "title": "Postdoctoral Researcher",
+      "institution": "University Mohammed VI Polytechnic (UM6P)",
+      "location": "Ben Guerir, Morocco",
+      "specializations": [
+        "Computational Catalysis",
+        "Hydrogen Production",
+        "DFT (Density Functional Theory)",
+        "Molecular Dynamics",
+        "Machine Learning in Chemistry",
+        "Photocatalysis",
+        "CO2 Valorization",
+        "Heterogeneous Catalysis"
+      ],
+      "metrics": {
+        "publications": "11+",
+        "researchers_mentored": "5+",
+        "efficiency_gain": "35%",
+        "time_reduction": "40%"
+      }
+    },
+    "contact": {
+      "email": "m.fahad1448@gmail.com",
+      "phone_morocco": "+212-774-773-477",
+      "phone_china": "+86-188-0122-5727",
+      "orcid": "0000-0003-1828-9458",
+      "github": "https://github.com/muhammad1438",
+      "linkedin": "https://www.linkedin.com/in/mfahadarshad",
+      "google_scholar": "https://scholar.google.com/citations?user=fwiNZasAAAAJ",
+      "researchgate": "https://www.researchgate.net/profile/Muhammad-Fahad-Arshad"
+    },
+    "design_system": {
+      "themes": {
+        "light": {
+          "name": "Warm Academic Parchment",
+          "bg": "#faf9f6",
+          "surface": "#f5f3ed",
+          "accent": "#0369a1",
+          "accent_secondary": "#b45309"
+        },
+        "dark": {
+          "name": "Molecular Observatory",
+          "bg": "#0a0e1a",
+          "surface": "#0f1428",
+          "accent": "#22d3ee",
+          "accent_secondary": "#fbbf24"
+        }
+      },
+      "typography": {
+        "display": "DM Serif Display",
+        "body": "Syne",
+        "mono": "JetBrains Mono"
+      },
+      "animations": ["fade-in", "slide-up", "shimmer", "float", "gradient-shift"]
+    }
+  },
+  "constraints": {
+    "accessibility": {
+      "level": "WCAG 2.1 AA",
+      "requirements": [
+        "All interactive elements must have visible focus states",
+        "Color contrast ratios must meet minimum 4.5:1 for normal text",
+        "All images must have descriptive alt text",
+        "Keyboard navigation must be fully functional"
+      ]
+    },
+    "performance": {
+      "targets": {
+        "lighthouse_score": 90,
+        "first_contentful_paint": "< 1.5s",
+        "time_to_interactive": "< 3s"
+      }
+    },
+    "security": {
+      "rules": [
+        "No hardcoded API keys or secrets",
+        "All external links must use rel='noopener noreferrer'",
+        "No inline JavaScript (use external files only)",
+        "Content Security Policy compliant"
+      ]
+    },
+    "code_quality": {
+      "html": [
+        "Use semantic HTML5 elements",
+        "Include appropriate ARIA attributes",
+        "Maintain proper heading hierarchy"
+      ],
+      "css": [
+        "Use CSS variables for theming",
+        "Follow mobile-first responsive design",
+        "Keep files under 3000 lines (split when larger)"
+      ],
+      "javascript": [
+        "Use strict mode",
+        "No console.log in production",
+        "Handle all errors gracefully"
+      ]
+    }
+  },
+  "directories": {
+    "context": ".agents/context/",
+    "workflows": ".agents/workflows/",
+    "hooks": ".agents/hooks/",
+    "constraints": ".agents/constraints/",
+    "skills": ".agents/skills/",
+    "memory": ".agents/memory/",
+    "assets": "assets/",
+    "css": "assets/css/",
+    "js": "assets/js/",
+    "images": "assets/images/",
+    "cv": "assets/"
+  },
+  "created_at": "2026-03-31T00:00:00Z",
+  "updated_at": "2026-03-31T00:00:00Z"
+}

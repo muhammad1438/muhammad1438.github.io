@@ -1,0 +1,384 @@
+/*-----------------------------------*\
+  #RESUME
+  Education, experience, and skills
+\*-----------------------------------*/
+
+.article-title { margin-bottom: var(--space-xl); }
+
+/*-----------------------------------*\
+  #CV DOWNLOAD
+\*-----------------------------------*/
+
+.cv-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  background: var(--accent-gradient);
+  color: var(--bg);
+  padding: var(--space-sm) var(--space-lg);
+  border-radius: var(--radius-full);
+  font-family: var(--ff-mono);
+  font-size: var(--fs-8);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  transition: all var(--transition-1);
+  float: right;
+  margin-top: -55px;
+  box-shadow:
+    0 4px 16px var(--accent-glow),
+    0 0 0 2px var(--accent-weak);
+  position: relative;
+  overflow: hidden;
+}
+
+.cv-download-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  transition: var(--transition-1);
+}
+
+.cv-download-btn:hover::before {
+  left: 100%;
+}
+
+.cv-download-btn ion-icon {
+  --ionicon-stroke-width: 50px;
+  stroke-width: 2.4;
+}
+
+.cv-download-btn:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 6px 24px var(--accent-glow),
+    0 0 0 3px var(--accent-weak),
+    var(--glow-accent);
+}
+
+/*-----------------------------------*\
+  #TIMELINE
+  Orbital-inspired academic/career timeline
+\*-----------------------------------*/
+
+.timeline {
+  margin-bottom: var(--space-xl);
+  position: relative;
+}
+
+.timeline .title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-sm);
+  border-bottom: 2px solid var(--border-subtle);
+}
+
+.timeline .title-wrapper .icon-box {
+  width: 44px;
+  height: 44px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-gradient);
+  border-radius: var(--radius-full);
+  color: var(--bg);
+  box-shadow: 0 0 20px var(--accent-glow);
+}
+
+.timeline-list {
+  font-size: var(--fs-6);
+  margin-left: 56px;
+  position: relative;
+}
+
+/* Central orbital line */
+.timeline-list::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -38px;
+  width: 3px;
+  background: linear-gradient(to bottom,
+    var(--accent) 0%,
+    var(--accent-secondary) 50%,
+    var(--border) 100%);
+  border-radius: var(--radius-full);
+  box-shadow: 0 0 15px var(--accent-glow);
+}
+
+.timeline-item {
+  position: relative;
+  animation: slide-up 0.6s ease backwards;
+  padding: var(--space-md) 0;
+}
+
+.timeline-item:nth-child(1) { animation-delay: 0.1s; }
+.timeline-item:nth-child(2) { animation-delay: 0.2s; }
+.timeline-item:nth-child(3) { animation-delay: 0.3s; }
+.timeline-item:nth-child(4) { animation-delay: 0.4s; }
+.timeline-item:nth-child(5) { animation-delay: 0.5s; }
+
+.timeline-item:not(:last-child) { margin-bottom: var(--space-xl); }
+
+/* Orbital node - electron dot */
+.timeline-item::after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: -46px;
+  height: 16px;
+  width: 16px;
+  background: var(--bg);
+  border: 3px solid var(--accent);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 5px var(--elevated),
+    0 0 25px var(--accent-glow);
+  transition: all var(--transition-1);
+  z-index: 2;
+}
+
+/* Orbital ring animation */
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: -52px;
+  height: 24px;
+  width: 24px;
+  border: 2px solid var(--accent-weak);
+  border-radius: 50%;
+  border-top-color: var(--accent);
+  border-right-color: var(--accent);
+  opacity: 0;
+  transition: opacity var(--transition-1);
+  animation: orbital 8s linear infinite;
+  transform-origin: center;
+}
+
+.timeline-item:hover::after {
+  transform: scale(1.3);
+  background: var(--accent-gradient);
+  box-shadow:
+    0 0 0 5px var(--elevated),
+    0 0 40px var(--accent-glow),
+    var(--glow-accent);
+  border-color: var(--accent-hover);
+}
+
+.timeline-item:hover::before {
+  opacity: 1;
+}
+
+.timeline-item-title {
+  font-size: var(--fs-4);
+  line-height: 1.5;
+  margin-bottom: var(--space-xs);
+  font-weight: var(--fw-600);
+  color: var(--text);
+  font-family: var(--ff-display);
+  letter-spacing: -0.01em;
+}
+
+.timeline-list span {
+  color: var(--accent);
+  font-family: var(--ff-mono);
+  font-size: var(--fs-8);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.6;
+  display: inline-block;
+  background: linear-gradient(135deg, var(--accent-weak) 0%, transparent 100%);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--accent);
+  margin-bottom: var(--space-sm);
+}
+
+.timeline-text {
+  color: var(--text-secondary);
+  font-weight: var(--fw-300);
+  line-height: 1.85;
+  font-size: var(--fs-6);
+}
+
+/* Stagger animation for multiple items */
+.timeline-item:nth-child(odd) {
+  animation-name: slide-up-odd;
+}
+
+@keyframes slide-up-odd {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*-----------------------------------*\
+  #SKILLS
+  Molecular-inspired skill visualization
+\*-----------------------------------*/
+
+.skills-title {
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-sm);
+  border-bottom: 2px solid var(--border-subtle);
+  font-family: var(--ff-display);
+  font-size: var(--fs-3);
+  font-weight: var(--fw-600);
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+
+.skills-list {
+  padding: var(--space-xl);
+  background: linear-gradient(135deg, var(--surface) 0%, var(--elevated) 100%);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-2);
+  position: relative;
+  overflow: hidden;
+}
+
+.skills-list::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, var(--accent-weak) 0%, transparent 70%);
+  opacity: 0.4;
+  filter: blur(60px);
+}
+
+.skills-item:not(:last-child) {
+  margin-bottom: var(--space-xl);
+}
+
+.skill .title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.skill .title-wrapper data {
+  color: var(--accent);
+  font-family: var(--ff-mono);
+  font-size: var(--fs-7);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  background: linear-gradient(135deg, var(--accent-weak) 0%, transparent 100%);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--accent);
+  transition: var(--transition-1);
+}
+
+.skill .title-wrapper:hover data {
+  background: var(--accent-weak);
+  transform: translateX(4px);
+}
+
+.skill-progress-bg {
+  background: var(--border-subtle);
+  width: 100%;
+  height: 10px;
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  position: relative;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skill-progress-fill {
+  background: var(--accent-gradient);
+  background-size: 200% 200%;
+  height: 100%;
+  border-radius: inherit;
+  box-shadow:
+    0 0 15px var(--accent-glow),
+    0 0 30px rgba(3, 105, 161, 0.2);
+  position: relative;
+  overflow: hidden;
+  animation: gradient-shift 3s ease infinite;
+  transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 0;
+}
+
+/* Animated electron flow effect */
+.skill-progress-fill::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.6) 50%,
+    transparent 100%);
+  background-size: 200% 100%;
+  animation: electron-flow 2s ease-in-out infinite;
+  opacity: 0.6;
+}
+
+.skill-progress-fill::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  background: var(--bg);
+  border-radius: 50%;
+  box-shadow: 0 0 15px var(--accent-glow);
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.skill-description {
+  font-size: var(--fs-8);
+  color: var(--muted);
+  margin-top: var(--space-xs);
+  font-style: italic;
+  font-family: var(--ff-display-italic);
+}
+
+/* Molecular node decorations at progress points */
+.skill-progress-bg::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: var(--space-sm);
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background: var(--accent);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--accent-glow);
+  opacity: 0.5;
+}
+
+/* Hover effect */
+.skill .title-wrapper:hover ~ .skill-progress-bg .skill-progress-fill {
+  filter: brightness(1.1);
+}
+
+/* Languages */
+.skills-title + .skills-list {
+  margin-top: var(--space-xl);
+}

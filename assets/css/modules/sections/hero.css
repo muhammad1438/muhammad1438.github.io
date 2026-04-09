@@ -1,0 +1,443 @@
+/*-----------------------------------*\
+  #HERO
+  Hero banner section - Enhanced with molecular elegance
+\*-----------------------------------*/
+
+.hero-section {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  margin-bottom: var(--space-2xl);
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  isolation: isolate;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 50%, var(--accent-weak) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 50%, var(--accent-secondary-weak) 0%, transparent 50%),
+    linear-gradient(135deg, var(--surface) 0%, var(--bg) 100%);
+  z-index: -2;
+  transition: var(--transition-theme);
+}
+
+/* Animated gradient pattern */
+.hero-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 10px,
+      rgba(127, 127, 127, 0.03) 10px,
+      rgba(127, 127, 127, 0.03) 11px
+    );
+  opacity: 0.5;
+  z-index: -1;
+}
+
+/* Molecular particle effects */
+.hero-particles {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.hero-particle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: var(--accent);
+  border-radius: 50%;
+  opacity: 0;
+  filter: blur(1px);
+}
+
+.hero-particle:nth-child(1) {
+  left: 10%;
+  top: 20%;
+  animation: particle-drift 8s ease-in-out infinite;
+}
+
+.hero-particle:nth-child(2) {
+  left: 30%;
+  top: 60%;
+  animation: particle-drift 10s ease-in-out infinite 1s;
+}
+
+.hero-particle:nth-child(3) {
+  left: 60%;
+  top: 30%;
+  animation: particle-drift 9s ease-in-out infinite 0.5s;
+}
+
+.hero-particle:nth-child(4) {
+  left: 80%;
+  top: 70%;
+  animation: particle-drift 11s ease-in-out infinite 1.5s;
+}
+
+.hero-particle:nth-child(5) {
+  left: 50%;
+  top: 50%;
+  animation: particle-drift 7s ease-in-out infinite 2s;
+}
+
+.hero-content {
+  text-align: center;
+  padding: var(--space-2xl);
+  max-width: 800px;
+  z-index: 1;
+  animation: slide-up 0.8s ease forwards;
+}
+
+.hero-title {
+  font-family: var(--ff-display);
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: var(--space-lg);
+  line-height: 1.1;
+  position: relative;
+}
+
+/* Decorative molecular bond underline */
+.hero-title::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 3px;
+  background: var(--accent-gradient);
+  border-radius: var(--radius-full);
+  box-shadow: 0 0 15px var(--accent-glow);
+}
+
+.hero-subtitle {
+  font-size: clamp(1.1rem, 3vw, 1.4rem);
+  color: var(--text-secondary);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  margin-bottom: var(--space-xl);
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  font-style: italic;
+  font-family: var(--ff-display-italic);
+}
+
+.hero-cta {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-md) var(--space-xl);
+  border-radius: var(--radius-full);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-500);
+  text-decoration: none;
+  transition: all var(--transition-1);
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.hero-btn.primary {
+  background: var(--accent-gradient);
+  color: var(--bg);
+  box-shadow:
+    0 4px 16px var(--accent-glow),
+    0 0 0 2px var(--accent-weak);
+}
+
+.hero-btn.primary:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 6px 24px var(--accent-glow),
+    0 0 0 3px var(--accent-weak),
+    var(--glow-accent);
+}
+
+.hero-btn.secondary {
+  background: transparent;
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.hero-btn.secondary:hover {
+  background: var(--accent-weak);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-2), var(--glow-accent);
+}
+
+.hero-scroll-indicator {
+  position: absolute;
+  bottom: var(--space-lg);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+  color: var(--muted);
+  font-size: var(--fs-8);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  animation: float 2s ease-in-out infinite;
+}
+
+.scroll-arrow {
+  width: 20px;
+  height: 20px;
+  border-right: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
+  transform: rotate(45deg);
+  margin-top: var(--space-xs);
+}
+
+/* Dark mode hero adjustments */
+:root[data-theme="dark"] .hero-bg {
+  background:
+    radial-gradient(ellipse at 15% 40%, rgba(34, 211, 238, 0.18) 0%, transparent 45%),
+    radial-gradient(ellipse at 85% 60%, rgba(251, 191, 36, 0.12) 0%, transparent 45%),
+    radial-gradient(ellipse at 50% 0%, rgba(34, 211, 238, 0.08) 0%, transparent 60%),
+    linear-gradient(160deg, #090e21 0%, #0a0e1a 100%);
+}
+
+/* Dark mode: molecular grid overlay on hero */
+:root[data-theme="dark"] .hero-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(37, 48, 80, 0.5) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37, 48, 80, 0.5) 1px, transparent 1px);
+  background-size: 48px 48px;
+  opacity: 0.4;
+  z-index: 0;
+}
+
+/* Scanning line — like a spectrometer sweep */
+:root[data-theme="dark"] .hero-particles::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    var(--accent) 40%,
+    rgba(34, 211, 238, 0.8) 50%,
+    var(--accent) 60%,
+    transparent 100%);
+  box-shadow: 0 0 20px var(--accent-glow), 0 0 40px var(--accent-glow);
+  animation: scan-line 6s ease-in-out infinite;
+  opacity: 0.6;
+  z-index: 2;
+}
+
+@keyframes scan-line {
+  0%   { top: 5%;  opacity: 0; }
+  5%   { opacity: 0.6; }
+  90%  { opacity: 0.6; }
+  100% { top: 95%; opacity: 0; }
+}
+
+
+/*-----------------------------------*\
+  #HERO FORMULA — lab instrument display
+\*-----------------------------------*/
+
+.hero-formula {
+  position: absolute;
+  top: var(--space-lg);
+  right: var(--space-lg);
+  font-family: var(--ff-mono);
+  font-size: var(--fs-8);
+  color: var(--accent);
+  opacity: 0.45;
+  letter-spacing: 0.12em;
+  pointer-events: none;
+  text-transform: uppercase;
+  transition: opacity var(--transition-1);
+  animation: fade-in 1.5s ease 1s both;
+}
+
+.hero-section:hover .hero-formula {
+  opacity: 0.7;
+}
+
+/*-----------------------------------*\
+  #FUNDING & AFFILIATIONS
+\*-----------------------------------*/
+
+.affiliations-section {
+  padding: var(--space-xl) 0;
+  margin-bottom: var(--space-2xl);
+}
+
+.affiliations-title {
+  font-size: var(--fs-7);
+  color: var(--muted);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: var(--space-lg);
+  font-weight: var(--fw-500);
+}
+
+.affiliations-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-2xl);
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.affiliation-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  color: var(--text-secondary);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-400);
+  transition: var(--transition-1);
+  opacity: 0.7;
+}
+
+.affiliation-item:hover {
+  opacity: 1;
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.affiliation-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  object-fit: contain;
+  filter: grayscale(1);
+  transition: var(--transition-1);
+}
+
+.affiliation-item:hover .affiliation-logo {
+  filter: grayscale(0);
+}
+
+/*-----------------------------------*\
+  #RESEARCH GALLERY
+\*-----------------------------------*/
+
+.research-gallery {
+  margin-bottom: var(--space-2xl);
+}
+
+.gallery-title {
+  margin-bottom: var(--space-lg);
+  text-align: center;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-lg);
+}
+
+.gallery-item {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  transition: all var(--transition-1);
+  cursor: pointer;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-3), var(--glow-accent);
+  border-color: var(--accent);
+}
+
+.gallery-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background: var(--bg-gradient-onyx);
+  transition: var(--transition-1);
+}
+
+.gallery-item:hover .gallery-image {
+  transform: scale(1.05);
+}
+
+.gallery-content {
+  padding: var(--space-lg);
+}
+
+.gallery-item-title {
+  font-size: var(--fs-5);
+  font-weight: var(--fw-600);
+  color: var(--text);
+  margin-bottom: var(--space-xs);
+}
+
+.gallery-item-text {
+  font-size: var(--fs-7);
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/*-----------------------------------*\
+  #LAND ACKNOWLEDGMENT
+\*-----------------------------------*/
+
+.land-acknowledgment {
+  margin-top: var(--space-2xl);
+  padding: var(--space-xl);
+  background: linear-gradient(135deg, var(--surface) 0%, var(--elevated) 100%);
+  border-radius: var(--radius-lg);
+  border-left: 4px solid var(--accent-secondary);
+  text-align: center;
+}
+
+.land-acknowledgment-title {
+  font-size: var(--fs-6);
+  font-weight: var(--fw-600);
+  color: var(--text);
+  margin-bottom: var(--space-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.land-acknowledgment-text {
+  font-size: var(--fs-7);
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto;
+}
