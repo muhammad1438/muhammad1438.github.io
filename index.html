@@ -1,1080 +1,1805 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dr. Muhammad Fahad Arshad - Postdoctoral Researcher</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Dr. Muhammad Fahad Arshad — Computational Catalysis</title>
+<meta name="description" content="Computational Catalysis Researcher specialising in DFT, MD, and AI/ML for hydrogen production and CO₂ valorisation. 11 publications · h-index 7 · 178 citations." />
+<link rel="icon" href="assets/images/logo.ico" />
+<meta property="og:title" content="Dr. Muhammad Fahad Arshad — Computational Catalysis Researcher" />
+<meta property="og:description" content="Computational Catalysis Researcher specialising in DFT, MD, and AI/ML for hydrogen production and CO₂ valorisation. 11 publications · h-index 7 · 178 citations." />
+<meta property="og:image" content="https://muhammad1438.github.io/assets/profile.jpg" />
+<meta property="og:url" content="https://muhammad1438.github.io" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Dr. Muhammad Fahad Arshad — Computational Catalysis Researcher" />
+<meta name="twitter:description" content="DFT · MD · AI/ML · Hydrogen Production · CO₂ Valorisation" />
+<meta name="twitter:image" content="https://muhammad1438.github.io/assets/profile.jpg" />
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
-  <!-- Custom CSS - Modular Architecture -->
-  <link rel="stylesheet" href="./assets/css/modules/variables.css">
-  <link rel="stylesheet" href="./assets/css/modules/reset.css">
-  <link rel="stylesheet" href="./assets/css/modules/animations.css">
-  <link rel="stylesheet" href="./assets/css/modules/components.css">
-  <link rel="stylesheet" href="./assets/css/modules/layout.css">
-  <link rel="stylesheet" href="./assets/css/modules/sections/sidebar.css">
-  <link rel="stylesheet" href="./assets/css/modules/sections/navbar.css">
-  <link rel="stylesheet" href="./assets/css/modules/sections/about.css">
-  <link rel="stylesheet" href="./assets/css/modules/sections/resume.css">
-  <link rel="stylesheet" href="./assets/css/modules/sections/publications.css">
-  <link rel="stylesheet" href="./assets/css/modules/sections/contact.css">
-  <link rel="stylesheet" href="./assets/css/modules/sections/hero.css">
-  <link rel="stylesheet" href="./assets/css/modules/responsive.css">
-  <link rel="stylesheet" href="./assets/css/modules/accessibility.css">
-  <link rel="stylesheet" href="./assets/css/modules/print.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
-  <!-- Google Fonts - Enhanced Typography -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Syne:wght@400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,500;1,400&family=Cormorant+Garamond:ital,wght@1,400;1,500;1,600&display=swap" rel="stylesheet">
-
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Dr. Muhammad Fahad Arshad - Postdoctoral Researcher specializing in computational catalysis, hydrogen production, and sustainable energy solutions.">
-  <meta name="keywords" content="computational catalysis, hydrogen production, DFT, machine learning, sustainable energy, CO2 valorization">
-  <meta name="author" content="Dr. Muhammad Fahad Arshad">
-
-  <!-- Open Graph / Social Media -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Dr. Muhammad Fahad Arshad - Postdoctoral Researcher">
-  <meta property="og:description" content="Advancing sustainable energy solutions through computational catalysis and hydrogen production research">
-  <meta property="og:image" content="https://muhammad1438.github.io/assets/images/my-avatar.png">
-  <meta property="og:url" content="https://muhammad1438.github.io">
-
-  <!-- ORCID -->
-  <link rel="me" href="https://orcid.org/0000-0003-1828-9458">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Dr. Muhammad Fahad Arshad - Postdoctoral Researcher">
-  <meta name="twitter:description" content="Advancing sustainable energy solutions through computational catalysis and hydrogen production research">
-  <meta name="twitter:image" content="https://muhammad1438.github.io/assets/images/my-avatar.png">
-
-  <!-- Additional SEO -->
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://muhammad1438.github.io">
-
-  <!-- JSON-LD Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Dr. Muhammad Fahad Arshad",
-    "jobTitle": "Postdoctoral Researcher",
-    "affiliation": {
-      "@type": "Organization",
-      "name": "University Mohammed VI Polytechnic (UM6P)",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Ben Guerir",
-        "addressCountry": "Morocco"
-      }
-    },
-    "description": "Computational catalysis researcher specializing in hydrogen production, CO₂ valorization, and sustainable energy solutions",
-    "url": "https://muhammad1438.github.io",
-    "image": "https://muhammad1438.github.io/assets/images/my-avatar.png",
-    "email": "m.fahad1448@gmail.com",
-    "telephone": ["+212-774-773-477", "+86-188-0122-5727"],
-    "sameAs": [
-      "https://orcid.org/0000-0003-1828-9458",
-      "https://github.com/muhammad1438",
-      "https://www.linkedin.com/in/mfahadarshad",
-      "https://scholar.google.com/citations?user=fwiNZasAAAAJ",
-      "https://www.researchgate.net/profile/Muhammad-Fahad-Arshad",
-      "https://www.scopus.com/authid/detail.uri?authorId=57219161795"
-    ],
-    "alumniOf": [
-      {
-        "@type": "EducationalOrganization",
-        "name": "University of Chinese Academy of Sciences",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Beijing",
-          "addressCountry": "China"
-        }
-      },
-      {
-        "@type": "EducationalOrganization",
-        "name": "University of Engineering and Technology",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Lahore",
-          "addressCountry": "Pakistan"
-        }
-      }
-    ],
-    "knowsAbout": [
-      "Computational Catalysis",
-      "Hydrogen Production",
-      "DFT (Density Functional Theory)",
-      "Molecular Dynamics",
-      "Machine Learning in Chemistry",
-      "Photocatalysis",
-      "CO₂ Valorization",
-      "Heterogeneous Catalysis"
-    ]
+<style>
+  :root {
+    --bg: #0a0e1a;
+    --bg-2: #0d1424;
+    --bg-3: #111a30;
+    --cyan: #00d4ff;
+    --cyan-soft: rgba(0, 212, 255, 0.5);
+    --gold: #f5a623;
+    --gold-soft: rgba(245, 166, 35, 0.5);
+    --text: #e8eaf0;
+    --text-dim: #9aa3b8;
+    --line: rgba(255, 255, 255, 0.08);
+    --glass: rgba(255, 255, 255, 0.04);
+    --glass-strong: rgba(255, 255, 255, 0.07);
   }
-  </script>
-</head>
+  html, body { background: var(--bg); color: var(--text); }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    background-image:
+      radial-gradient(1200px 700px at 80% -10%, rgba(0,212,255,0.10), transparent 60%),
+      radial-gradient(1000px 600px at -10% 30%, rgba(245,166,35,0.06), transparent 60%),
+      linear-gradient(180deg, #0a0e1a 0%, #080b14 100%);
+  }
+  h1, h2, h3, h4, .display {
+    font-family: 'Space Grotesk', 'Inter', sans-serif;
+    letter-spacing: -0.01em;
+  }
+  .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; }
 
+  /* ---------- Section scaffolding ---------- */
+  .section { position: relative; padding: 7rem 0; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 1.5rem; box-sizing: border-box; }
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--cyan); padding: 0.35rem 0.75rem;
+    border: 1px solid rgba(0,212,255,0.25);
+    border-radius: 999px;
+    background: rgba(0,212,255,0.05);
+  }
+  .eyebrow::before {
+    content: ""; width: 6px; height: 6px; border-radius: 50%;
+    background: var(--cyan); box-shadow: 0 0 12px var(--cyan);
+  }
+  .section-title {
+    font-size: clamp(2rem, 4.2vw, 3.25rem); font-weight: 600;
+    margin-top: 1rem; line-height: 1.05;
+  }
+  .section-title .accent { color: var(--cyan); }
+  .section-lede { color: var(--text-dim); max-width: 56ch; margin-top: 0.9rem; font-size: 1.02rem; line-height: 1.65; }
+
+  /* ---------- Glass card ---------- */
+  .glass {
+    background: var(--glass);
+    border: 1px solid var(--line);
+    backdrop-filter: blur(14px) saturate(1.2);
+    -webkit-backdrop-filter: blur(14px) saturate(1.2);
+    border-radius: 18px;
+  }
+  .glass-strong { background: var(--glass-strong); }
+
+  /* ---------- Navbar ---------- */
+  nav.topnav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 60;
+    background: rgba(10, 14, 26, 0.55);
+    backdrop-filter: blur(18px) saturate(1.4);
+    -webkit-backdrop-filter: blur(18px) saturate(1.4);
+    border-bottom: 1px solid var(--line);
+    transition: padding .35s ease, background .35s ease;
+  }
+  nav.topnav .inner {
+    max-width: 1240px; margin: 0 auto; padding: 0.9rem 1.5rem;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  nav.topnav .brand {
+    display: flex; align-items: center; gap: 0.7rem;
+    font-family: 'Space Grotesk', sans-serif; font-weight: 600;
+    font-size: 0.98rem;
+  }
+  nav.topnav .brand .mark {
+    width: 36px; height: 36px; border-radius: 10px;
+    display: grid; place-items: center;
+    background: linear-gradient(135deg, rgba(0,212,255,0.18), rgba(245,166,35,0.12));
+    border: 1px solid rgba(0,212,255,0.35);
+    color: var(--cyan); font-size: 0.85rem;
+    box-shadow: 0 0 18px rgba(0,212,255,0.25) inset;
+  }
+  nav.topnav .brand .sub { color: var(--text-dim); font-weight: 400; font-size: 0.78rem; letter-spacing: 0.05em; }
+  nav.topnav ul { display: flex; gap: 0.35rem; }
+  nav.topnav a.navlink {
+    padding: 0.5rem 0.9rem; border-radius: 999px;
+    font-size: 0.88rem; color: var(--text-dim);
+    transition: color .2s ease, background .2s ease;
+    position: relative;
+  }
+  nav.topnav a.navlink:hover { color: var(--text); background: rgba(255,255,255,0.04); }
+  nav.topnav a.navlink.is-active { color: var(--cyan); }
+  nav.topnav a.navlink.is-active::after {
+    content: ""; position: absolute; left: 50%; bottom: 0.15rem; transform: translateX(-50%);
+    width: 4px; height: 4px; background: var(--cyan); border-radius: 50%;
+    box-shadow: 0 0 8px var(--cyan);
+  }
+  .hamburger { display: none; width: 40px; height: 40px; border-radius: 10px; border: 1px solid var(--line); }
+  .hamburger span { display: block; width: 18px; height: 1.5px; background: var(--text); margin: 4px auto; transition: transform .25s ease, opacity .25s ease; }
+  .mobile-menu { display: none; position: fixed; inset: 64px 0 0 0; z-index: 55; background: rgba(10,14,26,0.97); backdrop-filter: blur(16px); padding: 2rem 1.5rem; }
+  .mobile-menu a { display: block; padding: 1rem; border-bottom: 1px solid var(--line); font-size: 1.1rem; color: var(--text); }
+  body.menu-open .mobile-menu { display: block; }
+  body.menu-open .hamburger span:nth-child(1) { transform: translateY(5.5px) rotate(45deg); }
+  body.menu-open .hamburger span:nth-child(2) { opacity: 0; }
+  body.menu-open .hamburger span:nth-child(3) { transform: translateY(-5.5px) rotate(-45deg); }
+
+  /* ---------- Hero ---------- */
+  .hero { position: relative; min-height: 100vh; overflow: hidden; padding-top: 6rem; }
+  .hero canvas { position: absolute; inset: 0; z-index: 0; }
+  .hero-grid-overlay {
+    position: absolute; inset: 0; z-index: 1; pointer-events: none;
+    background-image:
+      linear-gradient(rgba(0,212,255,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,212,255,0.04) 1px, transparent 1px);
+    background-size: 64px 64px;
+    mask-image: radial-gradient(ellipse at center, black 40%, transparent 75%);
+    -webkit-mask-image: radial-gradient(ellipse at center, black 40%, transparent 75%);
+  }
+  .hero-vignette {
+    position: absolute; inset: 0; z-index: 1; pointer-events: none;
+    background: radial-gradient(ellipse at center, transparent 30%, rgba(10,14,26,0.85) 90%);
+  }
+  .hero-content { position: relative; z-index: 3; }
+
+  .hero-meta {
+    display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center;
+    color: var(--text-dim); font-family: 'JetBrains Mono', monospace; font-size: 0.78rem;
+  }
+  .hero-meta .dot { width: 4px; height: 4px; border-radius: 50%; background: var(--text-dim); }
+  .live-dot {
+    display: inline-flex; align-items: center; gap: 0.45rem;
+    color: var(--cyan); font-family: 'JetBrains Mono', monospace; font-size: 0.78rem;
+    text-transform: uppercase; letter-spacing: 0.2em;
+  }
+  .live-dot::before {
+    content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--cyan);
+    box-shadow: 0 0 14px var(--cyan); animation: pulse 1.8s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.4); opacity: 0.5; }
+  }
+
+  .hero-name {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: clamp(2.4rem, 7vw, 5.6rem);
+    line-height: 0.98;
+    letter-spacing: -0.025em;
+    margin-top: 1.5rem;
+  }
+  .hero-name .gradient {
+    background: linear-gradient(135deg, #fff 0%, var(--cyan) 55%, var(--gold) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .typewriter-cursor {
+    display: inline-block; width: 3px; height: 0.9em;
+    background: var(--cyan); margin-left: 4px; vertical-align: -0.05em;
+    animation: blink 0.9s steps(2, start) infinite;
+    box-shadow: 0 0 12px var(--cyan);
+  }
+  @keyframes blink { to { opacity: 0; } }
+
+  .hero-title {
+    margin-top: 1.2rem;
+    font-size: clamp(1.05rem, 1.8vw, 1.35rem); font-weight: 400;
+    color: var(--text-dim);
+  }
+  .hero-title b { color: var(--text); font-weight: 500; }
+  .hero-quote {
+    margin-top: 1.6rem;
+    padding-left: 1rem;
+    border-left: 2px solid rgba(0,212,255,0.4);
+    color: var(--text-dim);
+    max-width: 56ch;
+    font-style: italic;
+    font-size: 0.98rem;
+    line-height: 1.65;
+  }
+
+  .hero-cta-row { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 2rem; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    padding: 0.78rem 1.3rem; border-radius: 999px;
+    font-family: 'Space Grotesk', sans-serif; font-weight: 500;
+    font-size: 0.93rem; transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+    border: 1px solid transparent; cursor: pointer;
+  }
+  .btn-primary {
+    background: var(--cyan); color: #04101a;
+    box-shadow: 0 8px 30px rgba(0,212,255,0.35), 0 0 0 0 rgba(0,212,255,0);
+  }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 16px 40px rgba(0,212,255,0.5); }
+  .btn-gold {
+    background: var(--gold); color: #1a1100;
+    box-shadow: 0 8px 30px rgba(245,166,35,0.35);
+  }
+  .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 16px 40px rgba(245,166,35,0.5); }
+  .btn-ghost {
+    background: transparent; color: var(--text);
+    border-color: rgba(255,255,255,0.18);
+  }
+  .btn-ghost:hover { border-color: var(--cyan); color: var(--cyan); background: rgba(0,212,255,0.05); }
+
+  /* Avatar disc */
+  .avatar-wrap {
+    position: relative; width: clamp(260px, 30vw, 380px); aspect-ratio: 1;
+  }
+  .avatar-ring {
+    position: absolute; inset: -14px; border-radius: 50%;
+    border: 1px dashed rgba(0,212,255,0.4);
+    animation: spin 22s linear infinite;
+  }
+  .avatar-ring.r2 { inset: -30px; border-color: rgba(245,166,35,0.25); animation-duration: 36s; animation-direction: reverse; }
+  .avatar-ring.r3 { inset: -50px; border-color: rgba(255,255,255,0.05); animation-duration: 60s; }
+  .avatar-ring .pip {
+    position: absolute; top: -4px; left: 50%; width: 8px; height: 8px;
+    border-radius: 50%; background: var(--cyan);
+    box-shadow: 0 0 16px var(--cyan);
+    transform: translateX(-50%);
+  }
+  .avatar-ring.r2 .pip { background: var(--gold); box-shadow: 0 0 16px var(--gold); }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .avatar-disc {
+    position: relative; width: 100%; height: 100%; border-radius: 50%; overflow: hidden;
+    border: 2px solid rgba(0,212,255,0.3);
+    box-shadow:
+      0 0 0 1px rgba(255,255,255,0.05) inset,
+      0 0 60px rgba(0,212,255,0.4),
+      0 0 140px rgba(0,212,255,0.15);
+    background: #0d1424;
+  }
+  .avatar-disc img { width: 100%; height: 100%; object-fit: cover; filter: contrast(1.02) saturate(0.9); }
+  .avatar-orbit-label {
+    position: absolute; padding: 0.3rem 0.7rem; border-radius: 999px;
+    background: rgba(10,14,26,0.85); border: 1px solid rgba(0,212,255,0.35);
+    color: var(--cyan); font-family: 'JetBrains Mono', monospace; font-size: 0.7rem;
+    backdrop-filter: blur(6px);
+    white-space: nowrap;
+  }
+
+  .scroll-cue {
+    position: absolute; left: 50%; bottom: 1.8rem; transform: translateX(-50%);
+    z-index: 4; color: var(--text-dim); display: flex; flex-direction: column; align-items: center; gap: 0.6rem;
+    font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase;
+  }
+  .scroll-cue .bar { width: 1px; height: 36px; background: linear-gradient(180deg, var(--cyan), transparent); animation: drop 2.2s ease-in-out infinite; }
+  @keyframes drop { 0% { transform: scaleY(0); transform-origin: top; } 50% { transform: scaleY(1); transform-origin: top; } 51% { transform-origin: bottom; } 100% { transform: scaleY(0); transform-origin: bottom; } }
+
+  /* ---------- Stats ---------- */
+  .stat-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem; }
+  .stat {
+    padding: 1.4rem 1.2rem; border-radius: 14px;
+    border: 1px solid var(--line); background: var(--glass);
+    position: relative; overflow: hidden;
+  }
+  .stat::before {
+    content: ""; position: absolute; top: 0; left: 0; width: 40%; height: 1px;
+    background: linear-gradient(90deg, var(--cyan), transparent);
+  }
+  .stat .num { font-family: 'Space Grotesk', sans-serif; font-size: 2.2rem; font-weight: 600; line-height: 1; color: var(--text); }
+  .stat .label { font-size: 0.78rem; color: var(--text-dim); margin-top: 0.4rem; letter-spacing: 0.04em; }
+  .stat:hover { border-color: rgba(0,212,255,0.35); }
+
+  /* ---------- Timeline ---------- */
+  .timeline { position: relative; padding-left: 2.4rem; }
+  .timeline::before {
+    content: ""; position: absolute; left: 12px; top: 6px; bottom: 6px;
+    width: 1px;
+    background: linear-gradient(180deg, transparent, rgba(0,212,255,0.5) 8%, rgba(0,212,255,0.5) 92%, transparent);
+  }
+  .tl-item { position: relative; padding-bottom: 2.2rem; }
+  .tl-item:last-child { padding-bottom: 0; }
+  .tl-dot {
+    position: absolute; left: -2.4rem; top: 1.1rem;
+    width: 26px; height: 26px; border-radius: 50%;
+    background: var(--bg); border: 1px solid rgba(0,212,255,0.5);
+    display: grid; place-items: center;
+  }
+  .tl-dot::after {
+    content: ""; width: 9px; height: 9px; border-radius: 50%; background: var(--cyan);
+    box-shadow: 0 0 14px var(--cyan);
+  }
+  .tl-card {
+    padding: 1.6rem 1.6rem 1.4rem;
+    border: 1px solid var(--line);
+    background: var(--glass);
+    border-radius: 16px;
+    transition: transform .35s ease, border-color .35s ease, box-shadow .35s ease;
+    position: relative;
+  }
+  .tl-card:hover {
+    border-color: rgba(0,212,255,0.4);
+    transform: translateY(-3px);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.4), 0 0 0 1px rgba(0,212,255,0.15) inset;
+  }
+  .tl-meta { display: flex; flex-wrap: wrap; gap: 0.7rem; align-items: center; font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; color: var(--text-dim); }
+  .tl-meta .tag {
+    padding: 0.2rem 0.55rem; border-radius: 4px; border: 1px solid var(--line);
+    color: var(--gold);
+  }
+  .tl-role { font-family: 'Space Grotesk', sans-serif; font-size: 1.35rem; font-weight: 600; margin-top: 0.6rem; color: var(--text); }
+  .tl-org { color: var(--text-dim); margin-top: 0.2rem; font-size: 0.95rem; }
+  .tl-bullets { margin-top: 1rem; list-style: none; display: grid; gap: 0.55rem; }
+  .tl-bullets li {
+    padding-left: 1.25rem; position: relative; color: var(--text-dim); line-height: 1.55; font-size: 0.93rem;
+  }
+  .tl-bullets li::before {
+    content: ""; position: absolute; left: 0; top: 0.65rem;
+    width: 8px; height: 1px; background: var(--cyan);
+  }
+
+  /* ---------- Education ---------- */
+  .edu-card {
+    padding: 1.8rem; border-radius: 18px;
+    border: 1px solid var(--line); background: var(--glass);
+    position: relative; overflow: hidden; height: 100%;
+  }
+  .edu-card::before {
+    content: ""; position: absolute; right: -60px; top: -60px;
+    width: 220px; height: 220px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(0,212,255,0.15), transparent 65%);
+  }
+  .edu-card.gold::before { background: radial-gradient(circle, rgba(245,166,35,0.15), transparent 65%); }
+  .edu-degree { font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: var(--cyan); letter-spacing: 0.15em; text-transform: uppercase; }
+  .edu-card.gold .edu-degree { color: var(--gold); }
+  .edu-title { font-family: 'Space Grotesk', sans-serif; font-size: 1.3rem; font-weight: 600; margin-top: 0.5rem; line-height: 1.25; }
+  .edu-school { color: var(--text-dim); margin-top: 0.3rem; font-size: 0.92rem; }
+  .edu-dates { font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; color: var(--text-dim); margin-top: 0.8rem; padding-top: 0.8rem; border-top: 1px solid var(--line); }
+  .edu-thesis { margin-top: 0.9rem; font-size: 0.92rem; line-height: 1.55; color: var(--text-dim); }
+  .edu-thesis b { color: var(--text); }
+  .edu-pills { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 1rem; }
+  .pill {
+    padding: 0.3rem 0.65rem; border-radius: 999px;
+    background: rgba(255,255,255,0.04); border: 1px solid var(--line);
+    font-size: 0.74rem; color: var(--text-dim);
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  /* ---------- Skills constellation ---------- */
+  #skills-canvas { width: 100%; height: 540px; display: block; }
+  .skill-legend { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; justify-content: center; }
+  .skill-legend .key {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    padding: 0.4rem 0.8rem; border-radius: 999px;
+    background: rgba(255,255,255,0.03); border: 1px solid var(--line);
+    font-size: 0.78rem; color: var(--text-dim);
+    font-family: 'JetBrains Mono', monospace;
+    cursor: pointer; transition: border-color .2s ease, color .2s ease;
+  }
+  .skill-legend .key.is-active { color: var(--text); border-color: rgba(0,212,255,0.4); }
+  .skill-legend .swatch { width: 10px; height: 10px; border-radius: 50%; }
+  .skills-frame {
+    position: relative; border: 1px solid var(--line); border-radius: 18px;
+    background:
+      radial-gradient(circle at 30% 20%, rgba(0,212,255,0.05), transparent 50%),
+      radial-gradient(circle at 70% 80%, rgba(245,166,35,0.05), transparent 50%),
+      rgba(255,255,255,0.02);
+    overflow: hidden;
+  }
+  .skills-frame::before {
+    content: ""; position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+  }
+  .skill-tooltip {
+    position: absolute; pointer-events: none;
+    padding: 0.5rem 0.8rem; border-radius: 8px;
+    background: rgba(10,14,26,0.95); border: 1px solid rgba(0,212,255,0.4);
+    font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; color: var(--text);
+    transform: translate(-50%, calc(-100% - 12px));
+    opacity: 0; transition: opacity .15s ease;
+    white-space: nowrap; z-index: 5;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  }
+  .skill-tooltip.show { opacity: 1; }
+
+  /* ---------- Project cards ---------- */
+  .project-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.2rem; }
+  .project-card {
+    padding: 1.6rem; border-radius: 18px;
+    background: var(--glass); border: 1px solid var(--line);
+    position: relative; overflow: hidden;
+    transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+  }
+  .project-card:hover { transform: translateY(-4px); border-color: rgba(0,212,255,0.35); box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
+  .project-card::after {
+    content: ""; position: absolute; right: 0; top: 0; width: 1px; height: 0;
+    background: linear-gradient(180deg, var(--cyan), transparent);
+    transition: height .35s ease;
+  }
+  .project-card:hover::after { height: 60%; }
+  .project-icon {
+    width: 52px; height: 52px; border-radius: 14px; display: grid; place-items: center;
+    background: linear-gradient(135deg, rgba(0,212,255,0.15), rgba(245,166,35,0.08));
+    border: 1px solid rgba(0,212,255,0.25);
+    color: var(--cyan); font-size: 1.5rem;
+    box-shadow: 0 0 24px rgba(0,212,255,0.2) inset;
+  }
+  .project-name { font-family: 'Space Grotesk', sans-serif; font-size: 1.2rem; font-weight: 600; margin-top: 1rem; }
+  .project-tag { font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: var(--gold); text-transform: uppercase; letter-spacing: 0.15em; margin-top: 0.3rem; }
+  .project-desc { color: var(--text-dim); margin-top: 0.8rem; line-height: 1.6; font-size: 0.93rem; }
+
+  /* ---------- Publications carousel ---------- */
+  .scholar-badge {
+    display: inline-flex; flex-wrap: wrap; align-items: center; gap: 1.5rem;
+    padding: 1rem 1.6rem; border-radius: 14px;
+    background: linear-gradient(135deg, rgba(0,212,255,0.08), rgba(245,166,35,0.05));
+    border: 1px solid rgba(0,212,255,0.25);
+  }
+  .scholar-badge .metric { display: flex; flex-direction: column; gap: 0.15rem; }
+  .scholar-badge .metric .v { font-family: 'Space Grotesk', sans-serif; font-size: 1.6rem; font-weight: 600; color: var(--cyan); line-height: 1; }
+  .scholar-badge .metric .l { font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.1em; }
+  .scholar-badge .vrule { width: 1px; height: 32px; background: var(--line); }
+
+  .pub-track {
+    display: flex; gap: 1.2rem; overflow-x: auto;
+    padding: 1.2rem 1.5rem 2rem;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0,212,255,0.4) transparent;
+  }
+  .pub-track::-webkit-scrollbar { height: 8px; }
+  .pub-track::-webkit-scrollbar-thumb { background: rgba(0,212,255,0.3); border-radius: 4px; }
+  .pub-card {
+    flex: 0 0 360px;
+    padding: 1.5rem;
+    border-radius: 16px;
+    background: var(--glass);
+    border: 1px solid var(--line);
+    scroll-snap-align: start;
+    display: flex; flex-direction: column; gap: 0.6rem;
+    transition: transform .3s ease, border-color .3s ease;
+    position: relative;
+  }
+  .pub-card:hover { border-color: rgba(0,212,255,0.4); transform: translateY(-3px); }
+  .pub-year {
+    display: inline-flex; align-items: center; gap: 0.4rem;
+    font-family: 'JetBrains Mono', monospace; font-size: 0.74rem;
+    color: var(--cyan);
+  }
+  .pub-card.first .pub-year { color: var(--gold); }
+  .pub-card.first::before {
+    content: "★"; position: absolute; top: 1.1rem; right: 1.2rem;
+    color: var(--gold); font-size: 1.1rem;
+    filter: drop-shadow(0 0 6px var(--gold));
+  }
+  .pub-title { font-family: 'Space Grotesk', sans-serif; font-size: 1.02rem; font-weight: 500; line-height: 1.4; color: var(--text); }
+  .pub-venue { color: var(--text-dim); font-size: 0.85rem; font-style: italic; }
+  .pub-authors { font-size: 0.78rem; color: var(--text-dim); margin-top: auto; padding-top: 0.6rem; border-top: 1px solid var(--line); line-height: 1.5; }
+  .pub-authors em { color: var(--text); font-style: normal; font-weight: 500; }
+  .pub-cited { display: inline-flex; align-items: center; gap: 0.3rem; font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; color: var(--text-dim); }
+
+  /* carousel controls */
+  .pub-ctl {
+    display: flex; gap: 0.5rem; align-items: center;
+  }
+  .pub-ctl button {
+    width: 38px; height: 38px; border-radius: 50%;
+    border: 1px solid var(--line); background: var(--glass);
+    color: var(--text); display: grid; place-items: center;
+    transition: border-color .2s ease, color .2s ease;
+  }
+  .pub-ctl button:hover { border-color: var(--cyan); color: var(--cyan); }
+
+  /* ---------- Awards ---------- */
+  .award-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+  .award {
+    padding: 1.2rem 1.3rem; border-radius: 14px;
+    background: var(--glass); border: 1px solid var(--line);
+    display: flex; gap: 1rem; align-items: flex-start;
+  }
+  .award .year-tag {
+    flex: 0 0 auto;
+    font-family: 'JetBrains Mono', monospace; font-size: 0.78rem;
+    color: var(--gold); letter-spacing: 0.05em;
+    padding: 0.25rem 0.55rem; border-radius: 6px;
+    border: 1px solid rgba(245,166,35,0.3);
+    background: rgba(245,166,35,0.06);
+  }
+  .award h4 { font-family: 'Space Grotesk', sans-serif; font-weight: 500; font-size: 1rem; line-height: 1.35; }
+  .award .org { font-size: 0.82rem; color: var(--text-dim); margin-top: 0.2rem; }
+
+  /* ---------- Contact ---------- */
+  .contact-card {
+    position: relative; max-width: 760px; margin: 0 auto;
+    padding: 3rem 2.5rem;
+    border-radius: 24px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01));
+    border: 1px solid rgba(0,212,255,0.3);
+    text-align: center;
+    box-shadow:
+      0 0 60px rgba(0,212,255,0.15),
+      0 0 0 1px rgba(0,212,255,0.1) inset;
+  }
+  .contact-card::before {
+    content: ""; position: absolute; inset: -1px; border-radius: 24px; padding: 1px;
+    background: linear-gradient(135deg, rgba(0,212,255,0.6), transparent 40%, rgba(245,166,35,0.4));
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor; mask-composite: exclude;
+    pointer-events: none;
+  }
+  .contact-meta {
+    display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem 1.6rem;
+    margin: 1.4rem 0 2rem;
+    color: var(--text-dim); font-size: 0.95rem;
+  }
+  .contact-meta span { display: inline-flex; align-items: center; gap: 0.5rem; }
+  .contact-meta b { color: var(--text); font-weight: 500; }
+
+  /* ---------- Floating back-to-top ---------- */
+  .back-top {
+    position: fixed; bottom: 1.8rem; right: 1.8rem; z-index: 50;
+    width: 52px; height: 52px; border-radius: 50%;
+    background: rgba(10,14,26,0.85); border: 1px solid rgba(0,212,255,0.4);
+    color: var(--cyan); display: grid; place-items: center;
+    box-shadow: 0 0 24px rgba(0,212,255,0.3);
+    backdrop-filter: blur(10px);
+    opacity: 0; transform: translateY(10px); pointer-events: none;
+    transition: opacity .25s ease, transform .25s ease;
+  }
+  .back-top.visible { opacity: 1; transform: translateY(0); pointer-events: auto; }
+  .back-top:hover { background: rgba(0,212,255,0.15); }
+
+  /* ---------- Footer ---------- */
+  footer { padding: 2rem 1.5rem 3rem; text-align: center; color: var(--text-dim); font-size: 0.86rem; border-top: 1px solid var(--line); }
+  footer .heart { color: #ff6b9c; }
+
+  /* ---------- Particle cursor canvas ---------- */
+  #cursor-canvas { position: fixed; inset: 0; pointer-events: none; z-index: 4; }
+
+  /* ---------- Reveal anim ---------- */
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .8s ease, transform .8s ease; }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+
+  /* ---------- Section divider corner marks ---------- */
+  .corner-marks { position: relative; }
+  .corner-marks::before, .corner-marks::after {
+    content: ""; position: absolute; width: 18px; height: 18px;
+    border: 1px solid rgba(0,212,255,0.4);
+  }
+  .corner-marks::before { top: 0; left: 0; border-right: 0; border-bottom: 0; }
+  .corner-marks::after { bottom: 0; right: 0; border-left: 0; border-top: 0; }
+
+
+  /* ====== LAYOUT CLASSES (replaces inline grids) ====== */
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 3rem;
+    align-items: center;
+    min-height: calc(100vh - 6rem);
+  }
+  .hero-avatar-col {
+    display: flex;
+    justify-content: center;
+  }
+  .hero-stats-row {
+    display: flex;
+    gap: 2.4rem;
+    margin-top: 2.4rem;
+    flex-wrap: wrap;
+  }
+  .about-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 2.4rem;
+    margin-top: 3rem;
+  }
+  .edu-grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.4rem;
+    margin-top: 3rem;
+  }
+  .awards-2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  /* ====== RESPONSIVE: tablet ====== */
+  @media (max-width: 980px) {
+    nav.topnav ul { display: none; }
+    .hamburger { display: block; }
+    .stat-grid { grid-template-columns: repeat(3, 1fr); }
+    .project-grid { grid-template-columns: repeat(2, 1fr); }
+    .award-grid { grid-template-columns: 1fr; }
+    .section { padding-top: 5rem; padding-bottom: 5rem; }
+    .about-grid { grid-template-columns: 1fr; }
+    .edu-grid-2 { grid-template-columns: 1fr; }
+    .awards-2col { grid-template-columns: 1fr; }
+  }
+
+  /* ====== RESPONSIVE: mobile ====== */
+  @media (max-width: 768px) {
+    .section { padding-top: 4rem; padding-bottom: 4rem; }
+    .wrap { padding: 0 1rem; }
+
+    /* Hero: stack avatar above text */
+    .hero-grid {
+      grid-template-columns: 1fr;
+      min-height: auto;
+      padding-top: 2rem;
+      padding-bottom: 3rem;
+      gap: 2rem;
+    }
+    .hero-avatar-col { order: -1; }
+    .avatar-wrap {
+      width: min(220px, 55vw) !important;
+    }
+    .avatar-orbit-label { font-size: 0.62rem; padding: 0.22rem 0.5rem; }
+
+    .hero-name { font-size: clamp(2rem, 10vw, 3.5rem) !important; }
+    .hero-quote { font-size: 0.92rem; }
+    .hero-cta-row { gap: 0.5rem; }
+    .hero-stats-row { gap: 1.4rem; }
+
+    /* About */
+    .about-grid { grid-template-columns: 1fr; }
+
+    /* Stats: 2-column */
+    .stat-grid { grid-template-columns: repeat(2, 1fr) !important; }
+
+    /* Education */
+    .edu-grid-2 { grid-template-columns: 1fr; }
+
+    /* Skills canvas */
+    #skills-canvas { height: 360px !important; }
+
+    /* Projects: single column */
+    .project-grid { grid-template-columns: 1fr !important; }
+
+    /* Publications */
+    .pub-card { flex: 0 0 90vw; }
+    .scholar-badge { width: 100%; justify-content: center; }
+
+    /* Awards */
+    .awards-2col { grid-template-columns: 1fr; }
+
+    /* Contact meta: stack */
+    .contact-meta {
+      flex-direction: column !important;
+      gap: 0.6rem !important;
+      align-items: center;
+    }
+
+    /* Timeline */
+    .timeline { padding-left: 1.6rem; }
+    .tl-dot { left: -1.6rem; }
+    .tl-card { padding: 1.2rem; }
+    .tl-role { font-size: 1.1rem; }
+
+    /* Buttons */
+    .btn { padding: 0.7rem 1.1rem; font-size: 0.88rem; }
+
+    /* Section title */
+    .section-title { font-size: clamp(1.6rem, 6.5vw, 2.5rem) !important; }
+
+    /* Publications header flex */
+    #publications .wrap > .reveal:first-child {
+      flex-direction: column !important;
+      align-items: flex-start !important;
+    }
+  }
+
+  /* ====== RESPONSIVE: small mobile ====== */
+  @media (max-width: 480px) {
+    .section { padding-top: 3rem; padding-bottom: 3rem; }
+    .wrap { padding: 0 0.9rem; }
+    .hero { padding-top: 5rem; }
+    .hero-grid { gap: 1.4rem; padding-bottom: 2rem; }
+    .avatar-wrap { width: min(180px, 60vw) !important; }
+    .avatar-orbit-label { display: none; }
+
+    .hero-meta { font-size: 0.7rem; gap: 0.4rem; }
+    .hero-title { font-size: 0.95rem; }
+    .stat-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 0.6rem; }
+    .stat .num { font-size: 1.7rem; }
+    .stat { padding: 1rem 0.9rem; }
+
+    .hero-stats-row > div { min-width: 0; }
+    .hero-stats-row .display { font-size: 1.3rem; }
+
+    .tl-card { padding: 1rem; }
+    .tl-bullets li { font-size: 0.88rem; }
+
+    .edu-card { padding: 1.4rem; }
+    .project-card { padding: 1.4rem; }
+    .award { padding: 0.9rem; }
+
+    .btn { padding: 0.65rem 0.95rem; font-size: 0.84rem; }
+    .btn-primary, .btn-gold { min-width: 0; }
+
+    #skills-canvas { height: 300px !important; }
+
+    .contact-card { padding: 1.8rem 1.2rem !important; }
+    .contact-card .display { font-size: 1.3rem !important; }
+
+    .pub-card { flex: 0 0 94vw; }
+
+    footer { padding: 2rem 1rem !important; font-size: 0.82rem; }
+  }
+
+</style>
+</head>
 <body>
 
-  <!-- Skip Link for Accessibility -->
-  <a href="#main-content" class="skip-link">Skip to main content</a>
+<!-- Cursor particle layer (hero only) -->
+<canvas id="cursor-canvas"></canvas>
 
-  <!-- MAIN -->
-  <main id="main-content">
+<!-- ========== NAV ========== -->
+<nav class="topnav" id="topnav">
+  <div class="inner">
+    <a href="#hero" class="brand">
+      <div class="mark">⚛</div>
+      <div>
+        <div>M. F. Arshad</div>
+        <div class="sub">PhD · Computational Catalysis</div>
+      </div>
+    </a>
+    <ul>
+      <li><a class="navlink" href="#about">About</a></li>
+      <li><a class="navlink" href="#experience">Experience</a></li>
+      <li><a class="navlink" href="#education">Education</a></li>
+      <li><a class="navlink" href="#skills">Skills</a></li>
+      <li><a class="navlink" href="#projects">Projects</a></li>
+      <li><a class="navlink" href="#publications">Publications</a></li>
+      <li><a class="navlink" href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#education">Education</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#publications">Publications</a>
+  <a href="#contact">Contact</a>
+</div>
 
-    <!-- SIDEBAR -->
-    <aside class="sidebar" data-sidebar>
+<!-- ========== HERO ========== -->
+<section class="hero" id="hero">
+  <canvas id="lattice-canvas"></canvas>
+  <div class="hero-grid-overlay"></div>
+  <div class="hero-vignette"></div>
 
-      <div class="sidebar-info">
+  <div class="hero-content wrap hero-grid">
+    <div>
+      <div class="hero-meta">
+        <span class="live-dot">Open to Opportunities</span>
+        <span class="dot"></span>
+        <span>Lat 31.5204°N · Lon 74.3587°E</span>
+      </div>
 
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Dr. Muhammad Fahad Arshad" width="80" loading="eager">
-        </figure>
+      <h1 class="hero-name">
+        <span class="gradient" id="nameType"></span><span class="typewriter-cursor" id="cursor"></span>
+      </h1>
 
-        <div class="info-content">
-          <h1 class="name" title="Dr. Muhammad Fahad Arshad">Dr. Muhammad Fahad Arshad</h1>
-          <p class="title">Postdoctoral Researcher · UM6P</p>
+      <p class="hero-title">
+        <b>Computational Catalysis Researcher</b> · DFT · MD · AI/ML · Open to New Roles
+      </p>
+
+      <p class="hero-quote">
+        “Advancing sustainable energy solutions through computational catalysis and hydrogen production research.”
+      </p>
+
+      <div class="hero-cta-row">
+        <a class="btn btn-primary" href="assets/cv.pdf" download>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>
+          Download CV
+        </a>
+        <a class="btn btn-ghost" href="#publications">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z M4 9h16 M9 4v16"/></svg>
+          Publications · 11
+        </a>
+        <a class="btn btn-ghost" href="#contact">
+          Get in touch →
+        </a>
+      </div>
+
+      <div class="hero-stats-row">
+        <div>
+          <div class="mono" style="font-size:0.72rem; color: var(--text-dim); letter-spacing: 0.18em; text-transform: uppercase;">Citations</div>
+          <div class="display" style="font-size: 1.6rem; color: var(--cyan); margin-top: 0.2rem;">178</div>
         </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
+        <div>
+          <div class="mono" style="font-size:0.72rem; color: var(--text-dim); letter-spacing: 0.18em; text-transform: uppercase;">h-index</div>
+          <div class="display" style="font-size: 1.6rem; color: var(--cyan); margin-top: 0.2rem;">7</div>
+        </div>
+        <div>
+          <div class="mono" style="font-size:0.72rem; color: var(--text-dim); letter-spacing: 0.18em; text-transform: uppercase;">i10-index</div>
+          <div class="display" style="font-size: 1.6rem; color: var(--cyan); margin-top: 0.2rem;">6</div>
+        </div>
+        <div>
+          <div class="mono" style="font-size:0.72rem; color: var(--text-dim); letter-spacing: 0.18em; text-transform: uppercase;">Countries</div>
+          <div class="display" style="font-size: 1.6rem; color: var(--gold); margin-top: 0.2rem;">PK · CN · MA</div>
+        </div>
       </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-              <a href="mailto:m.fahad1448@gmail.com" class="contact-link">m.fahad1448@gmail.com</a>
-            </div>
-          </li>
-
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-              <a href="tel:+212774773477" class="contact-link">+212-774-773-477 (Morocco)</a>
-              <a href="tel:+8618801225727" class="contact-link" style="margin-top: 4px;">+86-188-0122-5727 (China)</a>
-            </div>
-          </li>
-
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-              <address>Ben Guerir, Morocco 🇲🇦</address>
-            </div>
-          </li>
-
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="school-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">ORCID</p>
-              <a href="https://orcid.org/0000-0003-1828-9458" class="contact-link" target="_blank">0000-0003-1828-9458</a>
-            </div>
-          </li>
-
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="globe-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Website</p>
-              <a href="https://muhammad1438.github.io" class="contact-link" target="_blank">muhammad1438.github.io</a>
-            </div>
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://github.com/muhammad1438" class="social-link" target="_blank" aria-label="GitHub Profile">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/mfahadarshad" class="social-link" target="_blank" aria-label="LinkedIn Profile">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://scholar.google.com/citations?user=fwiNZasAAAAJ" class="social-link" target="_blank" aria-label="Google Scholar Profile">
-              <ion-icon name="school-outline"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.researchgate.net/profile/Muhammad-Fahad-Arshad" class="social-link" target="_blank" aria-label="ResearchGate Profile">
-              <ion-icon name="flask-outline"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-    <!-- MAIN CONTENT -->
-    <div class="main-content">
-
-      <!-- NAVBAR -->
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <li class="navbar-item">
-            <button class="navbar-link active" data-nav-link>About</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Publications</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link theme-toggle-btn" id="theme-toggle" aria-label="Toggle theme">
-              <ion-icon name="moon-outline" class="theme-icon-dark"></ion-icon>
-              <ion-icon name="sunny-outline" class="theme-icon-light"></ion-icon>
-            </button>
-          </li>
-        </ul>
-      </nav>
-
-      <!-- ABOUT -->
-      <article class="about active" data-page="about">
-
-        <!-- Hero Section -->
-        <section class="hero-section">
-          <div class="hero-bg"></div>
-          <div class="hero-particles">
-            <div class="hero-particle"></div>
-            <div class="hero-particle"></div>
-            <div class="hero-particle"></div>
-            <div class="hero-particle"></div>
-            <div class="hero-particle"></div>
-          </div>
-          <div class="hero-content">
-            <h2 class="hero-title">Dr. Muhammad Fahad Arshad</h2>
-            <p class="hero-subtitle">Advancing sustainable energy solutions through computational catalysis and hydrogen production research</p>
-            <div class="hero-cta">
-              <button class="hero-btn primary" onclick="navigateTo('contact')">Contact for Collaboration</button>
-              <button class="hero-btn secondary" onclick="navigateTo('publications')">View Publications</button>
-            </div>
-          </div>
-          <div class="hero-scroll-indicator">
-            <span>Scroll to explore</span>
-            <div class="scroll-arrow"></div>
-          </div>
-          <div class="hero-formula" aria-hidden="true">DFT · MD · ML · H₂ ⟶ CO₂</div>
-        </section>
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            <strong>"Advancing sustainable energy solutions through computational catalysis and hydrogen production research"</strong>
-          </p>
-          <p>
-            I am a computational catalysis researcher blending heterogeneous experimentation with high-performance modelling
-            (DFT, MD, AI/ML) to design low-carbon hydrogen and CO₂ utilisation pathways. I deliver reactor innovations,
-            cross-functional collaborations, and data-driven workflows that accelerate catalyst discovery from concept to pilot scale.
-          </p>
-          <p>
-            Currently serving as a Postdoctoral Researcher at University Mohammed VI Polytechnic (UM6P) in Morocco, I steer
-            multi-institutional hydrogen production and CO₂ valorisation programmes, building automated computational pipelines
-            on HPC clusters and deploying machine learning tools to reduce experimental screening time by ~40%.
-          </p>
-        </section>
-
-        <!-- Research Highlights Strip -->
-        <section class="research-highlights">
-          <div class="highlight-item">
-            <ion-icon name="flask-outline"></ion-icon>
-            <span class="value">11+</span>
-            <span class="label">Publications</span>
-          </div>
-          <div class="highlight-item">
-            <ion-icon name="people-outline"></ion-icon>
-            <span class="value">5+</span>
-            <span class="label">Researchers Mentored</span>
-          </div>
-          <div class="highlight-item">
-            <ion-icon name="trending-up-outline"></ion-icon>
-            <span class="value">35%</span>
-            <span class="label">Efficiency Gain</span>
-          </div>
-          <div class="highlight-item">
-            <ion-icon name="leaf-outline"></ion-icon>
-            <span class="value">40%</span>
-            <span class="label">Time Reduction</span>
-          </div>
-        </section>
-
-        <!-- Research Expertise -->
-        <section class="service">
-          <h3 class="h3 service-title">Research Expertise</h3>
-          <ul class="service-list">
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/computational_catalysis.png" alt="Computational Catalysis" width="64" height="64" loading="lazy">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Computational Catalysis</h4>
-                <p class="service-item-text">
-                  Density Functional Theory (DFT), Molecular Dynamics, and Microkinetic Modeling using Quantum ESPRESSO,
-                  VASP, Gaussian, LAMMPS, Cantera, and CHEMKIN.
-                </p>
-              </div>
-            </li>
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/hydrogen.png" alt="Hydrogen Production" width="64" height="64" loading="lazy">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Hydrogen Production</h4>
-                <p class="service-item-text">
-                  Development of sustainable hydrogen production pathways through photocatalysis and thermochemical processes,
-                  with focus on catalyst design and reactor optimization.
-                </p>
-              </div>
-            </li>
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/machine_learning.png" alt="Machine Learning in Chemistry" width="64" height="64" loading="lazy">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Machine Learning in Chemistry</h4>
-                <p class="service-item-text">
-                  Deploying ML and LLM tools for catalyst formulation screening, reducing experimental time and
-                  accelerating discovery of optimal materials for energy applications.
-                </p>
-              </div>
-            </li>
-
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/experimental_catalysis.png" alt="Experimental Catalysis" width="64" height="64" loading="lazy">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Experimental Catalysis</h4>
-                <p class="service-item-text">
-                  Expertise in XRD, XPS, Raman, BET, SEM/EDS characterization; Sol-gel and CVD synthesis;
-                  CO oxidation and photocatalysis testing.
-                </p>
-              </div>
-            </li>
-
-          </ul>
-        </section>
-
-        <!-- Academic Achievements -->
-        <section class="testimonials">
-          <h3 class="h3 testimonials-title">Academic Achievements</h3>
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-                <figure class="testimonials-avatar-box">
-                  <ion-icon name="trophy-outline" style="font-size: 48px; color: var(--orange-yellow-crayola);"></ion-icon>
-                </figure>
-                <h4 class="h4 testimonials-item-title">Outstanding International Student</h4>
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>UCAS, Beijing, China (2022)</p>
-                </div>
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-                <figure class="testimonials-avatar-box">
-                  <ion-icon name="school-outline" style="font-size: 48px; color: var(--orange-yellow-crayola);"></ion-icon>
-                </figure>
-                <h4 class="h4 testimonials-item-title">CAS-TWAS Fellowship</h4>
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>The World Academy of Sciences (2020-2024)</p>
-                </div>
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-                <figure class="testimonials-avatar-box">
-                  <ion-icon name="ribbon-outline" style="font-size: 48px; color: var(--orange-yellow-crayola);"></ion-icon>
-                </figure>
-                <h4 class="h4 testimonials-item-title">Belt and Road Fellowship</h4>
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>UCAS, Beijing, China (2017-2020)</p>
-                </div>
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-                <figure class="testimonials-avatar-box">
-                  <ion-icon name="star-outline" style="font-size: 48px; color: var(--orange-yellow-crayola);"></ion-icon>
-                </figure>
-                <h4 class="h4 testimonials-item-title">Top Crisis Manager</h4>
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>UET Lahore, Pakistan (2016)</p>
-                </div>
-              </div>
-            </li>
-
-          </ul>
-        </section>
-
-        <!-- Research Interests -->
-        <section class="clients">
-          <h3 class="h3 clients-title">Research Interests</h3>
-          <ul class="interest-list">
-            <li class="interest-item">
-              <ion-icon name="water-outline"></ion-icon>
-              <span>Hydrogen Production</span>
-            </li>
-            <li class="interest-item">
-              <ion-icon name="leaf-outline"></ion-icon>
-              <span>CO₂ Valorization</span>
-            </li>
-            <li class="interest-item">
-              <ion-icon name="flask-outline"></ion-icon>
-              <span>Heterogeneous Catalysis</span>
-            </li>
-            <li class="interest-item">
-              <ion-icon name="sunny-outline"></ion-icon>
-              <span>Photocatalysis</span>
-            </li>
-            <li class="interest-item">
-              <ion-icon name="analytics-outline"></ion-icon>
-              <span>Machine Learning in Chemistry</span>
-            </li>
-          </ul>
-        </section>
-
-        <!-- Funding & Affiliations -->
-        <section class="affiliations-section">
-          <h3 class="h3 affiliations-title">Affiliations</h3>
-          <ul class="affiliations-list">
-            <li class="affiliation-item">
-              <span>University Mohammed VI Polytechnic (UM6P)</span>
-            </li>
-            <li class="affiliation-item">
-              <span>Chinese Academy of Sciences (CAS)</span>
-            </li>
-            <li class="affiliation-item">
-              <span>CAS–TWAS Fellowship</span>
-            </li>
-            <li class="affiliation-item">
-              <span>University of Chinese Academy of Sciences (UCAS)</span>
-            </li>
-          </ul>
-        </section>
-
-        <!-- Land Acknowledgment -->
-        <section class="land-acknowledgment">
-          <h4 class="land-acknowledgment-title">Land & Context Acknowledgment</h4>
-          <p class="land-acknowledgment-text">
-            This research is conducted at University Mohammed VI Polytechnic, located in Ben Guerir, Morocco.
-            We acknowledge the rich scientific heritage of this region and commit to advancing knowledge
-            that benefits both local communities and the global pursuit of sustainable energy solutions.
-          </p>
-        </section>
-
-      </article>
-
-      <!-- RESUME -->
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-          <a href="./assets/cv.pdf" class="cv-download-btn" download>
-            <ion-icon name="download-outline"></ion-icon>
-            <span>Download CV</span>
-          </a>
-        </header>
-
-        <!-- Education -->
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">PhD, Engineering Thermophysics</h4>
-              <span>Aug 2017 — Aug 2023</span>
-              <p class="timeline-text">
-                <strong>University of Chinese Academy of Sciences, Beijing, China 🇨🇳</strong><br>
-                Built coupled experimental–computational workflows for heterogeneous and photo-catalytic systems.
-                Created bespoke photocatalytic reactors increasing quantum efficiency by 35%. Authored 8+ peer-reviewed
-                articles through international collaborations.
-              </p>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">BSc, Mechanical Engineering (Fluid Dynamics)</h4>
-              <span>Aug 2012 — Aug 2016</span>
-              <p class="timeline-text">
-                <strong>University of Engineering and Technology, Lahore, Pakistan 🇵🇰</strong><br>
-                Graduated with specialization in fluid dynamics. Completed industry-sponsored design projects
-                utilizing CAD/CAM, CFD, and experimental validation of thermal processes.
-              </p>
-            </li>
-
-          </ol>
-        </section>
-
-        <!-- Professional Experience -->
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="briefcase-outline"></ion-icon>
-            </div>
-            <h3 class="h3">Professional Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Postdoctoral Researcher, Chemical and Biochemical Sciences</h4>
-              <span>2025 — Present</span>
-              <p class="timeline-text">
-                <strong>University Mohammed VI Polytechnic (UM6P), Morocco 🇲🇦</strong><br>
-                Steering multi-institutional hydrogen production and CO₂ valorisation programmes. Building automated
-                DFT, molecular dynamics, and micro-kinetic pipelines on HPC cluster. Deploying ML and LLM tools to
-                reduce experimental screening time by ~40%.
-              </p>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Postdoctoral Researcher</h4>
-              <span>2023 — 2024</span>
-              <p class="timeline-text">
-                <strong>Institute of Engineering Thermophysics, Chinese Academy of Sciences, Beijing 🇨🇳</strong><br>
-                Mentored 5+ international researchers, improving catalytic test repeatability by 25%. Co-led CO oxidation
-                and methane activation campaigns, delivering three peer-reviewed papers and two invited talks.
-              </p>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Intern Engineer</h4>
-              <span>2016 — 2017</span>
-              <p class="timeline-text">
-                <strong>Pakistan Industrial Technical Assistance Centre (PITAC), Lahore 🇵🇰</strong><br>
-                Supported CAD/CAM workflows and produced fabrication drawings for bespoke tooling projects.
-                Documented test procedures and implemented design refinements for thermal systems.
-              </p>
-            </li>
-
-          </ol>
-        </section>
-
-        <!-- Technical Skills -->
-        <section class="skill">
-          <h3 class="h3 skills-title">Technical Skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Computational</h5>
-                <data value="95">Expert</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 95%;"></div>
-              </div>
-              <p class="skill-description">Density Functional Theory (DFT), Quantum ESPRESSO, VASP, Gaussian; Molecular Dynamics (LAMMPS)</p>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Microkinetic Modeling</h5>
-                <data value="90">Expert</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-              <p class="skill-description">Cantera, CHEMKIN, Reaction Mechanism Development</p>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Programming & HPC</h5>
-                <data value="85">Advanced</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-              <p class="skill-description">Python, Bash (Shell), Git, High-Performance Computing, LaTeX</p>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Experimental/Analytical</h5>
-                <data value="88">Advanced</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 88%;"></div>
-              </div>
-              <p class="skill-description">XRD, XPS, Raman, BET, SEM/EDS; Sol-gel, CVD; CO Oxidation, Photocatalysis</p>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Machine Learning</h5>
-                <data value="80">Advanced</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-              <p class="skill-description">ML for Catalyst Screening, LLM Tools, Data-driven Workflows</p>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">General/Technical</h5>
-                <data value="92">Expert</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 92%;"></div>
-              </div>
-              <p class="skill-description">Technical Writing, Adobe Illustrator, CAD/CAM, Research Supervision</p>
-            </li>
-
-          </ul>
-
-          <!-- Languages -->
-          <h3 class="h3 skills-title" style="margin-top: 40px;">Languages</h3>
-          <ul class="skills-list content-card">
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">English</h5>
-                <data>Fluent</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 95%;"></div>
-              </div>
-            </li>
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Urdu</h5>
-                <data>Native</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 100%;"></div>
-              </div>
-            </li>
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Mandarin</h5>
-                <data>Conversational</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 65%;"></div>
-              </div>
-            </li>
-          </ul>
-
-        </section>
-
-        <!-- Teaching Experience -->
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="school-outline"></ion-icon>
-            </div>
-            <h3 class="h3">Teaching Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Graduate Teaching Assistant</h4>
-              <span>2020 — 2021</span>
-              <p class="timeline-text">
-                <strong>University of Chinese Academy of Sciences, Beijing 🇨🇳</strong><br>
-                Taught postgraduate students and assisted faculty with course delivery and curriculum development.
-                Provided one-on-one mentoring on research methodologies; facilitated laboratory sessions in
-                thermophysics and catalysis.
-              </p>
-            </li>
-          </ol>
-        </section>
-
-        <!-- Leadership & Service -->
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="people-outline"></ion-icon>
-            </div>
-            <h3 class="h3">Leadership & Service</h3>
-          </div>
-
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Leader of International Staff and Students</h4>
-              <span>2021 — 2024</span>
-              <p class="timeline-text">
-                <strong>Institute of Engineering Thermophysics, CAS, Beijing 🇨🇳</strong><br>
-                Organized weekly meetings to coordinate research activities and foster collaboration among international
-                researchers. Served as liaison between international researchers and laboratory management.
-              </p>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Student Guide and Translator</h4>
-              <span>2017 — 2023</span>
-              <p class="timeline-text">
-                <strong>UCAS International Student Office, Beijing 🇨🇳</strong><br>
-                Guided international students through orientation programmes. Provided Mandarin–English translation
-                for academic and administrative purposes. Contributed to cross-cultural communication and integration.
-              </p>
-            </li>
-          </ol>
-        </section>
-
-      </article>
-
-      <!-- PUBLICATIONS -->
-      <article class="publications" data-page="publications">
-
-        <header>
-          <h2 class="h2 article-title">Publications</h2>
-        </header>
-
-        <section class="publications-info">
-          <p class="publication-summary">
-            <strong>11 peer-reviewed publications</strong> with focus on computational catalysis, hydrogen production,
-            and sustainable energy solutions. Publications indexed in high-impact journals including
-            <em>ACS Omega</em>, <em>Industrial & Engineering Chemistry Research</em>, and <em>Materials Research Bulletin</em>.
-          </p>
-
-          <div class="publication-stats">
-            <div class="stat-item">
-              <ion-icon name="document-text-outline"></ion-icon>
-              <div>
-                <h4>11+</h4>
-                <p>Publications</p>
-              </div>
-            </div>
-            <div class="stat-item">
-              <ion-icon name="people-outline"></ion-icon>
-              <div>
-                <h4>International</h4>
-                <p>Collaborations</p>
-              </div>
-            </div>
-            <div class="stat-item">
-              <ion-icon name="school-outline"></ion-icon>
-              <div>
-                <h4>ORCID</h4>
-                <p>0000-0003-1828-9458</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="publications-list">
-          <h3 class="h3 section-title">Selected Publications</h3>
-
-          <ul class="publication-items">
-
-            <li class="publication-item">
-              <div class="publication-year">2024</div>
-              <div class="publication-content">
-                <h4 class="publication-title">
-                  <a href="https://doi.org/10.1002/kin.21708" target="_blank" rel="noopener">
-                    Thermodynamic properties calculations of Cu-based species
-                  </a>
-                </h4>
-                <p class="publication-authors">Yousuf M, <strong>Arshad MF</strong>, Tian Z-Y.</p>
-                <p class="publication-journal"><em>International Journal of Chemical Kinetics</em>, 56: 310–322.</p>
-              </div>
-            </li>
-
-            <li class="publication-item">
-              <div class="publication-year">2023</div>
-              <div class="publication-content">
-                <h4 class="publication-title">
-                  <a href="https://doi.org/10.1016/J.MATERRESBULL.2023.112343" target="_blank" rel="noopener">
-                    Insights into catalytic oxidation mechanism of CO over Cu catalyst
-                  </a>
-                </h4>
-                <p class="publication-authors">El Kasmi A, <strong>Arshad MF</strong>, Waqas M, et al.</p>
-                <p class="publication-journal"><em>Materials Research Bulletin</em>, 112343.</p>
-              </div>
-            </li>
-
-            <li class="publication-item">
-              <div class="publication-year">2023</div>
-              <div class="publication-content">
-                <h4 class="publication-title">
-                  <a href="https://doi.org/10.30919/esee908" target="_blank" rel="noopener">
-                    Insights into the Role of Carbonates and Hydroxides in La-Co Oxides for CO Catalytic Conversion
-                  </a>
-                </h4>
-                <p class="publication-authors"><strong>Arshad MF</strong>, El Kasmi A, Fonzeu Monguen CK, et al.</p>
-                <p class="publication-journal"><em>ES Energy & Environment</em>, 20: 908.</p>
-              </div>
-            </li>
-
-            <li class="publication-item">
-              <div class="publication-year">2022</div>
-              <div class="publication-content">
-                <h4 class="publication-title">
-                  <a href="https://doi.org/10.1021/acs.iecr.2c00813" target="_blank" rel="noopener">
-                    Oxidative Dehydrogenation of Propane into Propene over Chromium Oxides
-                  </a>
-                </h4>
-                <p class="publication-authors">Fonzeu Monguen CK, El Kasmi A, <strong>Arshad MF</strong>, et al.</p>
-                <p class="publication-journal"><em>Industrial & Engineering Chemistry Research</em>, 61(13), 4546–4560.</p>
-              </div>
-            </li>
-
-            <li class="publication-item">
-              <div class="publication-year">2021</div>
-              <div class="publication-content">
-                <h4 class="publication-title">
-                  <a href="https://doi.org/10.1021/acsomega.1c02178" target="_blank" rel="noopener">
-                    Ab Initio Calculation of Surface Thermochemistry for Popular Solid Transition Metal-Based Species
-                  </a>
-                </h4>
-                <p class="publication-authors"><strong>Arshad MF</strong>, Wu LN, El Kasmi A, et al.</p>
-                <p class="publication-journal"><em>ACS Omega</em>, 6(35), 22525–22536.</p>
-              </div>
-            </li>
-
-            <li class="publication-item">
-              <div class="publication-year">2021</div>
-              <div class="publication-content">
-                <h4 class="publication-title">
-                  <a href="https://doi.org/10.1016/j.jaecs.2020.100021" target="_blank" rel="noopener">
-                    Insight into one-step synthesis of active amorphous La-Co thin films for catalytic oxidation of CO
-                  </a>
-                </h4>
-                <p class="publication-authors"><strong>Arshad MF</strong>, El Kasmi A, Waqas M, Tian ZY.</p>
-                <p class="publication-journal"><em>Applications in Energy and Combustion Science</em>, 5, 100021.</p>
-              </div>
-            </li>
-
-            <li class="publication-item">
-              <div class="publication-year">2021</div>
-              <div class="publication-content">
-                <h4 class="publication-title">
-                  <a href="https://doi.org/10.1016/j.proci.2020.06.376" target="_blank" rel="noopener">
-                    Mechanistic study of the CO oxidation reaction on the CuO (111) surface
-                  </a>
-                </h4>
-                <p class="publication-authors">Wu LN, Tian ZY, El Kasmi A, <strong>Arshad MF</strong>, Qin W.</p>
-                <p class="publication-journal"><em>Proceedings of the Combustion Institute</em>, 38(4), 5289–5297.</p>
-              </div>
-            </li>
-
-            <li class="publication-item">
-              <div class="publication-year">2021</div>
-              <div class="publication-content">
-                <h4 class="publication-title">
-                  <a href="https://doi.org/10.1016/j.fuel.2020.119760" target="_blank" rel="noopener">
-                    Catalytic combustion of CO over Cu-doped iron oxides: CO₂ effects on activity
-                  </a>
-                </h4>
-                <p class="publication-authors">Waqas M, El Kasmi A, Wu LN, <strong>Arshad MF</strong>, et al.</p>
-                <p class="publication-journal"><em>Fuel</em>, 289, 119760.</p>
-              </div>
-            </li>
-
-          </ul>
-
-          <div class="publication-links">
-            <h4>Full Publication List:</h4>
-            <ul class="profile-links">
-              <li>
-                <a href="https://orcid.org/0000-0003-1828-9458" target="_blank">
-                  <ion-icon name="school-outline"></ion-icon>
-                  ORCID Profile
-                </a>
-              </li>
-              <li>
-                <a href="https://scholar.google.com/citations?user=fwiNZasAAAAJ" target="_blank">
-                  <ion-icon name="school-outline"></ion-icon>
-                  Google Scholar
-                </a>
-              </li>
-              <li>
-                <a href="https://www.scopus.com/authid/detail.uri?authorId=57219161795" target="_blank">
-                  <ion-icon name="analytics-outline"></ion-icon>
-                  Scopus Profile
-                </a>
-              </li>
-              <li>
-                <a href="https://www.researchgate.net/profile/Muhammad-Fahad-Arshad" target="_blank">
-                  <ion-icon name="flask-outline"></ion-icon>
-                  ResearchGate
-                </a>
-              </li>
-              <li>
-                <a href="https://www.webofscience.com/wos/author/record/rid102402" target="_blank">
-                  <ion-icon name="globe-outline"></ion-icon>
-                  Web of Science
-                </a>
-              </li>
-            </ul>
-          </div>
-
-        </section>
-
-        <!-- Conference Presentations -->
-        <section class="conferences">
-          <h3 class="h3 section-title">Selected Conference Presentations</h3>
-
-          <ul class="conference-list">
-            <li class="conference-item">
-              <div class="conference-year">2021</div>
-              <div class="conference-content">
-                <h4 class="conference-title">European Combustion Meeting</h4>
-                <p class="conference-location">Australia 🇦🇺</p>
-                <p class="conference-talk">Ab Initio Calculation of Surface Thermochemistry for Popular Solid Transition Metal-Based Species</p>
-              </div>
-            </li>
-            <li class="conference-item">
-              <div class="conference-year">2020</div>
-              <div class="conference-content">
-                <h4 class="conference-title">Chinese Combustion Symposium</h4>
-                <p class="conference-location">Tianjin, China 🇨🇳</p>
-                <p class="conference-talk">Insight into one-step synthesis of active amorphous La-Co thin films for catalytic oxidation of CO</p>
-              </div>
-            </li>
-          </ul>
-        </section>
-
-      </article>
-
-      <!-- CONTACT -->
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106772.42287793957!2d-7.955832849999999!3d32.2307634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdaf7b642d1620d7%3A0x97db9930496191ba!2sBen%20Guerir%2C%20Morocco!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-info-section">
-          <h3 class="h3 form-title">Get In Touch</h3>
-
-          <div class="contact-details">
-            <div class="contact-detail-item">
-              <div class="icon-box">
-                <ion-icon name="mail-outline"></ion-icon>
-              </div>
-              <div>
-                <h4>Email</h4>
-                <a href="mailto:m.fahad1448@gmail.com">m.fahad1448@gmail.com</a>
-              </div>
-            </div>
-
-            <div class="contact-detail-item">
-              <div class="icon-box">
-                <ion-icon name="call-outline"></ion-icon>
-              </div>
-              <div>
-                <h4>Phone</h4>
-                <a href="tel:+212774773477">+212-774-773-477 (Morocco)</a><br>
-                <a href="tel:+8618801225727">+86-188-0122-5727 (China)</a>
-              </div>
-            </div>
-
-            <div class="contact-detail-item">
-              <div class="icon-box">
-                <ion-icon name="location-outline"></ion-icon>
-              </div>
-              <div>
-                <h4>Address</h4>
-                <address>
-                  University Mohammed VI Polytechnic<br>
-                  Ben Guerir, Morocco 🇲🇦
-                </address>
-              </div>
-            </div>
-
-            <div class="contact-detail-item">
-              <div class="icon-box">
-                <ion-icon name="globe-outline"></ion-icon>
-              </div>
-              <div>
-                <h4>Professional Profiles</h4>
-                <a href="https://orcid.org/0000-0003-1828-9458" target="_blank">ORCID</a> |
-                <a href="https://github.com/muhammad1438" target="_blank">GitHub</a> |
-                <a href="https://www.linkedin.com/in/mfahadarshad" target="_blank">LinkedIn</a> |
-                <a href="https://scholar.google.com/citations?user=fwiNZasAAAAJ" target="_blank">Google Scholar</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="collaboration-note">
-            <h4>Research Collaboration & Opportunities</h4>
-            <p>
-              I am open to collaborations in computational catalysis, hydrogen production, and sustainable energy research.
-              Feel free to reach out for potential research partnerships, consulting opportunities, or academic discussions.
-            </p>
-          </div>
-
-        </section>
-
-      </article>
-
     </div>
 
-  </main>
+    <div class="hero-avatar-col">
+      <div class="avatar-wrap">
+        <div class="avatar-ring r3"></div>
+        <div class="avatar-ring r2"><span class="pip"></span></div>
+        <div class="avatar-ring"><span class="pip"></span></div>
+        <div class="avatar-disc">
+          <img src="assets/profile.jpg" alt="Dr. Muhammad Fahad Arshad" />
+        </div>
+        <div class="avatar-orbit-label" style="top: -10px; right: -10px;">DFT · MD · ML</div>
+        <div class="avatar-orbit-label" style="bottom: 6px; left: -30px;">H₂ · CO₂ · zeolites</div>
+      </div>
+    </div>
+  </div>
 
-  <!-- Custom JS -->
-  <script src="./assets/js/script.js"></script>
+  <div class="scroll-cue">
+    <span>Scroll</span>
+    <div class="bar"></div>
+  </div>
+</section>
 
-  <!-- Ionicons -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<!-- ========== ABOUT ========== -->
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">01 · About</span>
+      <h2 class="section-title">A researcher at the boundary of <span class="accent">simulation</span> and the <span class="accent">flask</span>.</h2>
+    </div>
+
+    <div class="about-grid reveal">
+      <!-- Profile card -->
+      <div class="glass" style="padding: 1.8rem;">
+        <div style="display:flex; gap:1rem; align-items:center;">
+          <div style="width:64px;height:64px;border-radius:14px;overflow:hidden;border:1px solid var(--line);">
+            <img src="assets/profile.jpg" style="width:100%;height:100%;object-fit:cover;" alt="" />
+          </div>
+          <div>
+            <div class="display" style="font-size:1.15rem;">Dr. Muhammad Fahad Arshad</div>
+            <div style="color:var(--text-dim); font-size:0.85rem;">PhD · Engineering Thermophysics</div>
+          </div>
+        </div>
+
+        <div style="margin-top:1.4rem; display:grid; gap:0.7rem;">
+          <div style="display:flex;align-items:center;gap:0.8rem;font-size:0.92rem;color:var(--text-dim);">
+            <span style="color:var(--cyan);">📍</span> Lahore, Pakistan
+          </div>
+          <div style="display:flex;align-items:center;gap:0.8rem;font-size:0.92rem;color:var(--text-dim);">
+            <span style="color:var(--cyan);">📞</span> <span class="mono">+92-321-4881565</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:0.8rem;font-size:0.92rem;color:var(--text-dim);">
+            <span style="color:var(--cyan);">✉️</span> <span class="mono">m.fahad1448@gmail.com</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:0.8rem;font-size:0.92rem;color:var(--text-dim);">
+            <span style="color:var(--cyan);">🌐</span> <span class="mono">muhammad1438.github.io</span>
+          </div>
+        </div>
+
+        <div style="display:flex; gap:0.5rem; margin-top:1.4rem; flex-wrap:wrap;">
+          <a class="pill" href="https://github.com/muhammad1438" target="_blank">GitHub</a>
+          <a class="pill" href="https://linkedin.com/in/mfahadarshad" target="_blank">LinkedIn</a>
+          <a class="pill" href="https://scholar.google.com/citations?user=fwiNZasAAAAJ" target="_blank">Scholar</a>
+          <a class="pill" href="https://orcid.org/0000-0003-1828-9458" target="_blank">ORCID</a>
+          <a class="pill" href="#" target="_blank">ResearchGate</a>
+        </div>
+      </div>
+
+      <!-- Bio + identifiers -->
+      <div>
+        <p style="font-size:1.05rem; line-height:1.75; color: #c8cdde;">
+          I'm a computational catalysis researcher blending heterogeneous experimentation with high-performance modelling — <b style="color:var(--text)">DFT, molecular dynamics, and AI/ML</b> — to design low-carbon hydrogen and CO<sub>2</sub> utilisation pathways. Over eight years of research across Pakistan, China, and Morocco, I've shipped reactor innovations, mentored multinational teams, and built data-driven workflows that accelerate catalyst discovery from concept to pilot scale.
+        </p>
+        <p style="font-size:1.02rem; line-height:1.7; color: var(--text-dim); margin-top: 1rem;">
+          Built agentic AI tooling for autonomous catalyst screening at <b style="color:var(--text)">UM6P</b>, focusing on zeolite-based biomass valorisation, high-pressure autoclave experiments, and DFT/MD-driven catalyst discovery workflows.
+        </p>
+
+        <!-- Stats -->
+        <div class="stat-grid" style="margin-top:2rem;" id="statGrid">
+          <div class="stat"><div class="num" data-count="178" data-suffix="">0</div><div class="label">Citations</div></div>
+          <div class="stat"><div class="num" data-count="7">0</div><div class="label">h-index</div></div>
+          <div class="stat"><div class="num" data-count="11">0</div><div class="label">Publications</div></div>
+          <div class="stat"><div class="num" data-count="8" data-suffix="+">0</div><div class="label">Years Research</div></div>
+          <div class="stat"><div class="num" data-count="3">0</div><div class="label">Countries</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== EXPERIENCE ========== -->
+<section class="section" id="experience" style="background: linear-gradient(180deg, transparent, rgba(0,212,255,0.02), transparent);">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">02 · Experience</span>
+      <h2 class="section-title">Eight years across <span class="accent">three continents</span>.</h2>
+      <p class="section-lede">From CAD drawings in Lahore to HPC-driven catalyst discovery in Ben Guerir — a timeline of work in computational and experimental catalysis.</p>
+    </div>
+
+    <div class="timeline" style="margin-top: 3rem;">
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-meta">
+            <span class="tag">2025 → Apr 2026</span>
+            <span>📍 Ben Guerir, Morocco</span>
+            
+          </div>
+          <div class="tl-role">Postdoctoral Researcher · Chemical &amp; Biochemical Sciences</div>
+          <div class="tl-org">University Mohammed VI Polytechnic (UM6P)</div>
+          <ul class="tl-bullets">
+            <li>Steering multi-institutional hydrogen production and CO<sub>2</sub> valorisation programmes from concept to pilot scale.</li>
+            <li>Automated DFT, MD, and micro-kinetic HPC pipelines for catalyst stability and reaction-pathway studies.</li>
+            <li>ML + LLM tooling reducing experimental screening time by ~40%.</li>
+            <li>Built <em>OpenContextFramework</em> — an agentic AI for literature mining and hypothesis generation.</li>
+            <li>High-pressure autoclave experiments with biomass feedstocks; zeolite catalyst synthesis &amp; characterisation.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-meta">
+            <span class="tag">2023 → 2024</span>
+            <span>📍 Beijing, China</span>
+          </div>
+          <div class="tl-role">Postdoctoral Researcher</div>
+          <div class="tl-org">Institute of Engineering Thermophysics, Chinese Academy of Sciences</div>
+          <ul class="tl-bullets">
+            <li>Mentored a cohort of 5+ international researchers; instituted protocols that raised catalytic-test repeatability by 25%.</li>
+            <li>Co-led CO oxidation and methane activation campaigns — three peer-reviewed papers and two invited talks.</li>
+            <li>Managed instrumentation sharing across CAS institutes, doubling collaborative project inflow.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-meta">
+            <span class="tag">2016 → 2017</span>
+            <span>📍 Lahore, Pakistan</span>
+          </div>
+          <div class="tl-role">Intern Engineer</div>
+          <div class="tl-org">Pakistan Industrial Technical Assistance Centre (PITAC)</div>
+          <ul class="tl-bullets">
+            <li>Supported CAD/CAM workflows and produced fabrication drawings for bespoke tooling projects.</li>
+            <li>Documented test procedures, contributing to design refinements for thermal systems.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== EDUCATION ========== -->
+<section class="section" id="education">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">03 · Education</span>
+      <h2 class="section-title">Foundations in <span class="accent">thermophysics</span> &amp; fluid dynamics.</h2>
+    </div>
+
+    <div class="edu-grid-2 reveal" id="eduGrid">
+      <div class="edu-card">
+        <div class="edu-degree">PhD · Engineering Thermophysics</div>
+        <div class="edu-title">University of Chinese Academy of Sciences</div>
+        <div class="edu-school">New Technology Lab · Beijing, China</div>
+        <div class="edu-thesis">
+          <b>Thesis:</b> Investigation on catalysis and surface thermochemistry of La-based transition metal oxide catalysts.
+        </div>
+        <div class="edu-pills">
+          <span class="pill">DFT</span>
+          <span class="pill">Micro-kinetics</span>
+          <span class="pill">Reactor design</span>
+          <span class="pill">+35% quantum efficiency</span>
+          <span class="pill">8+ publications</span>
+        </div>
+        <div class="edu-dates">Aug 2017 → Aug 2023</div>
+      </div>
+
+      <div class="edu-card gold">
+        <div class="edu-degree">BSc · Mechanical Engineering (Fluid Dynamics)</div>
+        <div class="edu-title">University of Engineering &amp; Technology</div>
+        <div class="edu-school">Lahore, Pakistan</div>
+        <div class="edu-thesis">
+          Specialisation in fluid dynamics with industry-sponsored capstone projects covering thermodynamics, heat transfer, and energy systems.
+        </div>
+        <div class="edu-pills">
+          <span class="pill">Thermodynamics</span>
+          <span class="pill">Heat transfer</span>
+          <span class="pill">CAD/CAM</span>
+          <span class="pill">CFD</span>
+          <span class="pill">Experimental validation</span>
+        </div>
+        <div class="edu-dates">Aug 2012 → Aug 2016</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SKILLS ========== -->
+<section class="section" id="skills" style="background: linear-gradient(180deg, transparent, rgba(245,166,35,0.02), transparent);">
+  <div class="wrap">
+    <div class="reveal" style="text-align:center;">
+      <span class="eyebrow">04 · Skills</span>
+      <h2 class="section-title" style="text-align:center;">A <span class="accent">constellation</span> of capabilities.</h2>
+      <p class="section-lede" style="margin:1rem auto 0;">Hover any node to expand. Toggle categories below to focus the graph.</p>
+    </div>
+
+    <div class="skills-frame reveal" style="margin-top:2.4rem;">
+      <canvas id="skills-canvas"></canvas>
+      <div class="skill-tooltip" id="skillTooltip"></div>
+    </div>
+
+    <div class="skill-legend reveal" id="skillLegend"></div>
+  </div>
+</section>
+
+<!-- ========== PROJECTS ========== -->
+<section class="section" id="projects">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">05 · Software</span>
+      <h2 class="section-title">Tools I've shipped for <span class="accent">my own research</span>.</h2>
+      <p class="section-lede">Open-source utilities built across Python, Rust, and emerging agentic-AI stacks.</p>
+    </div>
+
+    <div class="project-grid reveal" style="margin-top:3rem;">
+      <div class="project-card">
+        <div class="project-icon">🔬</div>
+        <div class="project-tag">Engineering safety · Python</div>
+        <div class="project-name">Autoclave Pressure Calculator</div>
+        <p class="project-desc">Pressure-parameter calculator for high-pressure autoclave experiments — keeps biomass and catalytic runs within safe operating envelopes.</p>
+      </div>
+      <div class="project-card">
+        <div class="project-icon">📚</div>
+        <div class="project-tag">Scientific corpus · Python</div>
+        <div class="project-name">oa_corpus</div>
+        <p class="project-desc">Scientific publication downloader and corpus builder — turns OpenAlex queries into mineable text bodies for large-scale literature analysis.</p>
+      </div>
+      <div class="project-card">
+        <div class="project-icon">⚙️</div>
+        <div class="project-tag">Molecular modelling · Rust</div>
+        <div class="project-name">scrysrust</div>
+        <p class="project-desc">Rust-based molecular-modelling toolkit. Fast DFT pre/post-processing, leveraging Rust's zero-cost abstractions for crystallographic workloads.</p>
+      </div>
+      <div class="project-card">
+        <div class="project-icon">🤖</div>
+        <div class="project-tag">Agentic AI · LLM</div>
+        <div class="project-name">OpenContextFramework</div>
+        <p class="project-desc">Agentic AI framework for scientific workflows — automated catalyst screening, literature-informed hypothesis generation, and tool use across DFT pipelines.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PUBLICATIONS ========== -->
+<section class="section" id="publications" style="background: linear-gradient(180deg, transparent, rgba(0,212,255,0.02), transparent);">
+  <div class="wrap">
+    <div class="reveal" style="display:flex; justify-content:space-between; align-items:flex-end; gap:2rem; flex-wrap:wrap;">
+      <div>
+        <span class="eyebrow">06 · Publications</span>
+        <h2 class="section-title">11 peer-reviewed papers, <span class="accent">first-author</span> on 4.</h2>
+      </div>
+      <div class="scholar-badge">
+        <div class="metric"><div class="v">178</div><div class="l">Citations</div></div>
+        <div class="vrule"></div>
+        <div class="metric"><div class="v">7</div><div class="l">h-index</div></div>
+        <div class="vrule"></div>
+        <div class="metric"><div class="v">6</div><div class="l">i10-index</div></div>
+      </div>
+    </div>
+
+    <div class="reveal" style="margin-top: 2rem;">
+      <div style="display:flex; justify-content: space-between; align-items: center; padding: 0 1.5rem;">
+        <div class="mono" style="font-size:0.78rem; color:var(--text-dim); letter-spacing:0.15em; text-transform: uppercase;">
+          <span style="color:var(--gold);">★</span> first author · scroll →
+        </div>
+        <div class="pub-ctl">
+          <button id="pubPrev" aria-label="prev"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></button>
+          <button id="pubNext" aria-label="next"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></button>
+        </div>
+      </div>
+
+      <div class="pub-track" id="pubTrack"></div>
+
+      <div style="text-align:center; margin-top:1rem; display:flex; gap:0.8rem; justify-content:center; flex-wrap:wrap;">
+        <a class="btn btn-ghost" href="https://scholar.google.com/citations?user=fwiNZasAAAAJ" target="_blank">View on Google Scholar →</a>
+        <a class="btn btn-ghost" href="https://orcid.org/0000-0003-1828-9458" target="_blank">ORCID profile →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== AWARDS & CONFERENCES ========== -->
+<section class="section" id="awards">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">07 · Awards · Talks · Teaching</span>
+      <h2 class="section-title">Recognised work, <span class="accent">delivered</span> talks, taught students.</h2>
+    </div>
+
+    <div class="awards-2col reveal" id="awardsBlock">
+
+      <!-- Awards column -->
+      <div>
+        <h3 class="display" style="font-size:1.15rem; color: var(--gold); margin-bottom:1rem; letter-spacing:0.05em;">★ Awards &amp; Honors</h3>
+        <div class="award-grid" style="grid-template-columns: 1fr;">
+          <div class="award">
+            <span class="year-tag">2022</span>
+            <div><h4>Outstanding International Student</h4><div class="org">University of Chinese Academy of Sciences · Beijing</div></div>
+          </div>
+          <div class="award">
+            <span class="year-tag">2020–24</span>
+            <div><h4>CAS–TWAS Fellowship</h4><div class="org">The World Academy of Sciences</div></div>
+          </div>
+          <div class="award">
+            <span class="year-tag">2017–20</span>
+            <div><h4>Belt &amp; Road Fellowship</h4><div class="org">UCAS · Beijing</div></div>
+          </div>
+          <div class="award">
+            <span class="year-tag">2016</span>
+            <div><h4>Top Crisis Manager</h4><div class="org">University of Engineering &amp; Technology · Lahore</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Conferences + Teaching column -->
+      <div>
+        <h3 class="display" style="font-size:1.15rem; color: var(--cyan); margin-bottom:1rem; letter-spacing:0.05em;">▦ Conferences &amp; Talks</h3>
+        <div class="award-grid" style="grid-template-columns: 1fr;">
+          <div class="award">
+            <span class="year-tag">2021</span>
+            <div>
+              <h4>European Combustion Meeting · Oral</h4>
+              <div class="org">Ab Initio Calculation of Surface Thermochemistry for Popular Solid Transition-Metal Species</div>
+            </div>
+          </div>
+          <div class="award">
+            <span class="year-tag">2020</span>
+            <div>
+              <h4>Chinese Combustion Symposium · Oral</h4>
+              <div class="org">One-Step Synthesis of Active Amorphous La–Co Thin Films for CO Oxidation · Tianjin, China</div>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="display" style="font-size:1.15rem; color: var(--cyan); margin: 1.6rem 0 1rem; letter-spacing:0.05em;">✎ Teaching</h3>
+        <div class="award-grid" style="grid-template-columns: 1fr;">
+          <div class="award">
+            <span class="year-tag">2025–26</span>
+            <div>
+              <h4>Lecturer · Process Engineering</h4>
+              <div class="org">UM6P · Reactor design, process optimisation, chemical-process safety.</div>
+            </div>
+          </div>
+          <div class="award">
+            <span class="year-tag">2020–21</span>
+            <div>
+              <h4>Graduate Teaching Assistant</h4>
+              <div class="org">University of Chinese Academy of Sciences · postgraduate teaching, examinations, lab supervision.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CONTACT ========== -->
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="reveal" style="text-align:center;">
+      <span class="eyebrow">08 · Contact</span>
+      <h2 class="section-title">Let's <span class="accent">collaborate</span>.</h2>
+      <p class="section-lede" style="margin: 1rem auto 0;">Open to postdoc and senior research roles in computational catalysis, hydrogen, and AI for science. Happy to discuss consulting, code, or coffee.</p>
+    </div>
+
+    <div class="contact-card reveal" style="margin-top:3rem;">
+      <div class="display" style="font-size:1.6rem;">Reach out</div>
+      <div class="contact-meta">
+        <span>📍 <b>Lahore, Pakistan</b></span>
+        <span>📞 <b class="mono">+92-321-4881565</b></span>
+        <span>✉️ <b class="mono">m.fahad1448@gmail.com</b></span>
+      </div>
+
+      <div style="display:flex; gap:0.8rem; justify-content:center; flex-wrap:wrap;">
+        <a class="btn btn-primary" href="assets/cv.pdf" download>Download CV</a>
+        <a class="btn btn-gold" href="mailto:m.fahad1448@gmail.com">Email Me</a>
+        <a class="btn btn-ghost" href="https://scholar.google.com/citations?user=fwiNZasAAAAJ" target="_blank">Google Scholar</a>
+      </div>
+
+      <div style="display:flex; gap:0.5rem; margin-top: 2rem; justify-content:center; flex-wrap:wrap;">
+        <a class="pill" href="https://github.com/muhammad1438" target="_blank">github · muhammad1438</a>
+        <a class="pill" href="https://linkedin.com/in/mfahadarshad" target="_blank">linkedin · mfahadarshad</a>
+        <a class="pill" href="https://orcid.org/0000-0003-1828-9458" target="_blank">orcid · 0000-0003-1828-9458</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<button class="back-top" id="backTop" aria-label="Back to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<footer>
+  <div>© 2026 Dr. Muhammad Fahad Arshad · Built with <span class="heart">❤</span> &amp; Science</div>
+  <div class="mono" style="margin-top:0.5rem; font-size:0.74rem;">DFT · MD · ML · H₂ · CO₂ · zeolites · ✦</div>
+</footer>
+
+<!-- ============================================================== -->
+<!-- ====================== JAVASCRIPT BLOCK ====================== -->
+<!-- ============================================================== -->
+<script>
+/* ============================================================
+   1. Three.js molecular lattice (hero background)
+============================================================ */
+(function() {
+  const canvas = document.getElementById('lattice-canvas');
+  if (!canvas || typeof THREE === 'undefined') return;
+
+  const scene = new THREE.Scene();
+  scene.fog = new THREE.FogExp2(0x0a0e1a, 0.05);
+
+  const camera = new THREE.PerspectiveCamera(55, window.innerWidth / window.innerHeight, 0.1, 100);
+  camera.position.set(0, 0, 14);
+
+  const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.setClearColor(0x000000, 0);
+
+  // -- Generate atom positions (cubic-like lattice, deformed)
+  const ATOMS = [];
+  const N = 6;
+  const spacing = 2.2;
+  for (let x = -N/2; x < N/2; x++) {
+    for (let y = -N/2; y < N/2; y++) {
+      for (let z = -N/2; z < N/2; z++) {
+        // sparse sphere selection
+        const px = (x + 0.5) * spacing + (Math.random()-0.5) * 0.4;
+        const py = (y + 0.5) * spacing + (Math.random()-0.5) * 0.4;
+        const pz = (z + 0.5) * spacing + (Math.random()-0.5) * 0.4;
+        const r = Math.sqrt(px*px + py*py + pz*pz);
+        if (r > N * 0.95) continue;
+        // gold atoms occasionally
+        const type = Math.random() < 0.18 ? 1 : 0;
+        ATOMS.push({ pos: new THREE.Vector3(px, py, pz), type });
+      }
+    }
+  }
+
+  // Cap at ~200 for perf
+  while (ATOMS.length > 200) ATOMS.splice(Math.floor(Math.random()*ATOMS.length), 1);
+
+  // -- Instanced spheres for atoms
+  const atomGeo = new THREE.IcosahedronGeometry(0.12, 1);
+  const atomMatCyan = new THREE.MeshBasicMaterial({ color: 0x00d4ff, transparent: true, opacity: 0.95 });
+  const atomMatGold = new THREE.MeshBasicMaterial({ color: 0xf5a623, transparent: true, opacity: 0.95 });
+
+  const cyanCount = ATOMS.filter(a => a.type === 0).length;
+  const goldCount = ATOMS.length - cyanCount;
+  const cyanMesh = new THREE.InstancedMesh(atomGeo, atomMatCyan, cyanCount);
+  const goldMesh = new THREE.InstancedMesh(atomGeo, atomMatGold, goldCount);
+
+  const dummy = new THREE.Object3D();
+  let cI = 0, gI = 0;
+  ATOMS.forEach(a => {
+    dummy.position.copy(a.pos);
+    dummy.updateMatrix();
+    if (a.type === 0) { cyanMesh.setMatrixAt(cI++, dummy.matrix); }
+    else { goldMesh.setMatrixAt(gI++, dummy.matrix); }
+  });
+  scene.add(cyanMesh); scene.add(goldMesh);
+
+  // -- Glow halos (sprites)
+  const haloTex = (() => {
+    const c = document.createElement('canvas');
+    c.width = 128; c.height = 128;
+    const g = c.getContext('2d');
+    const grad = g.createRadialGradient(64, 64, 0, 64, 64, 64);
+    grad.addColorStop(0, 'rgba(255,255,255,1)');
+    grad.addColorStop(0.3, 'rgba(255,255,255,0.4)');
+    grad.addColorStop(1, 'rgba(255,255,255,0)');
+    g.fillStyle = grad;
+    g.fillRect(0, 0, 128, 128);
+    return new THREE.CanvasTexture(c);
+  })();
+  ATOMS.forEach(a => {
+    const mat = new THREE.SpriteMaterial({ map: haloTex, color: a.type === 0 ? 0x00d4ff : 0xf5a623, transparent: true, opacity: 0.35, blending: THREE.AdditiveBlending, depthWrite: false });
+    const sp = new THREE.Sprite(mat);
+    sp.position.copy(a.pos);
+    sp.scale.setScalar(0.7);
+    scene.add(sp);
+  });
+
+  // -- Bonds (nearest-neighbour edges)
+  const bondGeo = new THREE.BufferGeometry();
+  const positions = [];
+  const colorAttr = [];
+  for (let i = 0; i < ATOMS.length; i++) {
+    for (let j = i+1; j < ATOMS.length; j++) {
+      const d = ATOMS[i].pos.distanceTo(ATOMS[j].pos);
+      if (d < spacing * 1.15) {
+        positions.push(ATOMS[i].pos.x, ATOMS[i].pos.y, ATOMS[i].pos.z);
+        positions.push(ATOMS[j].pos.x, ATOMS[j].pos.y, ATOMS[j].pos.z);
+        const c1 = ATOMS[i].type === 0 ? [0, 0.83, 1] : [0.96, 0.65, 0.14];
+        const c2 = ATOMS[j].type === 0 ? [0, 0.83, 1] : [0.96, 0.65, 0.14];
+        colorAttr.push(...c1, ...c2);
+      }
+    }
+  }
+  bondGeo.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
+  bondGeo.setAttribute('color', new THREE.Float32BufferAttribute(colorAttr, 3));
+  const bondMat = new THREE.LineBasicMaterial({ vertexColors: true, transparent: true, opacity: 0.35 });
+  const bonds = new THREE.LineSegments(bondGeo, bondMat);
+  scene.add(bonds);
+
+  // Group for rotation
+  const group = new THREE.Group();
+  group.add(cyanMesh); group.add(goldMesh); group.add(bonds);
+  scene.add(group);
+
+  // distant particles
+  const starGeo = new THREE.BufferGeometry();
+  const starPos = [];
+  for (let i = 0; i < 350; i++) {
+    starPos.push((Math.random()-0.5) * 80, (Math.random()-0.5) * 60, (Math.random()-0.5) * 60 - 20);
+  }
+  starGeo.setAttribute('position', new THREE.Float32BufferAttribute(starPos, 3));
+  const starMat = new THREE.PointsMaterial({ color: 0xffffff, size: 0.06, transparent: true, opacity: 0.5 });
+  scene.add(new THREE.Points(starGeo, starMat));
+
+  // Mouse parallax
+  const target = { x: 0, y: 0 };
+  window.addEventListener('mousemove', (e) => {
+    target.x = (e.clientX / window.innerWidth - 0.5) * 0.6;
+    target.y = -(e.clientY / window.innerHeight - 0.5) * 0.4;
+  });
+
+  window.addEventListener('resize', () => {
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+  });
+
+  let t0 = performance.now();
+  function loop() {
+    const t = (performance.now() - t0) * 0.0001;
+    group.rotation.y = t * 1.2;
+    group.rotation.x = Math.sin(t * 0.8) * 0.25;
+    camera.position.x += (target.x * 3 - camera.position.x) * 0.04;
+    camera.position.y += (target.y * 2 - camera.position.y) * 0.04;
+    camera.lookAt(0, 0, 0);
+    renderer.render(scene, camera);
+    requestAnimationFrame(loop);
+  }
+  loop();
+})();
+
+/* ============================================================
+   2. Hero typewriter
+============================================================ */
+(function() {
+  const target = document.getElementById('nameType');
+  const cursor = document.getElementById('cursor');
+  if (!target) return;
+  const text = 'Dr. Muhammad Fahad Arshad';
+  let i = 0;
+  function tick() {
+    target.textContent = text.slice(0, i);
+    i++;
+    if (i <= text.length) setTimeout(tick, 65 + Math.random()*40);
+  }
+  setTimeout(tick, 400);
+})();
+
+/* ============================================================
+   3. Cursor particle trail (hero only)
+============================================================ */
+(function() {
+  const c = document.getElementById('cursor-canvas');
+  const ctx = c.getContext('2d');
+  let w, h;
+  function resize() { w = c.width = window.innerWidth; h = c.height = window.innerHeight; }
+  resize();
+  window.addEventListener('resize', resize);
+
+  const particles = [];
+  let inHero = true;
+  const hero = document.getElementById('hero');
+  window.addEventListener('scroll', () => {
+    const r = hero.getBoundingClientRect();
+    inHero = r.bottom > 0;
+  });
+
+  window.addEventListener('mousemove', (e) => {
+    if (!inHero) return;
+    for (let i = 0; i < 2; i++) {
+      particles.push({
+        x: e.clientX, y: e.clientY,
+        vx: (Math.random()-0.5) * 0.4,
+        vy: (Math.random()-0.5) * 0.4 + 0.1,
+        life: 1.0,
+        size: Math.random() * 2 + 1,
+        color: Math.random() < 0.7 ? '0, 212, 255' : '245, 166, 35'
+      });
+    }
+  });
+
+  function render() {
+    ctx.clearRect(0, 0, w, h);
+    for (let i = particles.length-1; i >= 0; i--) {
+      const p = particles[i];
+      p.x += p.vx; p.y += p.vy;
+      p.life -= 0.02;
+      if (p.life <= 0) { particles.splice(i, 1); continue; }
+      ctx.beginPath();
+      ctx.fillStyle = `rgba(${p.color}, ${p.life * 0.7})`;
+      ctx.shadowColor = `rgba(${p.color}, ${p.life})`;
+      ctx.shadowBlur = 8;
+      ctx.arc(p.x, p.y, p.size, 0, Math.PI*2);
+      ctx.fill();
+    }
+    ctx.shadowBlur = 0;
+    requestAnimationFrame(render);
+  }
+  render();
+})();
+
+/* ============================================================
+   4. Reveal-on-scroll
+============================================================ */
+(function() {
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+})();
+
+/* ============================================================
+   5. Counters (IntersectionObserver)
+============================================================ */
+(function() {
+  const nums = document.querySelectorAll('#statGrid [data-count]');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      io.unobserve(e.target);
+      const el = e.target;
+      const target = +el.dataset.count;
+      const suffix = el.dataset.suffix || '';
+      const dur = 1600;
+      const start = performance.now();
+      function step(now) {
+        const t = Math.min(1, (now - start) / dur);
+        const eased = 1 - Math.pow(1 - t, 3);
+        el.textContent = Math.round(target * eased) + suffix;
+        if (t < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    });
+  }, { threshold: 0.4 });
+  nums.forEach(n => io.observe(n));
+})();
+
+/* ============================================================
+   6. Smooth scroll + active nav
+============================================================ */
+(function() {
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', (e) => {
+      const id = a.getAttribute('href');
+      if (id.length < 2) return;
+      const tgt = document.querySelector(id);
+      if (!tgt) return;
+      e.preventDefault();
+      window.scrollTo({ top: tgt.offsetTop - 70, behavior: 'smooth' });
+      document.body.classList.remove('menu-open');
+    });
+  });
+
+  const sections = ['about','experience','education','skills','projects','publications','contact'];
+  const navs = document.querySelectorAll('nav.topnav a.navlink');
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY + 140;
+    let active = '';
+    sections.forEach(s => {
+      const el = document.getElementById(s);
+      if (el && el.offsetTop <= y) active = s;
+    });
+    navs.forEach(a => {
+      a.classList.toggle('is-active', a.getAttribute('href') === '#' + active);
+    });
+  });
+})();
+
+/* ============================================================
+   7. Hamburger + back-to-top
+============================================================ */
+(function() {
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.body.classList.toggle('menu-open');
+  });
+  document.querySelectorAll('#mobileMenu a').forEach(a => a.addEventListener('click', () => document.body.classList.remove('menu-open')));
+
+  const btn = document.getElementById('backTop');
+  window.addEventListener('scroll', () => {
+    btn.classList.toggle('visible', window.scrollY > 700);
+  });
+  btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+})();
+
+/* ============================================================
+   8. Publications data + carousel
+============================================================ */
+const PUBS = [
+  { title: "Thermodynamic properties calculations of Cu-based species", year: 2024, venue: "Int. J. Chemical Kinetics", first: true, authors: ["Yousuf M", "Arshad MF", "Tian Z-Y"], cited: 3, url: "https://onlinelibrary.wiley.com/doi/10.1002/kin.21708" },
+  { title: "Insights into catalytic oxidation mechanism of CO over Cu catalyst: Experimental and modeling study", year: 2023, venue: "Materials Research Bulletin", first: false, authors: ["El Kasmi A", "Arshad MF", "Waqas M", "Monguen CKF", "Azar FZ", "Wu LN", "Tian Z-Y"], cited: 5, url: "https://www.sciencedirect.com/science/article/pii/S0025540823003793" },
+  { title: "Insights into the Role of Carbonates and Hydroxides in La-Co Oxides for CO Catalytic Conversion", year: 2023, venue: "ES Energy & Environment", first: true, authors: ["Arshad MF", "El Kasmi A", "Fonzeu Monguen CK", "Daniel S", "Waqas M", "Tian Z-Y"], cited: 2, url: "https://doi.org/10.30919/esee908" },
+  { title: "Structure sensitivity of propane partial oxidation over chromium-manganese binary oxides", year: 2022, venue: "Proc. Combustion Institute", first: false, authors: ["Fonzeu Monguen CK", "El Kasmi A", "Daniel S", "Arshad MF", "Tian ZY"], cited: 4, url: "https://www.sciencedirect.com/science/article/pii/S1540748922004466" },
+  { title: "Oxidative Dehydrogenation of Propane into Propene over Chromium Oxides", year: 2022, venue: "Ind. & Eng. Chemistry Research", first: false, authors: ["Fonzeu Monguen CK", "El Kasmi A", "Arshad MF", "Kouotou PM", "Daniel S", "Tian ZY"], cited: 7, url: "https://pubs.acs.org/doi/10.1021/acs.iecr.2c00813" },
+  { title: "Oxidative Dehydrogenation of Propane to Olefins Promoted by Zr Modified ZSM-5", year: 2022, venue: "Catalysis Letters", first: false, authors: ["Daniel S", "Monguen CKF", "El Kasmi A", "Arshad MF", "Tian ZY"], cited: 6, url: "https://link.springer.com/article/10.1007/s10562-022-03977-6" },
+  { title: "Insight into one-step synthesis of active amorphous La-Co thin films for catalytic oxidation of CO", year: 2021, venue: "Applications in Energy & Combustion Science", first: true, authors: ["Arshad MF", "El Kasmi A", "Waqas M", "Tian Z-Y"], cited: 15, url: "https://www.sciencedirect.com/science/article/pii/S2666352X20300217" },
+  { title: "Ab Initio Calculation of Surface Thermochemistry for Popular Solid Transition Metal-Based Species", year: 2021, venue: "ACS Omega", first: true, authors: ["Arshad MF", "Wu LN", "El Kasmi A", "Qin W", "Tian ZY"], cited: 12, url: "https://pubs.acs.org/doi/10.1021/acsomega.1c02178" },
+  { title: "CO2 effect on catalytic abatement of VOC emissions over Cu-Co binary oxide films", year: 2021, venue: "Materials Research Bulletin", first: false, authors: ["El Kasmi A", "Waqas M", "Wu LN", "Arshad MF", "Tian ZY"], cited: 8, url: "https://www.sciencedirect.com/science/article/pii/S0025540821003924" },
+  { title: "Mechanistic study of the CO oxidation reaction on the CuO(111) surface during chemical looping combustion", year: 2021, venue: "Proc. Combustion Institute", first: false, authors: ["Wu LN", "Tian ZY", "El Kasmi A", "Arshad MF", "Qin W"], cited: 11, url: "https://www.sciencedirect.com/science/article/pii/S1540748920304345" },
+  { title: "Catalytic combustion of CO over Cu-doped iron oxides: CO2 effects on activity", year: 2021, venue: "Fuel", first: false, authors: ["Waqas M", "El Kasmi A", "Wu LN", "Arshad MF", "Qin W", "Tian ZY"], cited: 9, url: "https://www.sciencedirect.com/science/article/pii/S0016236120333330" }
+];
+
+(function() {
+  const track = document.getElementById('pubTrack');
+  PUBS.forEach(p => {
+    const authorHtml = p.authors.map(a => a === 'Arshad MF' ? `<em>${a}</em>` : a).join(' · ');
+    const card = document.createElement('div');
+    card.className = 'pub-card' + (p.first ? ' first' : '');
+    card.innerHTML = `
+      <div class="pub-year">${p.year} ${p.first ? '· first author' : ''}</div>
+      <a href="${p.url}" target="_blank" class="pub-title">${p.title}</a>
+      <div class="pub-venue">${p.venue}</div>
+      <div class="pub-authors">${authorHtml}</div>
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        <span class="pub-cited">↗ ${p.cited} citations</span>
+        <a href="${p.url}" target="_blank" style="font-size:0.75rem;color:var(--cyan);" class="mono">view →</a>
+      </div>
+    `;
+    track.appendChild(card);
+  });
+
+  const step = 380;
+  document.getElementById('pubPrev').addEventListener('click', () => track.scrollBy({ left: -step, behavior: 'smooth' }));
+  document.getElementById('pubNext').addEventListener('click', () => track.scrollBy({ left: step, behavior: 'smooth' }));
+})();
+
+/* ============================================================
+   9. Skills constellation (canvas)
+============================================================ */
+const SKILL_GROUPS = [
+  { id: 'comp', label: 'Computational', color: '#00d4ff', skills: ['DFT (Quantum ESPRESSO)', 'DFT (VASP)', 'DFT (Gaussian)', 'MD (LAMMPS)', 'Cantera', 'Chemkin', 'Python', 'NumPy', 'scikit-learn', 'ASE', 'pymatgen', 'Rust', 'HPC', 'Git', 'Bash', 'LaTeX'] },
+  { id: 'exp', label: 'Experimental', color: '#f5a623', skills: ['XRD', 'XPS', 'Raman', 'BET', 'SEM/EDS', 'Sol-gel', 'CVD', 'Zeolite synthesis', 'Autoclave', 'Biomass conv.', 'Photocatalysis'] },
+  { id: 'ai', label: 'AI / ML', color: '#a78bfa', skills: ['ML for catalysis', 'LLM tooling', 'Data crawlers', 'OpenContextFramework'] },
+  { id: 'focus', label: 'Research focus', color: '#22d3ee', skills: ['H₂ production', 'CO₂ valorization', 'Heterogeneous catalysis', 'Photocatalysis', 'Zeolite catalysts', 'Biomass', 'ML-accel. discovery'] },
+  { id: 'lang', label: 'Languages', color: '#f472b6', skills: ['English (fluent)', 'Urdu (native)', 'Mandarin (conv.)'] }
+];
+
+(function() {
+  const canvas = document.getElementById('skills-canvas');
+  const tooltip = document.getElementById('skillTooltip');
+  const wrap = canvas.parentElement;
+  const dpr = Math.min(window.devicePixelRatio, 2);
+  let W, H;
+
+  function resize() {
+    const r = wrap.getBoundingClientRect();
+    W = r.width; H = 540;
+    canvas.width = W * dpr;
+    canvas.height = H * dpr;
+    canvas.style.width = W + 'px';
+    canvas.style.height = H + 'px';
+    placeNodes();
+  }
+
+  // build nodes
+  const nodes = [];
+  SKILL_GROUPS.forEach((g, gi) => {
+    g.skills.forEach((s, si) => {
+      nodes.push({ group: g.id, color: g.color, label: s, x: 0, y: 0, r: 5 + Math.random() * 3, vx: 0, vy: 0, phase: Math.random() * Math.PI * 2 });
+    });
+  });
+
+  function placeNodes() {
+    // arrange clusters around centers based on group index
+    const cx = W / 2, cy = H / 2;
+    const groupCount = SKILL_GROUPS.length;
+    SKILL_GROUPS.forEach((g, gi) => {
+      const ang = (gi / groupCount) * Math.PI * 2 - Math.PI / 2;
+      const gx = cx + Math.cos(ang) * Math.min(W, H) * 0.32;
+      const gy = cy + Math.sin(ang) * H * 0.32;
+      const groupNodes = nodes.filter(n => n.group === g.id);
+      groupNodes.forEach((n, i) => {
+        const a = (i / groupNodes.length) * Math.PI * 2;
+        const rad = 30 + (i % 3) * 24 + Math.random() * 10;
+        n.x = gx + Math.cos(a) * rad;
+        n.y = gy + Math.sin(a) * rad;
+        n.bx = n.x; n.by = n.y;
+      });
+    });
+  }
+
+  // build edges (within-group + sparse inter-group hub)
+  const edges = [];
+  SKILL_GROUPS.forEach(g => {
+    const gn = nodes.filter(n => n.group === g.id);
+    for (let i = 0; i < gn.length; i++) {
+      for (let j = i+1; j < gn.length; j++) {
+        if (Math.random() < 0.25) edges.push([gn[i], gn[j]]);
+      }
+    }
+  });
+  // hub: connect first node of each group to first of next
+  for (let i = 0; i < SKILL_GROUPS.length; i++) {
+    const a = nodes.find(n => n.group === SKILL_GROUPS[i].id);
+    const b = nodes.find(n => n.group === SKILL_GROUPS[(i+1) % SKILL_GROUPS.length].id);
+    if (a && b) edges.push([a, b]);
+  }
+
+  resize();
+  window.addEventListener('resize', resize);
+
+  const ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
+  // re-apply scale after each resize
+  function resetScale() { ctx.setTransform(dpr, 0, 0, dpr, 0, 0); }
+
+  // hover detection
+  let mouse = { x: -1000, y: -1000 };
+  let hovered = null;
+  let activeGroups = new Set(SKILL_GROUPS.map(g => g.id));
+
+  canvas.addEventListener('mousemove', (e) => {
+    const r = canvas.getBoundingClientRect();
+    mouse.x = e.clientX - r.left;
+    mouse.y = e.clientY - r.top;
+  });
+  canvas.addEventListener('mouseleave', () => { mouse.x = -1000; mouse.y = -1000; });
+
+  function render(t) {
+    resetScale();
+    ctx.clearRect(0, 0, W, H);
+
+    // edges
+    edges.forEach(([a, b]) => {
+      if (!activeGroups.has(a.group) || !activeGroups.has(b.group)) return;
+      ctx.strokeStyle = 'rgba(255,255,255,0.06)';
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(a.x, a.y);
+      ctx.lineTo(b.x, b.y);
+      ctx.stroke();
+    });
+
+    // nodes (with gentle float)
+    hovered = null;
+    let bestD = Infinity;
+    nodes.forEach(n => {
+      if (!activeGroups.has(n.group)) return;
+      const fx = Math.cos((t/2000) + n.phase) * 4;
+      const fy = Math.sin((t/2200) + n.phase * 0.8) * 4;
+      n.x = n.bx + fx; n.y = n.by + fy;
+      const dx = n.x - mouse.x, dy = n.y - mouse.y;
+      const d = Math.sqrt(dx*dx + dy*dy);
+      if (d < n.r + 12 && d < bestD) { hovered = n; bestD = d; }
+    });
+
+    nodes.forEach(n => {
+      if (!activeGroups.has(n.group)) return;
+      const isHover = n === hovered;
+      const r = isHover ? n.r * 1.8 : n.r;
+
+      // glow
+      const grad = ctx.createRadialGradient(n.x, n.y, 0, n.x, n.y, r * 3);
+      grad.addColorStop(0, n.color + 'cc');
+      grad.addColorStop(1, n.color + '00');
+      ctx.fillStyle = grad;
+      ctx.beginPath();
+      ctx.arc(n.x, n.y, r * 3, 0, Math.PI * 2);
+      ctx.fill();
+
+      // core
+      ctx.fillStyle = n.color;
+      ctx.beginPath();
+      ctx.arc(n.x, n.y, r, 0, Math.PI * 2);
+      ctx.fill();
+
+      if (isHover) {
+        ctx.strokeStyle = '#fff';
+        ctx.lineWidth = 1.5;
+        ctx.beginPath();
+        ctx.arc(n.x, n.y, r + 4, 0, Math.PI * 2);
+        ctx.stroke();
+      }
+    });
+
+    if (hovered) {
+      tooltip.textContent = hovered.label;
+      const rect = canvas.getBoundingClientRect();
+      tooltip.style.left = (hovered.x) + 'px';
+      tooltip.style.top  = (hovered.y) + 'px';
+      tooltip.classList.add('show');
+      canvas.style.cursor = 'pointer';
+    } else {
+      tooltip.classList.remove('show');
+      canvas.style.cursor = 'default';
+    }
+
+    requestAnimationFrame(render);
+  }
+  requestAnimationFrame(render);
+
+  // legend
+  const legend = document.getElementById('skillLegend');
+  SKILL_GROUPS.forEach(g => {
+    const k = document.createElement('div');
+    k.className = 'key is-active';
+    k.innerHTML = `<span class="swatch" style="background:${g.color};box-shadow:0 0 8px ${g.color};"></span>${g.label} <span style="opacity:0.6;margin-left:0.4rem;">${g.skills.length}</span>`;
+    k.addEventListener('click', () => {
+      if (activeGroups.has(g.id)) {
+        if (activeGroups.size === 1) return;
+        activeGroups.delete(g.id);
+        k.classList.remove('is-active');
+      } else {
+        activeGroups.add(g.id);
+        k.classList.add('is-active');
+      }
+    });
+    legend.appendChild(k);
+  });
+})();
+
+/* ============================================================
+   10. GSAP ScrollTrigger emphasis (subtle parallax on hero)
+============================================================ */
+if (window.gsap && window.ScrollTrigger) {
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.to('.avatar-wrap', {
+    y: -80, scrollTrigger: { trigger: '#hero', start: 'top top', end: 'bottom top', scrub: true }
+  });
+  gsap.fromTo('.hero-name', { letterSpacing: '-0.06em', opacity: 0 }, { letterSpacing: '-0.025em', opacity: 1, duration: 1.2, ease: 'power3.out' });
+  gsap.from('.hero-quote', { opacity: 0, y: 12, delay: 1.4, duration: 0.9 });
+  gsap.from('.hero-cta-row > *', { opacity: 0, y: 12, delay: 1.7, duration: 0.7, stagger: 0.1 });
+}
+</script>
 
 </body>
-
 </html>

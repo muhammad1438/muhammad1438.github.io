@@ -55,3 +55,4 @@ __pycache__/
 # AI guide and documentation (not for public)
 aiguide.md
 *.guide.md
+.gstack/
