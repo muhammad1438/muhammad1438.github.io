@@ -10,7 +10,7 @@
 <br>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com/render?font=Fira+Code&pause=1000&color=00BCD4&center=true&vCenter=true&width=640&lines=Experimental+%26+Computational+Researcher;DFT+%7C+MD+%7C+AI%2FML+%7C+Heterogeneous+Catalysis;Hydrogen+Production+%26+CO%E2%82%82+Valorisation;8%2B+Years+%E2%80%94+3+Continents+%E2%80%94+11+Publications" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=00BCD4&center=true&vCenter=true&width=640&lines=Experimental+%26+Computational+Researcher;DFT+%7C+MD+%7C+AI%2FML+%7C+Heterogeneous+Catalysis;Hydrogen+Production+%26+CO%E2%82%82+Valorisation;8%2B+Years+%E2%80%94+3+Continents+%E2%80%94+11+Publications" alt="Typing SVG" />
 </div>
 
 <h1 align="center">Dr. Muhammad Fahad Arshad</h1>
