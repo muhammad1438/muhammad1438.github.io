@@ -16,8 +16,8 @@
 <h1 align="center">Dr. Muhammad Fahad Arshad</h1>
 
 <p align="center">
-  <strong>Post-Doctorate Researcher · Chemical &amp; Biochemical Sciences</strong><br>
-  <a href="https://www.um6p.ma/">University Mohammed VI Polytechnic (UM6P)</a> · Ben Guerir, Morocco 🇲🇦
+  <strong>Experimental &amp; Computational Catalysis Researcher</strong><br>
+  Ex-Postdoctoral Researcher at UM6P, Morocco 🇲🇦 &nbsp;·&nbsp; Open to new opportunities 🌍
 </p>
 
 <p align="center">
@@ -46,7 +46,7 @@ Experimental and computational catalysis researcher — bridging hands-on hetero
 
 Over **eight years across Pakistan 🇵🇰, China 🇨🇳, and Morocco 🇲🇦**, I've shipped reactor innovations, mentored multinational research teams, and built data-driven workflows that accelerate catalyst discovery from concept to pilot scale.
 
-> 💬 Ask me anything via [GitHub Issues](https://github.com/muhammad1438/muhammad1438/issues) · 📫 [m.fahad1448@gmail.com](mailto:m.fahad1448@gmail.com)
+> 💬 Open to collaborations and new positions · 📫 [m.fahad1448@gmail.com](mailto:m.fahad1448@gmail.com)
 
 ---
 
@@ -65,33 +65,56 @@ Over **eight years across Pakistan 🇵🇰, China 🇨🇳, and Morocco 🇲�
 
 ## 🌐 Live Interactive Portfolio
 
-> **[→ muhammad1438.github.io](https://muhammad1438.github.io/)** — a production-grade, single-file portfolio built with cutting-edge browser tech
+> **[→ muhammad1438.github.io](https://muhammad1438.github.io/)** — a production-grade, single-file portfolio with cutting-edge browser tech
 
 | Feature | Details |
 |:---|:---|
-| 🔷 **Three.js Molecular Lattice Hero** | Cosmic-navy background with ~200 instanced atoms (cyan + gold), animated bond lines, star field, mouse parallax, and cursor particle trail |
+| 🔷 **Three.js Molecular Lattice Hero** | Cosmic-navy background with ~200 instanced atoms (cyan + gold), animated bond lines, star field, mouse parallax, cursor particle trail |
 | 🕸️ **Interactive Skills Constellation** | Canvas-based skill network — 5 colour-coded clusters (Computational · Experimental · AI/ML · Research · Languages), hover tooltips, click-to-toggle |
-| 📚 **Publications Carousel** | Horizontal-scroll card reel of all 11 papers; first-author entries starred ⭐; name auto-bolded; live Google Scholar metric badge |
-| ✨ **GSAP Scroll Animations** | ScrollTrigger-powered staggered section reveals and avatar parallax scrub on scroll |
-| 📊 **Animated Stats Counters** | Live count-up to 178 citations · h-index 7 · 11 publications triggered on scroll-into-view |
-| 📄 **Interactive HTML CV** | 2.6 MB fully self-contained CV bundle — view beautifully rendered in the browser **or** download as PDF |
-| 🏗️ **Single-File Architecture** | All CSS + JS inline, zero build step — Three.js · GSAP · Tailwind via CDN |
-| 📱 **Fully Responsive** | Hamburger nav, fluid typography, mobile-first breakpoints throughout |
+| 📚 **Publications Carousel** | Horizontal-scroll reel of all 11 papers; first-author entries starred ⭐; name auto-bolded; live Google Scholar badge |
+| ✨ **GSAP Scroll Animations** | ScrollTrigger-powered staggered section reveals and avatar parallax scrub |
+| 📊 **Animated Stats Counters** | Live count-up to 178 citations · h-index 7 · 11 publications on scroll-in |
+| 📄 **Interactive HTML CV** | Fully self-contained CV bundle — view in browser or download as PDF |
+| 🏗️ **Single-File Architecture** | All CSS + JS inline, zero build — Three.js · GSAP · Tailwind via CDN |
+| 📱 **Fully Responsive** | Hamburger nav, fluid typography, mobile-first breakpoints |
 
 ---
 
 ## 💼 Experience
 
-**🔬 Post-Doctorate Researcher** — [UM6P](https://www.um6p.ma/), Morocco *(2025–present)*
-> Hydrogen production, CO₂ valorisation, molecular dynamics, DFT, LLM/ML for catalysis
+**🔬 Postdoctoral Researcher** — [UM6P](https://www.um6p.ma/), Morocco *(Jan 2025 – May 2026)*
+> Hydrogen production, CO₂ valorisation, molecular dynamics, DFT, LLM/ML for catalysis; agentic AI tooling for autonomous catalyst screening
 
-**🧪 Post-Doctorate Researcher** — [Institute of Engineering Thermophysics, CAS](http://www.iet.cas.cn/), Beijing 🇨🇳 *(2023–2024)*
+**🧪 Postdoctoral Researcher** — [Institute of Engineering Thermophysics, CAS](http://www.iet.cas.cn/), Beijing 🇨🇳 *(2023–2024)*
 > Led and mentored international research teams; experimental & computational catalysis
 
 **🎓 PhD · Engineering Thermophysics** — [University of Chinese Academy of Sciences](https://www.ucas.ac.cn/) *(2017–2023)*
 > Heterogeneous catalysis · Photocatalysis · Hydrogen production · DFT
 
 **🎓 BSc · Mechanical Engineering (Fluid Dynamics)** — [UET Lahore](https://www.uet.edu.pk/) 🇵🇰 *(2012–2016)*
+
+---
+
+## ✍️ Academic Writing Skills for AI Coding Assistants
+
+> **[academic-writer-skills](https://github.com/muhammad1438/academic-writer-skills)** — a curated collection of 27 specialist writing skills for researchers
+
+Built from years of first-hand publishing experience, this open-source toolkit brings structured academic writing workflows directly into your AI coding assistant:
+
+| Skill | Purpose |
+|:---|:---|
+| 📄 **Paper Structure & Argumentation** | IMRAD scaffolding, logical flow, section-level coherence |
+| 📚 **Literature Review** | Gap analysis, citation synthesis, systematic review support |
+| 🧪 **Statistical & Qualitative Reporting** | Methods sections, results narration, uncertainty language |
+| 🖊️ **Abstract Writer & Plain Language** | High-impact abstracts, lay summaries for broad audiences |
+| 🔍 **Peer Review Response** | Point-by-point response letters, rebuttal strategy |
+| 🏆 **Grant Proposals & Preregistration** | Funding narratives, hypothesis registration documents |
+| 📑 **Thesis & Dissertation Guide** | Chapter structure, argument threading, examiner expectations |
+| 🌐 **Journal Selection & Citation Format** | Scope matching, impact ranking, reference style enforcement |
+
+Works with **Claude Code**, **Gemini CLI**, and **Cursor IDE**. Install once, use across every manuscript.
+
+[![academic-writer-skills](https://github-readme-stats.vercel.app/api/pin/?username=muhammad1438&repo=academic-writer-skills&theme=react&border_color=61dafb&border_radius=10)](https://github.com/muhammad1438/academic-writer-skills)
 
 ---
 
@@ -171,13 +194,13 @@ Over **eight years across Pakistan 🇵🇰, China 🇨🇳, and Morocco 🇲�
 
 <div align="center">
   <img width="390" src="https://streak-stats.demolab.com?user=muhammad1438&theme=react&border=61dafb&hide_border=true" alt="GitHub Streak" />
-  <img width="390" src="https://github-readme-stats.vercel.app/api?username=muhammad1438&show_icons=true&theme=react&border_color=61dafb&hide_border=true" alt="GitHub Stats" />
+  <img width="390" src="https://github-readme-stats.vercel.app/api?username=muhammad1438&show_icons=true&theme=react&border_color=61dafb&hide_border=true&cache_seconds=86400" alt="GitHub Stats" />
 </div>
 
 <br>
 
 <div align="center">
-  <img height="200" src="https://github-readme-stats.vercel.app/api/top-langs/?username=muhammad1438&hide=c%23,powershell,Mathematica,Ruby,Objective-C,Objective-C%2b%2b,Cuda&title_color=61dafb&text_color=ffffff&icon_color=61dafb&bg_color=20232a&langs_count=8&layout=compact&border_color=61dafb&hide_border=true&size_weight=0.5&count_weight=0.5&cache_seconds=86400" alt="Top Languages" />
+  <img height="200" src="https://github-readme-stats.vercel.app/api/top-langs/?username=muhammad1438&hide=c%23,powershell,Mathematica,Ruby,Objective-C,Objective-C%2b%2b,Cuda&title_color=61dafb&text_color=ffffff&icon_color=61dafb&bg_color=20232a&langs_count=8&layout=compact&border_color=61dafb&hide_border=true&cache_seconds=86400" alt="Top Languages" />
 </div>
 
 <br>
@@ -194,8 +217,16 @@ Over **eight years across Pakistan 🇵🇰, China 🇨🇳, and Morocco 🇲�
   <a href="https://github.com/muhammad1438/muhammad1438.github.io" title="Portfolio Website">
     <img height="115" src="https://github-readme-stats.vercel.app/api/pin/?username=muhammad1438&repo=muhammad1438.github.io&theme=react&border_color=61dafb&border_radius=10" />
   </a>
-  <a href="https://github.com/muhammad1438/muhammad1438" title="GitHub Profile Repository">
-    <img height="115" src="https://github-readme-stats.vercel.app/api/pin/?username=muhammad1438&repo=muhammad1438&theme=react&border_color=61dafb&border_radius=10" />
+  <a href="https://github.com/muhammad1438/academic-writer-skills" title="Academic Writer Skills">
+    <img height="115" src="https://github-readme-stats.vercel.app/api/pin/?username=muhammad1438&repo=academic-writer-skills&theme=react&border_color=61dafb&border_radius=10" />
+  </a>
+</div>
+
+<br>
+
+<div align="center">
+  <a href="https://github.com/muhammad1438/snapjet" title="Snapjet — Rust screenshot + OCR tool">
+    <img height="115" src="https://github-readme-stats.vercel.app/api/pin/?username=muhammad1438&repo=snapjet&theme=react&border_color=61dafb&border_radius=10" />
   </a>
 </div>
 
@@ -249,11 +280,11 @@ Over **eight years across Pakistan 🇵🇰, China 🇨🇳, and Morocco 🇲�
 </p>
 
 <p align="center">
-  📍 <strong>Ben Guerir, Morocco</strong> &nbsp;·&nbsp; 🌍 <strong>Open to collaborations</strong> &nbsp;·&nbsp; 💬 <strong>Ask me about catalysis, hydrogen research, or DFT</strong>
+  🌍 <strong>Open to new positions &amp; collaborations</strong> &nbsp;·&nbsp; 💬 <strong>Ask me about catalysis, hydrogen research, or DFT</strong>
 </p>
 
 ---
 
 <p align="center">
-  <i>⭐ <a href="https://github.com/muhammad1438">muhammad1438</a> — Experimental &amp; Computational Catalysis Researcher · UM6P, Morocco</i>
+  <i>⭐ <a href="https://github.com/muhammad1438">muhammad1438</a> — Experimental &amp; Computational Catalysis Researcher</i>
 </p>
