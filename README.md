@@ -170,14 +170,14 @@ Over **eight years across Pakistan 🇵🇰, China 🇨🇳, and Morocco 🇲�
 ## ⚡ GitHub Stats
 
 <div align="center">
-  <img width="390" src="https://github-readme-streak-stats.demolab.com/?user=muhammad1438&theme=react&border=61dafb&hide_border=true" alt="GitHub Streak" />
+  <img width="390" src="https://streak-stats.demolab.com?user=muhammad1438&theme=react&border=61dafb&hide_border=true" alt="GitHub Streak" />
   <img width="390" src="https://github-readme-stats.vercel.app/api?username=muhammad1438&show_icons=true&theme=react&border_color=61dafb&hide_border=true" alt="GitHub Stats" />
 </div>
 
 <br>
 
 <div align="center">
-  <img height="200" src="https://github-readme-stats.vercel.app/api/top-langs/?username=muhammad1438&hide=c%23,powershell,Mathematica,Ruby,Objective-C,Objective-C%2b%2b,Cuda&title_color=61dafb&text_color=ffffff&icon_color=61dafb&bg_color=20232a&langs_count=8&layout=compact&border_color=61dafb&hide_border=true&size_weight=0.5&count_weight=0.5" alt="Top Languages" />
+  <img height="200" src="https://github-readme-stats.vercel.app/api/top-langs/?username=muhammad1438&hide=c%23,powershell,Mathematica,Ruby,Objective-C,Objective-C%2b%2b,Cuda&title_color=61dafb&text_color=ffffff&icon_color=61dafb&bg_color=20232a&langs_count=8&layout=compact&border_color=61dafb&hide_border=true&size_weight=0.5&count_weight=0.5&cache_seconds=86400" alt="Top Languages" />
 </div>
 
 <br>
