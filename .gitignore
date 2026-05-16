@@ -56,3 +56,6 @@ __pycache__/
 aiguide.md
 *.guide.md
 .gstack/
+
+# Playwright MCP browser session artifacts
+.playwright-mcp/
