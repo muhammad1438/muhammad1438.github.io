@@ -26,17 +26,6 @@ jobs:
       - name: Update publications
         run: python scripts/update_publications.py
 
-      - name: Inline publications into index.html
-        run: |
-          START="<!-- PUBS:START -->"
-          END="<!-- PUBS:END -->"
-          if [ -f data/publications.html ]; then
-            # Create a temporary file with the publication content
-            PUBS_CONTENT=$(cat data/publications.html)
-            # Use perl to replace the content between markers
-            perl -0777 -pe "s/\Q${START}\E.*?\Q${END}\E/${START}\n${PUBS_CONTENT}\n${END}/s" -i index.html
-          fi
-
       - name: Check for changes
         id: verify-changed-files
         run: |
@@ -51,6 +40,6 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add data/publications.json data/publications.html index.html
+          git add data/publications.json data/publications.html
           git commit -m "chore: auto-refresh publications data [skip ci]"
           git push

@@ -62,3 +62,9 @@ aiguide.md
 
 # Original CV file with spaces in name (use cv-view.html instead)
 Muhammad Fahad Arshad - CV.html
+
+# Next.js custom rules
+/.next/
+/out/
+/*.tsbuildinfo
+/node_modules
