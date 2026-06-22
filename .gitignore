@@ -37,9 +37,8 @@ dist/
 build/
 _site/
 
-# Dependencies (if any future Node.js usage)
+# Dependencies
 node_modules/
-package-lock.json
 yarn.lock
 
 # Python cache (for publication scripts)
