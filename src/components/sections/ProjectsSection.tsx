@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Flame, BookOpen, Code, Compass } from "lucide-react";
 import SectionBadge from "@/components/SectionBadge";
+import EnhancedProjectCard from "@/components/EnhancedProjectCard";
 
 const reveal = {
   hidden: { opacity: 0, y: 24 },
@@ -40,26 +41,11 @@ export default function ProjectsSection() {
         </motion.div>
 
         <motion.div variants={containerReveal} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {projects.map((proj, i) => {
-            const Icon = proj.icon;
-            return (
-              <motion.div key={i} variants={itemReveal} className="p-6 rounded-2xl bg-glass-bg border border-glass-border backdrop-blur-md shadow-xl flex gap-5 items-start group hover:border-accent-primary/25 transition-all">
-                <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-accent-primary/5 border border-accent-primary/20 text-accent-primary group-hover:scale-105 transition-all shrink-0">
-                  <Icon className="w-5 h-5" />
-                </div>
-                <div className="space-y-2">
-                  <div className="flex items-center justify-between">
-                    <h3 className="font-heading font-semibold text-ink group-hover:text-accent-primary transition-colors">{proj.name}</h3>
-                    <span className="font-mono text-label text-accent-secondary border border-accent-secondary/25 bg-accent-secondary/5 px-2 py-0.5 rounded-full uppercase font-medium">{proj.lang}</span>
-                  </div>
-                  <p className="text-small text-faint leading-relaxed">{proj.desc}</p>
-                  <div className="pt-2">
-                    <a href={proj.repo} target="_blank" rel="noopener noreferrer" className="text-label font-mono text-accent-primary hover:underline">github repo →</a>
-                  </div>
-                </div>
-              </motion.div>
-            );
-          })}
+          {projects.map((proj, i) => (
+            <motion.div key={i} variants={itemReveal}>
+              <EnhancedProjectCard {...proj} />
+            </motion.div>
+          ))}
         </motion.div>
       </div>
     </section>

@@ -59,6 +59,12 @@ const SKILL_GROUPS: SkillGroup[] = [
     skills: ["ML for catalysis", "LLM tooling", "Data crawlers", "OpenContextFramework"],
   },
   {
+    id: "web",
+    label: "Web / Frontend",
+    color: "#38bdf8",
+    skills: ["Website building", "Frontend development", "React", "Next.js", "Tailwind CSS", "Three.js", "Anime.js"],
+  },
+  {
     id: "focus",
     label: "Research focus",
     color: "#22d3ee",
@@ -127,7 +133,7 @@ export default function SkillsConstellation() {
 
     const dpr = Math.min(window.devicePixelRatio, 2);
     let W = canvas.clientWidth;
-    let H = 500;
+    const H = 500;
 
     const nodes: Node[] = [];
     const edges: [Node, Node][] = [];
@@ -238,16 +244,6 @@ export default function SkillsConstellation() {
         ([a, b]) => activeGroups.has(a.group) && activeGroups.has(b.group)
       );
 
-      // Draw connections
-      ctx.strokeStyle = isDark ? "rgba(255, 255, 255, 0.05)" : "rgba(26, 28, 34, 0.06)";
-      ctx.lineWidth = 1;
-      activeEdges.forEach(([a, b]) => {
-        ctx.beginPath();
-        ctx.moveTo(a.x, a.y);
-        ctx.lineTo(b.x, b.y);
-        ctx.stroke();
-      });
-
       // Float nodes & find hovered
       activeNodes.forEach((n) => {
         const fx = Math.cos(time / 2000 + n.phase) * 3;
@@ -265,14 +261,34 @@ export default function SkillsConstellation() {
         }
       });
 
+      // Draw connections after hover detection so related skill groups can light up.
+      activeEdges.forEach(([a, b]) => {
+        const isWebEdge = a.group === "web" || b.group === "web";
+        const isScientificEdge =
+          ["comp", "exp", "focus"].includes(a.group) && ["comp", "exp", "focus"].includes(b.group);
+        const isRelated = hoveredNode && (a.group === hoveredNode.group || b.group === hoveredNode.group);
+        const hoverColor = hoveredNode?.color ?? "#00d4ff";
+        ctx.strokeStyle = isRelated
+          ? `${hoverColor}90`
+          : isWebEdge || isScientificEdge
+            ? isDark ? "rgba(0, 212, 255, 0.14)" : "rgba(3, 105, 161, 0.16)"
+            : isDark ? "rgba(255, 255, 255, 0.05)" : "rgba(26, 28, 34, 0.06)";
+        ctx.lineWidth = isRelated ? 1.8 : isWebEdge || isScientificEdge ? 1.2 : 1;
+        ctx.beginPath();
+        ctx.moveTo(a.x, a.y);
+        ctx.lineTo(b.x, b.y);
+        ctx.stroke();
+      });
+
       // Draw nodes
       activeNodes.forEach((n) => {
         const isHover = n === hoveredNode;
-        const radius = isHover ? n.r * 1.8 : n.r;
+        const isRelated = hoveredNode && n.group === hoveredNode.group;
+        const radius = isHover ? n.r * 1.9 : isRelated ? n.r * 1.35 : n.r;
 
         // Draw soft glow
         const grad = ctx.createRadialGradient(n.x, n.y, 0, n.x, n.y, radius * 3.5);
-        grad.addColorStop(0, `${n.color}c0`);
+        grad.addColorStop(0, `${n.color}${isRelated ? "ee" : "c0"}`);
         grad.addColorStop(1, `${n.color}00`);
         ctx.fillStyle = grad;
         ctx.beginPath();

@@ -4,8 +4,9 @@ import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 import { BookOpen, Download, Eye } from "lucide-react";
 import StatsCounter from "@/components/StatsCounter";
+import ParticleField from "@/components/ParticleField";
 
-const CrystalScene = dynamic(() => import("@/components/three/CrystalScene"), {
+const ScientificHeroScene = dynamic(() => import("@/components/three/ScientificHeroScene"), {
   ssr: false,
   loading: () => null,
 });
@@ -18,8 +19,8 @@ const reveal = {
 export default function HeroSection() {
   return (
     <header id="hero" className="relative min-h-screen flex items-center justify-center pt-24 pb-12 overflow-hidden">
-      {/* 3D crystal background */}
-      <CrystalScene />
+      <ScientificHeroScene />
+      <ParticleField density={34} className="z-0 opacity-35" />
       <div className="absolute inset-0 z-0 bg-gradient-to-br from-accent-primary/5 via-transparent to-accent-secondary/5" />
 
       {/* Grid overlay */}

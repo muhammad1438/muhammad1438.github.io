@@ -39,7 +39,7 @@ export default function ContactForm() {
             Connection Node
           </h3>
           <p className="text-sm leading-relaxed text-faint">
-            Interested in postdoctoral research collaborations, computational modeling projects, or academic consults? Send a message and let's build the future of green science together.
+            Interested in postdoctoral research collaborations, computational modeling projects, or academic consults? Send a message and let&apos;s build the future of green science together.
           </p>
 
           <div className="space-y-4 pt-2">

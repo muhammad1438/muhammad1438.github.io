@@ -15,9 +15,19 @@ interface Publication {
   cited_by_openalex?: number | null;
 }
 
+const TOPICS = [
+  { id: "all", label: "All", terms: [] },
+  { id: "methane", label: "Methane", terms: ["methane", "ch4"] },
+  { id: "hydrogen", label: "Hydrogen", terms: ["hydrogen", "h2"] },
+  { id: "co2", label: "CO2", terms: ["co2", "carbon dioxide"] },
+  { id: "catalysis", label: "Catalysis", terms: ["catalyst", "catalytic", "catalysis"] },
+  { id: "dft", label: "DFT", terms: ["dft", "ab initio", "thermodynamic"] },
+] as const;
+
 export default function PublicationsList() {
   const [searchQuery, setSearchQuery] = useState("");
   const [authorFilter, setAuthorFilter] = useState<"all" | "first" | "co">("all");
+  const [topicFilter, setTopicFilter] = useState<(typeof TOPICS)[number]["id"]>("all");
   const [sortBy, setSortBy] = useState<"year-desc" | "year-asc" | "citations-desc">("year-desc");
 
   // Typecast imported JSON
@@ -88,6 +98,16 @@ export default function PublicationsList() {
       });
     }
 
+    if (topicFilter !== "all") {
+      const topic = TOPICS.find((item) => item.id === topicFilter);
+      if (topic) {
+        result = result.filter((pub) => {
+          const haystack = `${pub.title} ${pub.venue}`.toLowerCase();
+          return topic.terms.some((term) => haystack.includes(term));
+        });
+      }
+    }
+
     // 3. Sorting
     if (sortBy === "year-desc") {
       result.sort((a, b) => b.year - a.year);
@@ -98,7 +118,7 @@ export default function PublicationsList() {
     }
 
     return result;
-  }, [publications, searchQuery, authorFilter, sortBy]);
+  }, [publications, searchQuery, authorFilter, topicFilter, sortBy]);
 
   return (
     <div className="w-full space-y-8">
@@ -182,6 +202,22 @@ export default function PublicationsList() {
         </div>
       </div>
 
+      <div className="flex flex-wrap gap-2">
+        {TOPICS.map((topic) => (
+          <button
+            key={topic.id}
+            onClick={() => setTopicFilter(topic.id)}
+            className={`rounded-full border px-3 py-1.5 font-mono text-label transition-all ${
+              topicFilter === topic.id
+                ? "border-accent-primary/40 bg-accent-primary/10 text-accent-primary"
+                : "border-edge bg-glass-bg text-faint hover:text-ink"
+            }`}
+          >
+            {topic.label}
+          </button>
+        ))}
+      </div>
+
       {/* Publications List */}
       <div className="space-y-4">
         {filteredAndSorted.length === 0 ? (
@@ -191,7 +227,7 @@ export default function PublicationsList() {
         ) : (
           <div className="grid gap-4">
             <AnimatePresence mode="popLayout">
-              {filteredAndSorted.map((pub, idx) => {
+              {filteredAndSorted.map((pub) => {
                 const isFirstAuthor =
                   pub.authors[0]?.includes("Arshad") && pub.authors[0]?.includes("Fahad");
 

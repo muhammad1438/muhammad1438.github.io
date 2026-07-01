@@ -3,6 +3,11 @@
 import { motion } from "framer-motion";
 import SectionBadge from "@/components/SectionBadge";
 import StatsCounter from "@/components/StatsCounter";
+import ParticleField from "@/components/ParticleField";
+import ResearchWorkflow from "@/components/ResearchWorkflow";
+import ReactionPathwayAnimation from "@/components/ReactionPathwayAnimation";
+import DFTComputationAnimation from "@/components/DFTComputationAnimation";
+import ExperimentalLabAnimation from "@/components/ExperimentalLabAnimation";
 
 const reveal = {
   hidden: { opacity: 0, y: 24 },
@@ -11,8 +16,9 @@ const reveal = {
 
 export default function AboutSection() {
   return (
-    <section id="about" className="section-padding border-t border-edge bg-surface/30">
-      <div className="max-w-[1180px] mx-auto px-6 space-y-12">
+    <section id="about" className="section-padding border-t border-edge bg-surface/30 relative overflow-hidden">
+      <ParticleField density={28} className="opacity-25" />
+      <div className="max-w-[1180px] mx-auto px-6 space-y-9 relative z-10">
         <motion.div variants={reveal} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} className="space-y-4">
           <SectionBadge number="01" notation="⟨1 0 0⟩" label="Biography" dSpacing="3.905 Å" />
           <h2 className="text-display font-heading font-semibold text-ink tracking-tight">
@@ -86,6 +92,24 @@ export default function AboutSection() {
                 </div>
               ))}
             </div>
+          </motion.div>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-5 items-stretch">
+          <motion.div variants={reveal} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} className="lg:col-span-3">
+            <ResearchWorkflow />
+          </motion.div>
+          <motion.div variants={reveal} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} className="lg:col-span-2">
+            <ReactionPathwayAnimation />
+          </motion.div>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+          <motion.div variants={reveal} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }}>
+            <DFTComputationAnimation />
+          </motion.div>
+          <motion.div variants={reveal} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }}>
+            <ExperimentalLabAnimation />
           </motion.div>
         </div>
       </div>

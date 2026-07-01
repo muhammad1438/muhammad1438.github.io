@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useSyncExternalStore, useState } from "react";
 import { useTheme } from "next-themes";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Zap, Sun, Moon } from "lucide-react";
@@ -24,12 +24,12 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("");
   const [open, setOpen] = useState(false);
-  const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+  const mounted = useSyncExternalStore(
+    () => () => {},
+    () => true,
+    () => false
+  );
 
   useEffect(() => {
     const handleScroll = () => {

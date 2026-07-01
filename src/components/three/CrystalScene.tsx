@@ -3,19 +3,12 @@
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useEffect, useState, useRef } from "react";
 import PerovskiteCrystal from "./PerovskiteCrystal";
+import { useReducedMotion } from "@/lib/useReducedMotion";
 
 export default function CrystalScene() {
-  const [reducedMotion, setReducedMotion] = useState(false);
+  const reducedMotion = useReducedMotion();
   const [isVisible, setIsVisible] = useState(true);
   const containerRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
-    setReducedMotion(mq.matches);
-    const handler = (e: MediaQueryListEvent) => setReducedMotion(e.matches);
-    mq.addEventListener("change", handler);
-    return () => mq.removeEventListener("change", handler);
-  }, []);
 
   useEffect(() => {
     if (!containerRef.current) return;

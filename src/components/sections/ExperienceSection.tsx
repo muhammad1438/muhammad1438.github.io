@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import SectionBadge from "@/components/SectionBadge";
+import EnhancedTimeline from "@/components/EnhancedTimeline";
 
 const reveal = {
   hidden: { opacity: 0, y: 24 },
@@ -62,37 +63,7 @@ export default function ExperienceSection() {
           </p>
         </motion.div>
 
-        {/* Timeline */}
-        <div className="relative pl-6 md:pl-10 space-y-12">
-          <div className="absolute left-1.5 md:left-2.5 top-2 bottom-2 w-[1px] timeline-line" />
-
-          {experiences.map((exp, i) => (
-            <motion.div
-              key={i}
-              variants={reveal}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-80px" }}
-              transition={{ delay: i * 0.1 }}
-              className="relative space-y-3"
-            >
-              <div className={`absolute left-[-29px] md:left-[-39px] top-1.5 w-4 h-4 rounded-full border-2 bg-background ${exp.active ? "border-accent-primary shadow-[0_0_10px_var(--accent-primary)]" : "border-accent-primary/40"}`} />
-
-              <div className="flex flex-wrap gap-2 items-center text-small font-mono text-faint">
-                <span className={`px-2.5 py-0.5 rounded-full border border-edge bg-glass-bg ${exp.active ? "text-accent-secondary" : "text-faint"}`}>
-                  {exp.date}
-                </span>
-                <span>·</span>
-                <span>{exp.location}</span>
-              </div>
-              <h3 className="text-title font-heading font-semibold text-ink">{exp.title}</h3>
-              <p className="text-small text-accent-primary font-light">{exp.org}</p>
-              <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-2 text-small text-faint leading-relaxed list-disc pl-4">
-                {exp.items.map((item, j) => <li key={j}>{item}</li>)}
-              </ul>
-            </motion.div>
-          ))}
-        </div>
+        <EnhancedTimeline items={experiences} />
       </div>
     </section>
   );

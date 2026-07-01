@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import SectionBadge from "@/components/SectionBadge";
 import ContactForm from "@/components/ContactForm";
+import ParticleField from "@/components/ParticleField";
 
 const reveal = {
   hidden: { opacity: 0, y: 24 },
@@ -16,8 +17,9 @@ const marqueeWords = [
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="section-padding border-t border-edge">
-      <div className="max-w-[1180px] mx-auto px-6 space-y-12">
+    <section id="contact" className="section-padding border-t border-edge relative overflow-hidden">
+      <ParticleField density={30} className="opacity-25" />
+      <div className="max-w-[1180px] mx-auto px-6 space-y-12 relative z-10">
         <motion.div variants={reveal} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} className="space-y-4 text-center">
           <div className="flex justify-center">
             <SectionBadge number="08" notation="⟨0 0 1⟩" label="Connection" dSpacing="3.905 Å" />

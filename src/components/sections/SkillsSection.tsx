@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import SectionBadge from "@/components/SectionBadge";
 import SkillsConstellation from "@/components/SkillsConstellation";
+import ParticleField from "@/components/ParticleField";
 
 const reveal = {
   hidden: { opacity: 0, y: 24 },
@@ -11,8 +12,9 @@ const reveal = {
 
 export default function SkillsSection() {
   return (
-    <section id="skills" className="section-padding border-t border-edge">
-      <div className="max-w-[1180px] mx-auto px-6 space-y-12">
+    <section id="skills" className="section-padding border-t border-edge relative overflow-hidden">
+      <ParticleField density={32} className="opacity-25" />
+      <div className="max-w-[1180px] mx-auto px-6 space-y-12 relative z-10">
         <motion.div variants={reveal} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} className="space-y-4 text-center">
           <div className="flex justify-center">
             <SectionBadge number="04" notation="{2 0 0}" label="Skills" dSpacing="1.953 Å" />

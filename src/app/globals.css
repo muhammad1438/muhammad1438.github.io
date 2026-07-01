@@ -263,6 +263,20 @@
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15), inset 0 0 12px color-mix(in srgb, var(--accent-primary) 5%, transparent);
 }
 
+.scientific-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  background: radial-gradient(220px circle at var(--mx, 50%) var(--my, 50%), color-mix(in srgb, var(--accent-primary) 18%, transparent), transparent 58%);
+  transition: opacity 0.2s ease;
+}
+
+.scientific-card:hover::before {
+  opacity: 1;
+}
+
 /* ─── Grid overlay ─── */
 .tech-grid {
   background-image:
