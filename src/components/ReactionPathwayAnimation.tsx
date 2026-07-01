@@ -4,7 +4,13 @@ import { animate, stagger } from "animejs";
 import { useEffect, useRef } from "react";
 import { useReducedMotion } from "@/lib/useReducedMotion";
 
-const methaneSteps = ["CH4*", "CH3* + H*", "CH2* + 2H*", "CH* + 3H*", "C* + 4H*"];
+const methaneSteps = [
+  { state: "CH4*", note: "adsorbed methane" },
+  { state: "CH3* + H*", note: "first C-H scission" },
+  { state: "CH2* + 2H*", note: "second H removed" },
+  { state: "CH* + 3H*", note: "deep dehydrogenation" },
+  { state: "C* + 4H*", note: "surface carbon" },
+];
 const co2Steps = ["CO2*", "COOH*", "CO* + OH*"];
 
 export default function ReactionPathwayAnimation() {
@@ -16,6 +22,7 @@ export default function ReactionPathwayAnimation() {
     if (!element || reducedMotion) return;
 
     const sites = element.querySelectorAll("[data-site]");
+    const stepCards = element.querySelectorAll("[data-step-card]");
     const pulses = element.querySelectorAll("[data-pulse]");
     const hPair = element.querySelector("[data-h-pair]");
     const curves = element.querySelectorAll("[data-energy-curve]");
@@ -32,10 +39,16 @@ export default function ReactionPathwayAnimation() {
         });
         animate(sites, {
           opacity: [0, 1],
-          translateY: [12, 0],
           scale: [0.92, 1],
           delay: stagger(90, { start: 180 }),
           duration: 620,
+          easing: "outCubic",
+        });
+        animate(stepCards, {
+          opacity: [0, 1],
+          translateY: [10, 0],
+          delay: stagger(70, { start: 160 }),
+          duration: 520,
           easing: "outCubic",
         });
         animate(pulses, {
@@ -80,10 +93,27 @@ export default function ReactionPathwayAnimation() {
         <div className="relative rounded-xl border border-edge bg-background/45 p-4">
           <div className="mb-3 flex items-center justify-between gap-3">
             <span className="font-mono text-label text-accent-primary">methane decomposition lane</span>
-            <span className="font-mono text-[10px] text-faint">CH4(g) + * -&gt; CHx* + H*</span>
+            <span className="font-mono text-[10px] text-faint">CH4(g) + * -&gt; CH4* -&gt; C* + 4H*</span>
           </div>
-          <div className="overflow-x-auto no-scrollbar">
-          <svg viewBox="0 0 620 188" className="h-48 w-full min-w-[560px] overflow-visible sm:min-w-0" role="img" aria-label="Methane decomposition surface pathway">
+
+          <div className="mb-4 grid grid-cols-1 gap-2 sm:grid-cols-5">
+            {methaneSteps.map((step, index) => (
+              <div
+                key={step.state}
+                data-step-card
+                className="rounded-lg border border-accent-primary/20 bg-accent-primary/5 p-3 text-center"
+              >
+                <div className="mx-auto mb-2 flex h-8 w-8 items-center justify-center rounded-full border border-accent-primary/35 bg-background text-accent-primary shadow-[0_0_14px_rgba(0,212,255,0.22)]">
+                  {index + 1}
+                </div>
+                <div className="font-mono text-sm font-semibold text-ink">{step.state}</div>
+                <div className="mt-1 min-h-[28px] text-[10px] leading-snug text-faint">{step.note}</div>
+              </div>
+            ))}
+          </div>
+
+          <div className="overflow-x-auto no-scrollbar rounded-lg border border-edge bg-background/45 p-2">
+          <svg viewBox="0 0 620 178" className="h-44 w-full min-w-[560px] sm:min-w-0" role="img" aria-label="Methane decomposition energy profile">
             <defs>
               <linearGradient id="methaneEnergy" x1="0" x2="1">
                 <stop offset="0%" stopColor="#00d4ff" />
@@ -91,34 +121,42 @@ export default function ReactionPathwayAnimation() {
                 <stop offset="100%" stopColor="#a78bfa" />
               </linearGradient>
             </defs>
+            <line x1="42" y1="138" x2="586" y2="138" stroke="currentColor" className="text-edge" strokeWidth="1" />
             <path
               data-energy-curve
-              d="M 32 128 C 72 112, 78 70, 118 78 S 170 138, 214 114 S 266 54, 308 72 S 358 140, 404 116 S 452 62, 500 78 S 552 122, 590 100"
+              d="M 48 122 L 94 122 C 116 66, 142 66, 164 118 L 202 118 C 224 54, 252 54, 276 112 L 314 112 C 338 62, 362 62, 386 116 L 424 116 C 448 72, 474 72, 500 104 L 584 104"
               fill="none"
               stroke="url(#methaneEnergy)"
-              strokeWidth="3"
+              strokeWidth="4"
               strokeLinecap="round"
               strokeDasharray="520"
               strokeDashoffset="0"
             />
-            <line x1="34" y1="150" x2="590" y2="150" stroke="currentColor" className="text-edge" strokeWidth="1" />
-            {methaneSteps.map((label, index) => {
-              const x = 48 + index * 132;
-              const y = [128, 112, 114, 116, 100][index];
+            {methaneSteps.map((step, index) => {
+              const positions = [
+                [48, 122],
+                [202, 118],
+                [314, 112],
+                [424, 116],
+                [584, 104],
+              ];
+              const [x, y] = positions[index];
               return (
-                <g key={label} data-site transform={`translate(${x} ${y})`}>
-                  <circle data-pulse cx="0" cy="0" r="18" fill="#00d4ff" opacity="0.16" />
-                  <circle cx="0" cy="0" r="7" fill={index === methaneSteps.length - 1 ? "#f5a623" : "#00d4ff"} />
-                  <text x="-30" y="38" className="fill-ink font-mono text-[11px]">{label}</text>
+                <g key={step.state} data-site>
+                  <circle data-pulse cx={x} cy={y} r="18" fill={index === 4 ? "#f5a623" : "#00d4ff"} opacity="0.16" />
+                  <circle cx={x} cy={y} r="8" fill={index === 4 ? "#f5a623" : "#00d4ff"} />
+                  <text x={x} y="156" textAnchor="middle" className="fill-ink font-mono text-[12px]">{step.state}</text>
                 </g>
               );
             })}
-            <g data-h-pair transform="translate(486 34)">
-              <circle cx="0" cy="0" r="6" fill="#dbeafe" />
-              <circle cx="18" cy="0" r="6" fill="#dbeafe" />
-              <line x1="6" y1="0" x2="12" y2="0" stroke="#dbeafe" strokeWidth="2" />
-              <text x="-20" y="-14" className="fill-faint font-mono text-[10px]">2H* -&gt; H2(g)</text>
+            <g data-h-pair transform="translate(456 28)">
+              <circle cx="0" cy="0" r="7" fill="#dbeafe" />
+              <circle cx="22" cy="0" r="7" fill="#dbeafe" />
+              <line x1="7" y1="0" x2="15" y2="0" stroke="#dbeafe" strokeWidth="2.4" />
+              <text x="-18" y="-13" className="fill-faint font-mono text-[11px]">H* + H* -&gt; H2(g)</text>
             </g>
+            <text x="46" y="24" className="fill-faint font-mono text-[10px]">relative surface free energy</text>
+            <text x="494" y="132" className="fill-accent-secondary font-mono text-[10px]">C* remains on catalyst</text>
           </svg>
           </div>
         </div>
